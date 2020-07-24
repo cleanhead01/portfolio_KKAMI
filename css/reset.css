@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+a {color: inherit; text-decoration: none;}
+img {vertical-align: middle;}
+ul {list-style: none;}
+.row {max-width: 1232px; margin: 0px auto;}
+.cf:after {content: ""; display: block; clear: both;}
+.blind {width: 0px; height: 0px; position:absolute; text-indent: -9999px; font-size: 0px; overflow: hidden; line-height: 0;}
+/* alt가 없을 때, 낭독만 되고 글자는 안보여야 할 때 span에 blind 클래스를 주고 화면에서 글자를 없애는 방법 */
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+table {width: 100%; table-layout: fixed;}
+fieldset {border: none;}
+legend {display: none}
+button, input[type=submit], input[type=reset] {border: none; background: none; cursor: pointer;}

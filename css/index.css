@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "reset.css";
+
+
+/* .language {background: #cccccc;} */
+
+
+
+
+#header {
+    color: #ffffff;
+}
+
+.language {
+    position: relative;
+}
+.language .flag_box {
+    width: auto; height: 35px; line-height: 35px;
+}
+.language .flag_box img {
+    width: auto; height: 15px;
+}
+.language .login_box {
+    position: absolute; top: 0px; right: 0px;
+    line-height: 35px;
+}
+.language .login_box p {
+    display: inline-block;
+    font-size: 13px; font-weight: bold;
+    color: #888888;
+}
+.language .login_box p::before {
+    content: "|";
+    color: #cccccc;
+    padding: 0px 10px 0px 5px;
+}
+.language .login_box p:nth-child(1)::before {
+    display: none;
+}
+
+
+
+
+
+
+.nav_box {
+    background: #101010;
+}
+.nav_box .nav_banner {
+    position: relative;
+    padding: 30px 0px;
+}
+.nav_box h1 {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.nav_box .nav {
+    position: absolute; top: 50%; right: 20px;
+}
+.nav_box .nav .depth1 > li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+
+
+
+.nav_box .nav .depth1 .depth2 {
+    width: 100%;
+    background: pink;
+    display: none;
+}
+.nav_box .nav .depth2 > li {
+    display: inline-block;
+}
+
+.nav_box .nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+
+
