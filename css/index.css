@@ -9,6 +9,7 @@
 
 #header {
     color: #ffffff;
+    z-index: 99999;
 }
 
 .language {
@@ -66,15 +67,32 @@
 }
 
 
-
+.nav_box .nav .depth2 > li a {
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+}
 
 .nav_box .nav .depth1 .depth2 {
-    width: 100%;
-    background: pink;
+    width: 542.5px;
+    background: #333333;
     display: none;
+    position: absolute; top: 100%; left: 0px;
+    border-radius: 10px;
+    padding: 2px 0px;
 }
+/* .nav_box .nav .depth1 .depth2::before {
+    content: "";
+    position: absolute; bottom: 100%; left: 40px;
+    border-bottom: 10px solid #333333;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+} */
 .nav_box .nav .depth2 > li {
     display: inline-block;
+    width: 104px;
+    
+    /* padding: 5px 20px; */
 }
 
 .nav_box .nav .depth1 > li:hover .depth2 {
