@@ -65,11 +65,13 @@
     padding: 0px 20px;
     font-weight: bold;
 }
-/* > 이걸 썼는데 왜 바로자식이 지명이 안되나... */
-/* .nav_box .nav .depth1 > li:hover {
+.nav_box .nav .depth1 > li:hover {
     color: #98885c;
+    transition: all 0.5s;
+}
+.nav_box .nav .depth1 > li:hover .depth2 {
     transition: all 1s;
-} */
+}
 /* depth1 바로 자식 li에 호버했는데 왜 depth2의 li까지 적용이 될까? */
 /* -------------------------------------------------------------------------------------- */
 
@@ -84,6 +86,7 @@
 .nav_box .nav .depth2 > li {
     display: inline-block;
     width: 104px;
+    color: #ffffff;
 }
 .nav_box .nav .depth1 > li:hover .depth2 {
     display: block;
