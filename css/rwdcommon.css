@@ -24,6 +24,7 @@
         font-size: 40px;
         letter-spacing: 5px;
     }
+    /* 메뉴1--------------------------------------------------------------------------------------- */
     .nav_box .nav {
         position: static; top: 50%; right: 0px; transform: translate(0, -50%);
         display: block;
@@ -32,8 +33,9 @@
         display: inline-block;
         padding: 0px 20px;
         font-weight: bold;
+        position: relative;
     }
-    /* --------------------------------------------------------------------------------------- */
+    /* 메뉴2--------------------------------------------------------------------------------------- */
     .nav_box .nav .depth1 .depth2 {
         width: 100%; height: auto;
         background: #333333;
@@ -47,6 +49,10 @@
         width: 104px;
         font-weight: normal;
     }
+    .nav_box .nav .depth1 > li:hover .depth2 {
+        display: block;
+        position: absolute; top: 150%; left: 0px;
+    }
     .nav_box .nav .depth2 > li a {
         display: block;
         padding: 5px 10px;
@@ -54,35 +60,35 @@
     }
     .nav_box .nav .depth1 li:nth-child(1):hover .depth2::before {
         content: "";
-        position: absolute; bottom: 100%; left: 7.5%;
+        position: absolute; bottom: 100%; left: 40%;
         border-bottom: 10px solid #333333;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
     .nav_box .nav .depth1 li:nth-child(2):hover .depth2::before {
         content: "";
-        position: absolute; bottom: 100%; left: 28%;
+        position: absolute; bottom: 100%; left: 40%;
         border-bottom: 10px solid #333333;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
     .nav_box .nav .depth1 li:nth-child(3):hover .depth2::before {
         content: "";
-        position: absolute; bottom: 100%; left: 48.5%;
+        position: absolute; bottom: 100%; left: 40%;
         border-bottom: 10px solid #333333;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
     .nav_box .nav .depth1 li:nth-child(4):hover .depth2::before {
         content: "";
-        position: absolute; bottom: 100%; left: 68.5%;
+        position: absolute; bottom: 100%; left: 40%;
         border-bottom: 10px solid #333333;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
     .nav_box .nav .depth1 li:nth-child(5):hover .depth2::before {
         content: "";
-        position: absolute; bottom: 100%; left: 88.5%;
+        position: absolute; bottom: 100%; left: 40%;
         border-bottom: 10px solid #333333;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
@@ -100,6 +106,7 @@
         position: static; top: 50%; right: 0px; transform: translate(0, -50%);
         display: none;
     }
+    /* 햄버거메뉴--------------------------------------------------------------------------------------- */
     .nav_box .open_nav {
         display: block;
         position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
