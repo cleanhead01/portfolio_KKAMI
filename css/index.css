@@ -117,7 +117,7 @@
 #section .title h2 {
     text-align: center;
     font-size: 28px;
-    padding: 35px 0px 75px 0px;
+    padding: 75px 0px;
 }
 .business_back {
     background: #f2f3f4;
@@ -153,9 +153,9 @@
     padding: 10px 0px;
 }
 /* 포토갤러리-------------------------------------------------------------------------------------------- */
-/* .photo_gall_back {
-    height: 265.66px; overflow: hidden;     여기서부터
-} */
+.photo_gall {
+    overflow: hidden;
+}
 .photo_gall ul > li {
     width: 33.33%;
     float: left;
