@@ -5,3 +5,124 @@
 
 
 /* 공통구역을 제외한 메인페이지 스타일 */
+
+
+
+
+/* #section {
+    padding-top: 149px;
+} */
+
+
+.slide_outer {
+    position: relative; height: 792.91px; overflow: hidden;
+}
+.slide_outer .slide_inner > .slide {
+    width: 100%; height: 792.91px; 
+    background-size: cover; background-position: center;
+    position: relative;
+}
+.slide_outer .slide_inner > .slide:nth-child(1) {
+    background: url(../images/slide1.jpg) no-repeat;
+}
+.slide_outer .slide_inner .slide:nth-child(2) {
+    background: url(../images/slide2.jpg) no-repeat;
+}
+.slide_outer .slide_inner .slide:nth-child(3) {
+    background: url(../images/slide3.jpg) no-repeat;
+}
+.slide_outer .slide_inner .slide:nth-child(4) {
+    background: url(../images/slide4.jpg) no-repeat;
+}
+/* 텍스트-------------------------------------------------------------------------------------------- */
+.slide_outer .slide_inner .slide .text {
+    color: #ffffff;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center;
+}
+.slide_outer .slide_inner .slide .text h2 {
+    font-size: 61px;
+    padding: 0px 0px 30px;
+}
+.slide_outer .slide_inner .slide .text span {
+    display: block;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.slide_outer .slide_inner .slide .text p {
+    width: 183px; height: 59px;
+    border: 1px solid ivory; border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 19px 0px; margin: 50px auto 0px;
+    font-size: 13px;
+}
+.slide_outer .slide_inner .slide .text p:hover {
+    width: 183px; height: 59px;
+    border: 1px solid ivory; border-radius: 10px;
+    background: rgba(108, 96, 81, 0.7);
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 19px 0px; margin: 50px auto 0px;
+    font-size: 13px;
+}
+/* 슬라이드 화살표--------------------------------------------------------------------------------------- */
+.slide_outer .arr {
+    color: #ffffff;
+    position: absolute; top: 50%; transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+}
+.slide_outer .arr:hover {
+    color: #ffffff;
+    opacity: 0.5;
+    transition: all 0.5s;
+    position: absolute; top: 50%; transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+}
+.slide_outer .prev {
+    left: 100px;
+}
+.slide_outer .next {
+    right: 100px;
+}
+/* 서브타이틀-------------------------------------------------------------------------------------------- */
+.slide_outer .sub_nav {
+    position: absolute; bottom: 0px; left: 0px;
+    width: 100%;
+}
+.slide_outer .sub_nav li {
+    float: left;
+    width: 25%;
+}
+.slide_outer .sub_nav li > a {
+    border: 1px solid #aaaaaa;
+    height: 98.6px;
+    display: block;
+    text-align: center;
+    padding: 28px 0px;
+    background: rgb(0,0,12,0.3);
+}
+.slide_outer .sub_nav li > a:hover {
+    border: 1px solid #aaaaaa;
+    color: #ffffff;
+    height: 98.6px;
+    display: block;
+    text-align: center;
+    padding: 28px 0px;
+    background: rgb(0,0,12,0.7);
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
