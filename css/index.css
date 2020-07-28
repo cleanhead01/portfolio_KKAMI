@@ -117,11 +117,10 @@
 #section .title h2 {
     text-align: center;
     font-size: 28px;
-    padding: 35px 0px 30px 0px;
+    padding: 35px 0px 75px 0px;
 }
 .business_back {
     background: #f2f3f4;
-    width: 100%;
 }
 .business .busi_photo {
     padding: 0px 10px;
@@ -134,11 +133,14 @@
     transform: scale(1.5); transition: all 0.5s;
 }
 .business ul {
-    padding: 35px 0px;
+    padding: 0px 0px 35px;
 }
 .business ul > li {
     width: 24%;
     display: inline-block;
+}
+.business ul > li img {
+    width: 100%;
 }
 .business ul > li h3 {
     text-align: center;
@@ -149,6 +151,52 @@
     font-size: 14px;
     color: #464646;
     padding: 10px 0px;
+}
+/* 포토갤러리-------------------------------------------------------------------------------------------- */
+/* .photo_gall_back {
+    height: 265.66px; overflow: hidden;     여기서부터
+} */
+.photo_gall ul > li {
+    width: 33.33%;
+    float: left;
+}
+.photo_gall ul > li img {
+    width: 100%;
+}
+/* 주요강사진-------------------------------------------------------------------------------------------- */
+
+.main_teacher .teacher_box {
+    width: 24%;
+    float: left;
+    text-align: center;
+    padding: 10px 0px 80px; margin: 0px 0.5%;
+}
+.main_teacher .teacher_box:hover {
+    width: 24%;
+    float: left;
+    text-align: center;
+    padding: 30px 0px 60px; margin: 0px 0.5%;
+    background: #f0f0f0;
+    transition: all 0.5s;
+}
+.main_teacher .teacher_box:hover h3 {
+    color: #ffffff;
+}
+.main_teacher .teacher_box .teacher_photo > img {
+    width: 100%;
+}
+.main_teacher .teacher_box h3 {
+    font-size: 19px;
+    color: #777777;
+    padding: 25px 0px 0px;
+}
+.main_teacher .teacher_box p {
+    font-size: 14px;
+    color: #949494;
+    padding: 5px 0px;
+}
+.main_teacher .teacher_box .teacher_mail {
+    color: #949494;
 }
 
 
