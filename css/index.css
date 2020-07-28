@@ -113,8 +113,43 @@
     background: rgb(0,0,12,0.7);
     transition: all 0.5s;
 }
-
-
+/* 사업영역---------------------------------------------------------------------------------------------- */
+#section .title h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 35px 0px 30px 0px;
+}
+.business_back {
+    background: #f2f3f4;
+    width: 100%;
+}
+.business .busi_photo {
+    padding: 0px 10px;
+}
+.business .busi_photo div {
+    height: 185px;          /* 사진이 div박스 안에서 커지고 싶으면 height값을 주고 overflow:hidden */
+    overflow: hidden;
+}
+.business .busi_photo img:hover {
+    transform: scale(1.5); transition: all 0.5s;
+}
+.business ul {
+    padding: 35px 0px;
+}
+.business ul > li {
+    width: 24%;
+    display: inline-block;
+}
+.business ul > li h3 {
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 0px 5px;
+}
+.business ul > li p {
+    font-size: 14px;
+    color: #464646;
+    padding: 10px 0px;
+}
 
 
 
