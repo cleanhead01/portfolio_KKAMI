@@ -153,8 +153,15 @@
     padding: 10px 0px;
 }
 /* 포토갤러리-------------------------------------------------------------------------------------------- */
+.photo_gall_back {
+    position: relative;
+    margin-bottom: 65px;
+}
 .photo_gall {
-    overflow: hidden;
+    margin-bottom: 35px;
+}
+.photo_gall ul {
+    height: 272.03px; overflow: hidden;
 }
 .photo_gall ul > li {
     width: 33.33%;
@@ -162,6 +169,47 @@
 }
 .photo_gall ul > li img {
     width: 100%;
+}
+/* 갤러리 도트----------------------------------------------------------------------------------------- */
+.photo_gall_back .dot_box {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    padding: 10px 0px;      /* 도트박스가 주요강사진 title에 계속 곂쳐서 photo_gall에 margin_bottom을 줌 */
+}
+.photo_gall_back .dot_box a {
+    display: inline-block;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: #cccccc;
+    margin: 0px 5px;
+}
+.photo_gall_back .dot_box a:hover {
+    display: inline-block;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: lime;
+    transition: all 0.5s;
+    margin: 0px 5px;
+}
+/* 갤러리 화살표---------------------------------------------------------------------------------------- */
+.photo_gall_back .arr {
+    color: pink;
+    position: absolute; top: 75%; transform: translateY(-75%);
+    font-size: 40px;
+    cursor: pointer;
+}
+.photo_gall_back .arr:hover {
+    color: pink;
+    opacity: 0.5;
+    transition: all 0.5s;
+    position: absolute; top: 75%; transform: translateY(-75%);
+    font-size: 40px;
+    cursor: pointer;
+}
+.photo_gall_back .prev {
+    left: 10px;
+}
+.photo_gall_back .next {
+    right: 10px;
 }
 /* 주요강사진-------------------------------------------------------------------------------------------- */
 
@@ -198,11 +246,209 @@
 .main_teacher .teacher_box .teacher_mail {
     color: #949494;
 }
+/* 제품가격표-------------------------------------------------------------------------------------------- */
+.menu_back {
+    background: #f2f3f4;
+    padding: 30px 0px 60px; 
+}
+.menu .menu_list {
+    width: 24.5%;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 15px;
+}
+.menu .menu_list h2 {
+    font-size: 22px;
+    padding: 16.5px 0px;
+    color: #ffffff;
+    border-top-left-radius: 20px; border-top-right-radius: 20px;
+}
+.menu .menu_list h3 {
+    font-size: 22px;
+    padding: 19px 0px 19px;
+    background: #e7eaec;
+}
+.menu .menu_list h3 span {
+    font-weight: normal;
+    color: rgba(51,51,51,0.25);
+}
+.menu .menu_list > div {
+    background: #ffffff;
+    padding: 50px 0px;
+    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+}
+.menu .menu_list p {
+    font-size: 17px;
+    color: #777777;
+    padding: 10px 0px;
+}
+.menu .menu_list .buy_now {
+    display: block;
+    width: 150px; height: 50px;
+    font-size: 17px; font-weight: bold;
+    border: 2px solid #000000; border-radius: 30px;
+    padding: 10px 0px; margin: 40px auto 0px;
+}
+.menu .menu_list .buy_now:hover {
+    display: block;
+    width: 150px; height: 50px;
+    font-size: 17px; font-weight: bold;
+    background: #8dc63f; color: #ffffff;
+    border-radius: 30px; border: 2px solid #8dc63f;
+    transition: all 1s;
+    padding: 10px 0px; margin: 40px auto 0px;
+}
+.menu .menu_list .buy_now a {
+    display: block;
+}
+.menu .starter h2 {
+    background: #c2c2c2;
+}
+.menu .basic h2 {
+    background: #8dc63f;
+}
+.menu .pro h2 {
+    background: #0099ff;
+    position: relative;
+    overflow: hidden;
+}
+.menu .pro img {
+    position: absolute; top: 0px; right: 0px;
+}
+.menu .advenced h2 {
+    background: #333333;
+}
+/* 제휴파트너-------------------------------------------------------------------------------------------- */
+.partner {
+    padding: 30px 0px 10px;
+    position: relative;
+}
+.partner ul {
+    text-align: center;
+    height: 101px; overflow: hidden;
+}
+.partner ul > li {
+    padding: 0px 50px;
+    display: inline-block;
+}
+.partner img {
+    width: 100%;
+}
+/* 파트너 화살표----------------------------------------------------------------------------------------- */
+.partner .arr {
+    position: absolute; top: 70%; transform: translateY(-50%);
+    color: #000000;
+    font-size: 30px;
+}
+.partner .arr:hover {
+    position: absolute; top: 70%; transform: translateY(-50%);
+    color: #cccccc; 
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+}
+.partner .prev {
+    left: 50px;
+}
+.partner .next {
+    right: 50px;
+}
+/* 파트너 도트------------------------------------------------------------------------------------------ */
+.partner {
+    position: relative;
+    margin-bottom: 105px;
+}
+.partner .dot_box {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    padding: 10px 0px;
+}
+.partner .dot_box a {
+    display: inline-block;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: #cccccc;
+    margin: 0px 5px;
+}
+.partner .dot_box a:hover {
+    display: inline-block;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: lime;
+    transition: all 0.5s;
+    margin: 0px 5px;
+}
+/* 프로젝트--------------------------------------------------------------------------------------------- */
+.project_back {
+    background: #f2f3f4;
+    padding-bottom: 70px;
+}
+.project li {
+    width: 24%;
+    float: left;
+    position: relative;
+}
+.project img {
+    width: 100%;
+}
+.project li span {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 100px; height: 50px; line-height: 50px;
+    text-align: center;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff; border-radius: 5px;
+    opacity: 0;
+}
+.project li:hover span {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 100px; height: 50px; line-height: 50px;
+    text-align: center;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #ffffff; border-radius: 5px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.project li span:hover {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 100px; height: 50px; line-height: 50px;
+    text-align: center;
+    font-size: 15px; font-weight: bold;
+    color: #73767e; background: #ffffff;
+    border: 2px solid #ffffff; border-radius: 5px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.project li .overlay {
+    position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    background: rgba(155,203,67,0);
+    transition: all 0.5s;
+}
+.project li:hover .overlay {
+    position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    background: rgba(155,203,67,0.4);
+}
 
 
-
-
-
+.go_top {
+    position: fixed; bottom: 50px; right: 50px;
+    font-size: 30px;
+    color: skyblue;
+}
+.go_top:hover {
+    position: fixed; bottom: 50px; right: 50px;
+    font-size: 30px;
+    color: darkgray;
+}
+.go_top:hover .lightning {
+    display: block;
+}
+.go_top .lightning {
+    font-size: 9px;
+    color: yellow;
+    position: fixed; bottom: 44px; right: 55px;
+    display: none;
+}
 
 
 

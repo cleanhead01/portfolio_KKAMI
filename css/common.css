@@ -131,5 +131,33 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
-/* -------------------------------------------------------------------------------------- */
+/* 푸터메뉴------------------------------------------------------------------------------------------ */
+.footer_nav {
+    text-align: center;
+    background: #212121;
+    padding: 20px 0px;
+}
+.footer_nav li {
+    display: inline-block;
+}
+.footer_nav li a {
+    display: block;
+    font-size: 13px;
+    padding: 20px 30px;
+    color: #ffffff;
+}
+.footer_nav li a:hover {
+    display: block;
+    font-size: 13px;
+    padding: 20px 30px;
+    color: #63ebc4;
+    transition: all 0.5s;
+}
 
+.footer_copy {
+    background: #f2f3f4;
+    text-align: center;
+    font-size: 13px;
+    color: #777777;
+    padding: 20px 0px;
+}
