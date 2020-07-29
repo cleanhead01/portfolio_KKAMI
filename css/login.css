@@ -11,7 +11,7 @@
 #login_back .login_page {
     width: 640px;
     text-align: center;
-    border: 2px solid #000000; border-radius: 50px;
+    border: 1px solid #000000; border-radius: 50px;
     padding: 60px 70px;
 }
 #login_back .login_box h1 {
@@ -41,7 +41,14 @@
     text-align: left;
     font-size: 13px;
     color: #333333;
-    padding: 10px 0px 40px;
+    padding: 10px 0px; margin: 10px 0px 40px;
+}
+#login_back .login_content .link a:last-child i {
+    color: red;
+}
+#login_back .login_content .link a:last-child:hover i {
+    color: blue;
+    transition: all 0.5s;
 }
 #login_back .login_content .link a::before {
     content: "|";
@@ -57,21 +64,45 @@
     font-size: 13px;
     color: #333333;
 }
-/* 버튼 박스---------------------------------------------------------------------------------------------- */
+/* 버튼 로그인박스---------------------------------------------------------------------------------- */
 #login_back .login_content button {
     display: block;
     margin: 5px auto; padding: 10px 0px;
     font-size: 14px;
-    width: 250px;
+    width: 300px;
     background: #ffffff;
     border: 1px solid #cccccc; border-radius: 10px;    
 }
 #login_back .login_content .button_login {
     background: pink;
     font-size: 18px;
+    font-weight: bold;
+}
+#login_back .login_content .button_login:hover {
+    background: pink; color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+/* 버튼 햄버거박스---------------------------------------------------------------------------------- */
+#login_back .login_content .button_box button:nth-child(1) {
+    background: url(../images/kfc.png) no-repeat 17px 50%;
+    background-size: auto 30px;
+}
+#login_back .login_content .button_box button:nth-child(2) {
+    background: url(../images/lotteria.png) no-repeat 5px 50%;
+    background-size: auto 30px;
+}
+#login_back .login_content .button_box button:nth-child(3) {
+    background: url(../images/mcdonard.png) no-repeat 12px 50%;
+    background-size: auto 30px;
+}
+#login_back .login_content .button_box button:nth-child(4) {
+    background: url(../images/burgerking.png) no-repeat 13px 50%;
+    background-size: auto 30px;
 }
 
-/* 지금 로그인버튼박스 실험중 */
+
 
 /* img는 백그라운드로 백그라운드 -size로 사이즈 맞추고 fixel값으로 맞추기 */
 
