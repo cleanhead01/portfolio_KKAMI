@@ -70,16 +70,10 @@
     background: pink;
     font-size: 18px;
 }
-#login_back .login_content button img {
-    width: auto; height: 40px;
-}
-#login_back .login_content button .blbl {
-    float: right;
-    width: 150px; height: auto;
-    text-align: left;
-}
 
 /* 지금 로그인버튼박스 실험중 */
+
+/* img는 백그라운드로 백그라운드 -size로 사이즈 맞추고 fixel값으로 맞추기 */
 
 
 
