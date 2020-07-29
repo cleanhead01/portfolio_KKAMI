@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import "rwdcommon.css";
+
+
+
+#login_back {
+    padding: 70px 0px;
+}
+#login_back .login_page {
+    width: 640px;
+    text-align: center;
+    border: 2px solid #000000; border-radius: 50px;
+    padding: 60px 70px;
+}
+#login_back .login_box h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+/* input박스------------------------------------------------------------------------------------------- */
+#login_back .idpw_box input {
+    display: block;
+    font-size: 16px;
+    width: 500px; height: 60px;
+    padding: 20px 0px 0px 10px;
+    border-bottom: 1px solid #000000;
+}
+
+#login_back .login_content .check_box {
+    font-size: 13px;
+    text-align: left;
+    padding: 20px 0px;
+}
+#login_back .login_content .check_box label {
+    padding-right: 10px;
+}
+/* ID 찾기----------------------------------------------------------------------------------------------- */
+#login_back .login_content .link a {
+    float: left;
+    text-align: left;
+    font-size: 13px;
+    color: #333333;
+    padding: 10px 0px 40px;
+}
+#login_back .login_content .link a::before {
+    content: "|";
+    margin: 0px 10px 0px 10px;
+}
+#login_back .login_content .link a:first-child::before,
+#login_back .login_content .link a:last-child::before {
+    display: none;
+}
+#login_back .login_content .link a:last-child {
+    float: right;
+    text-align: right;
+    font-size: 13px;
+    color: #333333;
+}
+/* 버튼 박스---------------------------------------------------------------------------------------------- */
+#login_back .login_content button {
+    display: block;
+    margin: 5px auto; padding: 10px 0px;
+    font-size: 14px;
+    width: 250px;
+    background: #ffffff;
+    border: 1px solid #cccccc; border-radius: 10px;    
+}
+#login_back .login_content .button_login {
+    background: pink;
+    font-size: 18px;
+}
+#login_back .login_content button img {
+    width: auto; height: 40px;
+}
+#login_back .login_content button .blbl {
+    float: right;
+    width: 150px; height: auto;
+    text-align: left;
+}
+
+/* 지금 로그인버튼박스 실험중 */
+
+
+
+
+
+
+
