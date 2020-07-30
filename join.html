@@ -8,6 +8,7 @@
     <title>KKAMI_join</title>
 </head>
 <body>
+    <div class="skip"><a href="#section">본문 바로가기</a></div>
     
     <header id="header">
         <div class="language row">
@@ -92,6 +93,7 @@
             <div class="join_box">
                 <h2>회원가입</h2>
             </div>
+            <p class="essential">필수 입력</p>
             <form action="#" method="post" class="join_form">
                 <fieldset>
                     <legend>회원가입</legend>
@@ -99,42 +101,78 @@
                 <div class="join_content">
                     <ul>
                         <li>
-                            <label for="name">성명</label>
+                            <label for="name" class="essential">성명</label>
                             <div class="input_lbl">
-                                <input type="text" id="name" placeholder="성명">
+                                <input type="text" id="name" placeholder="성명" class="w300">
                             </div>
                         </li>
                         <li>
-                            <label for="gender">성별</label>
+                            <label for="gender" class="essential">성별</label>
                             <div class="input_lbl">
                                 <input type="checkbox" id="male" value="male">
-                                <label for="male">남성</label>
+                                <label for="male" class="checkbox_lbl gender_lbl">남성</label>
                                 <input type="checkbox" id="female" value="female">
-                                <label for="female">여성</label>
+                                <label for="female" class="checkbox_lbl gender_lbl">여성</label>
                             </div>
                         </li>
                         <li>
-                            <label for="id">아이디</label>
+                            <label for="code_number" class="essential">주민번호</label>
                             <div class="input_lbl">
-                                <input type="text" id="id" placeholder="@kkami.com">
+                                <input type="text" id="code_number">
+                                <span>-</span>
+                                <input type="text" id="code_number">
                             </div>
                         </li>
                         <li>
-                            <label for="pw">패스워드</label>
-                            <div class="input_lbl">
-                                <input type="password" id="pw" placeholder="비밀번호">
+                            <label for="id" class="essential">아이디</label>
+                            <div class="input_lbl id_input">
+                                <input type="text" id="id" placeholder="@kkami.com" class="w300">
                             </div>
                         </li>
                         <li>
-                            <label for="pw_check">패스워드 확인</label>
+                            <label for="pw" class="essential">패스워드</label>
                             <div class="input_lbl">
-                                <input type="password" id="pw_check" placeholder="비밀번호 확인">
+                                <input type="password" id="pw" placeholder="비밀번호" class="w300">
                             </div>
                         </li>
                         <li>
-                            <label for="tel">연락처</label>
+                            <label for="pw_check" class="essential">패스워드 확인</label>
                             <div class="input_lbl">
-                                <input type="tel" id="tel" placeholder="연락처">
+                                <input type="password" id="pw_check" placeholder="비밀번호 확인" class="w300">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="home_tel">집</label>
+                            <div class="input_lbl">
+                                <select id="tel_choice">
+                                    <option value="nochoice">선택</option>
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                    <option value="033">033</option>
+                                    <option value="041">041</option>
+                                    <option value="042">042</option>
+                                    <option value="043">043</option>
+                                    <option value="044">044</option>
+                                    <option value="051">051</option>
+                                    <option value="052">052</option>
+                                    <option value="053">053</option>
+                                    <option value="054">054</option>
+                                    <option value="055">055</option>
+                                    <option value="061">061</option>
+                                    <option value="062">062</option>
+                                    <option value="063">063</option>
+                                    <option value="064">064</option>
+                                </select>
+                                <input type="tel" id="home_tel">
+                                <span> - </span>
+                                <input type="tel" id="home_tel">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="tel" class="essential">휴대폰</label>
+                            <div class="input_lbl">
+                                <input type="tel" id="tel" placeholder='휴대폰번호 "-" 없이 숫자만 입력해주세요' class="w300">
                             </div>
                         </li>
                         <li>
@@ -149,22 +187,24 @@
                                     <option value="gmail.com">구글</option>
                                     <option value="naver.com">네이버</option>
                                     <option value="kkami.com">까미</option>
+                                    <option value="self">직접입력</option>
                                 </select>
                             </div>
                         </li>
                         <li>
-                            <label for=""></label>
-                            <div class="input_lbl">
-                                <input type="text">
-                            </div>
-                        </li>
-                        <li>
-                            <label for=""></label>
-                            <div class="input_lbl">
-                                <input type="text">
+                            <label for="address1">주소</label>
+                            <div class="input_lbl add_text">
+                                <input type="text" id="address1" class="w300"> <button type="button">우편번호</button>
+                                <input type="text" id="address2" class="w70p"><span> (도로명 주소)</span>
+                                <input type="text" id="address3" class="w70p"><span> (지번 주소)</span>
+                                <input type="text" id="address4" class="w70p"><span> (나머지 주소)</span>
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div class="sm_rs_button">
+                    <button type="submit">전송</button>
+                    <button type="reset">취소</button>
                 </div>
             </form>
         </div>

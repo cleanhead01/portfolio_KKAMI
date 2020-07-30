@@ -9,54 +9,131 @@
 #join_back {
     padding: 70px 0px;
 }
-
-
-
-
-
-
-
-
-.join_page
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.join_page .join_box h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.join_page p {
+    padding: 7px 15px;
+    color: red;
+    font-size: 13px;
+}
+.join_page .essential {
+    position: relative;
+}
+/* padding이 아닌 position으로 주는 이유는 속성값을 주지 않은 목록이랑 위치가 안맞음 */
+.join_page .essential::before {
+    content: "*";
+    position: absolute; top: 25%; left: 5px;
+    font-weight: bold;
+    color: red;
+}
+.join_page form {
+    border-top: 1px solid black;
+    padding: 50px 0px;
+}
+.join_page .join_content .w300 {
+    width: 300px;
+}
+.join_page .join_content .w70p {
+    width: 70%;
+}
+.join_page .join_content span {
+    line-height: 40px;
+}
+.join_page .join_content label {
+    display: inline-block;
+    /* label은 순수 inline이여서 다른 적용값이 안먹히니
+    그래서 inline속성에 block값을 넣어줘야 다른 값이 먹힘
+    form태그 안에서 유일하게 label만 이럼... */
+    width: 20%; height: 40px;
+    font-size: 17px; font-weight: bold;
+    padding: 7px 15px;
+}
+/* 성별------------------------------------------------------------------------------------------------------ */
+.join_page .join_content .gender_lbl {
+    padding: 0px 10px 0px 0px;
+    font-size: 13px;
+    line-height: 40px;
+}
+.join_page .join_content .input_lbl .checkbox_lbl {
+    width: auto;
+}
+/* 아이디------------------------------------------------------------------------------------------------------ */
+.join_page .join_content .id_input input::placeholder {
+    text-align: right;
+}
+/* 인풋------------------------------------------------------------------------------------------------------ */
+.join_page .join_content li:last-child > .input_lbl input,
+.join_page .join_content li:last-child > .input_lbl button {
+    margin-bottom: 5px;
+}
+.join_page .join_content .input_lbl {
+    display: inline-block;
+    width: 74%;
+    vertical-align: top;
+}
+.join_page .join_content .input_lbl input {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.join_page .join_content .input_lbl select {
+    border-radius: 10px;
+}
+.join_page .join_content .input_lbl select:hover {
+    border-radius: 10px;
+    background: #cccccc;
+    transition: all 0.5s;
+}
+.join_page .join_content .input_lbl select:hover option {
+    background: #ffffff;
+}
+.join_page .join_content .input_lbl button {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+.join_page .join_content .input_lbl select,
+.join_page .join_content .input_lbl button,
+.join_page .join_content .input_lbl input[type=text],
+.join_page .join_content .input_lbl input[type=password],
+.join_page .join_content .input_lbl input[type=tel],
+.join_page .join_content .input_lbl input[type=checkbox] {
+    vertical-align: top;
+    height: 40px;
+    margin-bottom: 25px;
+}
+.join_page .join_content .add_text span {
+    font-size: 13px;
+}
+/* 전송버튼------------------------------------------------------------------------------------------------- */
+.join_page .sm_rs_button {
+    text-align: center;
+    padding-top: 60px; margin-top: 50px;
+    border-top: 1px solid black;
+}
+.join_page .sm_rs_button button {
+    width: 100px; height: 40px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 0px 10px;
+    font-size: 18px; font-weight: bold;
+}
+.join_page .sm_rs_button button:nth-child(1) {
+    background: red;
+}
+.join_page .sm_rs_button button:nth-child(2) {
+    background: black;
+    cursor: pointer;
+}
+.join_page .sm_rs_button button:hover:nth-child(1) {
+    background: black;
+    transition: all 0.5s;
+}
+.join_page .sm_rs_button button:hover:nth-child(2) {
+    background: red;
+    cursor: pointer;
+    transition: all 0.5s;
+}
