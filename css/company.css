@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import "rwdcommon.css";
+
+
+
+
+
+
+
+
+
+#company_back .slide {
+    background: url(../images/company_slide.jpg) no-repeat;
+    background-size: cover; background-position: center;
+    width: 100%; height: 400px;
+    padding: 98.5px 0px;
+}
+#company_back .slide .text_box {
+    text-align: right;
+    text-shadow: -3px 3px 3px gray;
+}
+/* 슬라이드 텍스트----------------------------------------------------------------------------- */
+#company_back .slide .text_box h1 {
+    font-size: 38px; font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#company_back .slide .text_box h1 span {
+    font-weight: bold;
+}
+#company_back .slide .text_box p {
+    font-size: 22px; font-weight: lighter;
+    color: #ffffff;
+}
+#company_back .slide .text_box .learn_more {
+    background: #9bcb43;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+}
+#company_back .slide .text_box .learn_more:hover {
+    background: orange;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+    transition: all 0.5s;
+}
+/* 메인 ------------------------------------------------------------------------------------- */
+#company_back .center {
+    padding: 50px 0px;
+}
+#company_back .center .button a {
+    display: inline-block;
+}
+#company_back .center .button span {
+    display: block;
+    width: 150px; height: 40px; line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+/* 이해가 안감-------------------------------------------------------------------------------- */
+#company_back .center .button a:nth-child(1) {
+    background: #666666; color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+#company_back .center .button a:nth-child(2) {
+    background: #f3f3f3; color: #666666;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+#company_back .center .button a:nth-child(1):hover {
+    background: #f3f3f3; color: #666666;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+    transition: all 0.5s;
+}
+#company_back .center .button a:nth-child(2):hover {
+    background: #666666; color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+    transition: all 0.5s;
+}
+/* 메인 인사말-------------------------------------------------------------------------------- */
+#company_back .center .greeting {
+    margin: 20px 0px 30px;
+}
+#company_back .center .greeting h2 {
+    font-size: 25px;
+    color: #666666;
+}
+#company_back .center .greeting p {
+    font-size: 15px;
+    color: #666666;
+}
+/* 메인-------------------------------------------------------------------------------------- */
+#company_back .center .greeting_img {
+    width: 440px; height: 529px;
+    display: inline-block;
+}
+#company_back .center .greeting_back {
+    position: relative;
+}
+#company_back .center .greeting_text {
+    display: inline-block;
+    width: auto; height: auto;
+    position: absolute; top: 0px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+#company_back .center .greeting_text h3 {
+    font-size: 22px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+#company_back .center .greeting_text p {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+#company_back .center .greeting_text h4 {
+    font-size: 20px;
+    color: #666666;
+    margin: 35px 0px 20px;
+}
+#company_back .center .greeting_text table {
+    font-size: 15px;
+    color: #666666;
+    width: 400px;
+}
+#company_back .center .greeting_text table td {
+    padding: 10px 0px 10px 10px;
+}
+#company_back .center .greeting_text table td:nth-child(1) {
+    background: #aaaaaa;
+    color: #f3f3f3;
+    width: 150px;
+}
+#company_back .center .greeting_text table td:nth-child(2) {
+    background: #f3f3f3;
+    color: #aaaaaa;
+}
