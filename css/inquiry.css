@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import "rwdcommon.css";
+
+
+
+
+
+#inquiry_back {
+    padding: 70px 0px;
+}
+.inquiry_page .inquiry_content .w500 {
+    width: 500px;
+}
+.inquiry_page .inquiry_content .h50 {
+    height: 50px;
+}
+/* h1 박스------------------------------------------------------------------------------------------------- */
+.inquiry_page .inquiry_box {
+    text-align: center;
+}
+.inquiry_page .inquiry_box h1 {
+    font-size: 40px; 
+    margin-bottom: 40px;
+}
+/* form 시작------------------------------------------------------------------------------------------------- */
+.inquiry_page .inquiry_form {
+    padding-left: 366px;
+}
+.inquiry_page .inquiry_content select,
+.inquiry_page .inquiry_content textarea,
+.inquiry_page .inquiry_content input[type=text] {
+    border: 1px solid #cccccc; border-radius: 10px;
+    padding-left: 10px; margin-bottom: 30px;
+    background: #f8f9fa;
+}
+/* label---------------------------------------------------------------------------------------------------- */
+.inquiry_page .inquiry_content label,
+.inquiry_page .inquiry_content select {
+    display: block;
+}
+.inquiry_page .inquiry_content label {
+    font-size: 13px; font-weight: bold;
+    color: #333333;
+    margin: 0px 0px 10px; padding-left: 5px;
+}
+/* select---------------------------------------------------------------------------------------------------- */
+.inquiry_page .inquiry_content .select_pro {
+    margin-bottom: 5px;
+}
+.inquiry_page .inquiry_content .select_mail {
+    display: inline-block;
+    vertical-align: top;
+    width: 103px;
+}
+.inquiry_page .inquiry_content select:hover {
+    background: #cccccc;
+    transition: all 0.5s; cursor: pointer;
+}
+.inquiry_page .inquiry_content select:hover option {
+    background: #ffffff;
+}
+/* 문의박스, 파일박스------------------------------------------------------------------------------------------ */
+.inquiry_page .inquiry_content textarea {
+    height: 250px;
+    padding-top: 10px;
+}
+.inquiry_page .inquiry_content input[type=file] {
+    width: 180px;
+}
+/* 전송버튼------------------------------------------------------------------------------------------------- */
+.inquiry_page .sm_rs_button button {
+    width: 247px; height: 50px;
+    border-radius: 10px; border: 1px solid #000000;
+    margin-top: 60px;
+    color: #ffffff; 
+    font-weight: bold; font-size: 18px;
+}
+.inquiry_page .sm_rs_button button:nth-child(1) {
+    background: blue;
+}
+.inquiry_page .sm_rs_button button:nth-child(2) {
+    background: black;
+}
+.inquiry_page .sm_rs_button button:nth-child(1):hover {
+    background: black;
+    transition: all 0.5s;
+}
+.inquiry_page .sm_rs_button button:nth-child(2):hover {
+    background: blue;
+    transition: all 0.5s;
+    cursor: pointer;
+}

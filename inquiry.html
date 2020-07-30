@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/inquiry.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <title>KKAMI_login</title>
+    <title>KKAMI_inquiry</title>
 </head>
 <body>
-    <div class="skip"><a href="#section">본문 바로가기</a></div>
     
     <header id="header">
         <div class="language row">
@@ -88,42 +87,72 @@
         </div>
     </header>
 
-    <section id="login_back">
-        <div class="login_page row">
-            <div class="login_box">
-                <h1>로그인</h1>
+    <section id="inquiry_back">
+        <div class="inquiry_page row">
+            <div class="inquiry_box">
+                <h1>제품 문의</h1>
             </div>
-            <form action="#" method="post" class="login_form">
+            <form action="#" method="post" class="inquiry_form">
                 <fieldset>
-                    <legend>로그인</legend>
-                    <div class="login_content">
-                        <div class="idpw_box">
-                            <input type="text" placeholder="이메일 주소 또는 전화번호">
-                            <input type="text" placeholder="비밀번호">
-                        </div>
-                        <div class="check_box">
-                            <input type="checkbox" id="idsave" value="idsave">
-                            <label for="idsave">아이디 저장</label> <!-- 체크박스에는 value를 써야함 -->
-                            <input type="checkbox" id="pwsave" value="pwsave">
-                            <label for="pwsave">비밀번호 저장</label>
-                            <input type="checkbox" id="security" value="security" checked>
-                            <label for="security">보안접속</label>
-                        </div>
-                        <button type="submit" class="button_login">로그인</button>
-                        <div class="link cf">
-                            <a href="#">ID찾기</a>
-                            <a href="#">비밀번호찾기</a>
-                            <a href="join.html">회원가입</a>
-                            <a href="#"><i class="fas fa-shield-alt"></i>보안센터</a>
-                        </div>
-                        <div class="button_box">
-                            <button type="submit"><span>KFC 로그인</span></button>
-                            <button type="submit"><span>LOTTERIA 로그인</span></button>
-                            <button type="submit"><span>Mcdonald's 로그인</span></button>
-                            <button type="submit"><span>BURGER KING 로그인</spa></button>
-                        </div>
-                    </div>
+                    <legend>제품문의</legend>
                 </fieldset>
+                <div class="inquiry_content">
+                    <div class="product_large">
+                        <label for="product_choice">제품 구분</label>
+                        <select id="product_choice_large" class="w500 h50 select_pro">
+                            <option value="nochoice">대분류</option>
+                            <option value="clipper">클리퍼</option>
+                            <option value="Slicker">슬리커</option>
+                            <option value="Blunt">블런트 가위</option>
+                            <option value="Curve">커브 가위</option>
+                            <option value="Tapering">숱 가위</option>
+                            <option value="Tenten">요술 가위</option>
+                            <option value="comb">콤</option>
+                        </select>
+                        <select id="product_choice_small" class="w500 h50">
+                            <option value="nochoice">소분류</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                            <option value="no">몰라</option>
+                        </select>
+                    </div>
+                    <div class="tel">
+                        <label for="tel">연락처</label>
+                        <input type="text" id="tel" placeholder='휴대폰번호 "-" 없이 숫자만 입력해주세요' class="w500 h50">
+                    </div>
+                    <div class="mail">
+                        <label for="mail">이메일</label>
+                        <input type="text" id="mail" class="input_mail h50">
+                        <span>@</span>
+                        <input type="text" id="mail" class="input_mail h50" disabled>
+                        <select id="mail_choice" class="select_mail h50">
+                            <option value="nochoice">선택</option>
+                            <option value="daum.net">다음</option>
+                            <option value="gmail.com">구글</option>
+                            <option value="naver.com">네이버</option>
+                            <option value="kkami.com">까미</option>
+                            <option value="self">직접입력</option>
+                        </select>
+                    </div>
+                    <div class="text">
+                        <label for="text">문의내용</label>
+                        <textarea name="inquiry" id="text" maxlength="100" class="w500" placeholder="간단한 요청사항을 남겨주시면 보다 자세한 상담이 가능합니다.
+전화상담 희망시 기재부탁드립니다.(100글자 이내)"></textarea>
+                    </div>
+                    <div class="file">
+                        <label for="file">파일첨부</label>
+                        <input type="file" id="file">
+                    </div>
+                </div>
+                <div class="sm_rs_button">
+                    <button type="submit">문의하기</button>
+                    <button type="reset">취소하기</button>
+                </div>
             </form>
         </div>
     </section>
@@ -142,7 +171,6 @@
             <p>COPYRIGHT Ⓒ 1999-2015 FWEB DESIGN. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
-
 
 </body>
 </html>
