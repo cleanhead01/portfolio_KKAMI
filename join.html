@@ -109,10 +109,11 @@
                         <li>
                             <label for="gender" class="essential">성별</label>
                             <div class="input_lbl">
-                                <input type="checkbox" id="male" value="male">
+                                <input type="radio" name="gender" id="male" value="male">
                                 <label for="male" class="checkbox_lbl gender_lbl">남성</label>
-                                <input type="checkbox" id="female" value="female">
+                                <input type="radio" name="gender" id="female" value="female">
                                 <label for="female" class="checkbox_lbl gender_lbl">여성</label>
+                                <!-- input에 type=radio 속성은 꼭 name을 줘야한다. -->
                             </div>
                         </li>
                         <li>

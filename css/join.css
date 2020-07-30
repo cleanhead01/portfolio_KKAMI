@@ -97,6 +97,7 @@
 }
 .join_page .join_content .input_lbl select,
 .join_page .join_content .input_lbl button,
+.join_page .join_content .input_lbl input[type=radio],
 .join_page .join_content .input_lbl input[type=text],
 .join_page .join_content .input_lbl input[type=password],
 .join_page .join_content .input_lbl input[type=tel],
