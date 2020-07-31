@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/facility_gall.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <title>KKAMI_login</title>
+    <title>KKAMI_gallery</title>
 </head>
 <body>
+    
     <div class="skip"><a href="#section">본문 바로가기</a></div>
     
     <header id="header">
@@ -88,44 +89,100 @@
         </div>
     </header>
 
-    <section id="login_back">
-        <div class="login_page row">
-            <div class="login_box">
-                <h1>로그인</h1>
-            </div>
-            <form action="#" method="post" class="login_form">
-                <fieldset>
-                    <legend>로그인</legend>
-                    <div class="login_content">
-                        <div class="idpw_box">
-                            <input type="text" placeholder="이메일 주소 또는 전화번호">
-                            <input type="text" placeholder="비밀번호">
-                        </div>
-                        <div class="check_box">
-                            <input type="checkbox" id="idsave" value="idsave">
-                            <label for="idsave">아이디 저장</label> <!-- 체크박스에는 value를 써야함 -->
-                            <input type="checkbox" id="pwsave" value="pwsave">
-                            <label for="pwsave">비밀번호 저장</label>
-                            <input type="checkbox" id="security" value="security" checked>
-                            <label for="security">보안접속</label>
-                        </div>
-                        <button type="submit" class="button_login">로그인</button>
-                        <div class="link cf">
-                            <a href="#">ID찾기</a>
-                            <a href="#">비밀번호찾기</a>
-                            <a href="join.html">회원가입</a>
-                            <a href="#"><i class="fas fa-shield-alt"></i>보안센터</a>
-                        </div>
-                        <div class="button_box">
-                            <button type="submit"><span>KFC 로그인</span></button>
-                            <button type="submit"><span>LOTTERIA 로그인</span></button>
-                            <button type="submit"><span>Mcdonald's 로그인</span></button>
-                            <button type="submit"><span>BURGER KING 로그인</spa></button>
-                        </div>
+    <section id="facility_back">
+        <article class="slide">
+            <div class="slide_back row">
+                <div class="text_box">
+                    <h1>Creative <span>Studio</span></h1>
+                    <p>Web sites, applications and custom programming. The latest technologies,</p>
+                    <p>code and design allow you to present your image with jaw-dropping effects.</p>
+                    <div class="learn_more">
+                        <span>LEARN MORE</span>
                     </div>
-                </fieldset>
-            </form>
-        </div>
+                </div>
+            </div>
+        </article>
+        <article class="center sub_row">
+            <div class="button">
+                <a href="facility_gall.html"><span>제품소개</span></a>
+                <a href="facility_video.html"><span>주요 파트너</span></a>
+            </div>
+            <div class="search_box">
+                <form action="#" method="post" class="search_form">
+                    <fieldset>
+                        <legend>검색</legend>
+                        <select id="name">
+                            <option value="search">검색</option>
+                            <option value="name">작성자</option>
+                            <option value="content">내용</option>
+                        </select>
+                        <input type="text" id="search" placeholder="search...">
+                        <button type="submit">
+                            <span class="blind">검색</span>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="facility_img_back">
+                <div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery1.jpg" alt="갤러리사진1">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery2.jpg" alt="갤러리사진2">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery3.jpg" alt="갤러리사진3">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery4.jpg" alt="갤러리사진4">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery5.jpg" alt="갤러리사진5">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery6.jpg" alt="갤러리사진6">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery7.jpg" alt="갤러리사진7">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery8.jpg" alt="갤러리사진8">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                    <div class="facility_img">
+                        <a href="#">
+                            <img src="images/gallery9.jpg" alt="갤러리사진9">
+                            <p>포토갤러리</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
 
     <footer id="footer">
@@ -142,7 +199,6 @@
             <p>COPYRIGHT Ⓒ 1999-2015 FWEB DESIGN. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
-
 
 </body>
 </html>

@@ -9,9 +9,9 @@
 
 
 
-.company_row {
-    max-width: 900px; margin: 0px auto;
-}
+.sub_row {max-width: 900px; margin: 0px auto;}
+
+
 
 #company_back .slide {
     background: url(../images/company_slide.jpg) no-repeat;

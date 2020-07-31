@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import "rwdcommon.css";
+
+
+
+.sub_row {max-width: 900px; margin: 0px auto;}
+
+
+#facility_back .slide {
+    background: url(../images/facility_slide.jpg) no-repeat;
+    background-size: cover; background-position: center;
+    width: 100%; height: 400px;
+    padding: 98.5px 0px;
+}
+#facility_back .slide .text_box {
+    text-align: right;
+    text-shadow: -3px 3px 3px gray;
+}
+/* 슬라이드 텍스트----------------------------------------------------------------------------- */
+#facility_back .slide .text_box h1 {
+    font-size: 38px; font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#facility_back .slide .text_box h1 span {
+    font-weight: bold;
+}
+#facility_back .slide .text_box p {
+    font-size: 22px; font-weight: lighter;
+    color: #ffffff;
+}
+#facility_back .slide .text_box .learn_more {
+    background: #9bcb43;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+}
+#facility_back .slide .text_box .learn_more:hover {
+    background: orange;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+    transition: all 0.5s;
+}
+/* 메인 버튼--------------------------------------------------------------------------------------- */
+#facility_back .center {
+    padding: 50px 0px;
+}
+#facility_back .center .button a {
+    display: inline-block;
+}
+#facility_back .center .button span {
+    display: block;
+    width: 150px; height: 40px; line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#facility_back .center .button a:nth-child(1) {
+    background: #666666; color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+#facility_back .center .button a:nth-child(2) {
+    background: #f3f3f3; color: #666666;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+/* 메인 이미지-------------------------------------------------------------------------------------- */
+/* #facility_back .center .facility_img_back {
+    padding: 50px 0px;
+} */
+#facility_back .center .facility_img {
+    width: 32%;
+    display: inline-block;
+    margin: 10px 3px;
+}
+#facility_back .center .facility_img img {
+    width: 100%;
+}
+#facility_back .center .facility_img p {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 15px; font-weight: bold; 
+    color: #666666;
+}
+/* 검색박스------------------------------------------------------------------------------------------ */
+#facility_back .center .search_box {
+    text-align: right;
+    padding: 40px 10px 0px 0px;
+}
+#facility_back .center .search_box select,
+#facility_back .center .search_box input,
+#facility_back .center .search_box button {
+    height: 30px;
+}
+#facility_back .center .search_box select {
+    cursor: pointer;
+    border-radius: 10px;
+}
+#facility_back .center .search_box input {
+    border-bottom: 1px solid #000000;
+    padding-left: 10px;
+}
+
+#facility_back .center .search_box button {
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
