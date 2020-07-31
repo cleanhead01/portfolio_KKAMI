@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import "rwdcommon.css";
+
+
+
+.business_row {
+    max-width: 900px; margin: 0px auto;
+}
+
+
+#business_back .slide {
+    background: url(../images/business_product_slide.jpg) no-repeat;
+    background-size: cover; background-position: center;
+    width: 100%; height: 400px;
+    padding: 98.5px 0px;
+}
+#business_back .slide .text_box {
+    text-align: right;
+    text-shadow: -3px 3px 3px gray;
+}
+/* 슬라이드 텍스트----------------------------------------------------------------------------- */
+#business_back .slide .text_box h1 {
+    font-size: 38px; font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#business_back .slide .text_box h1 span {
+    font-weight: bold;
+}
+#business_back .slide .text_box p {
+    font-size: 22px; font-weight: lighter;
+    color: #ffffff;
+}
+#business_back .slide .text_box .learn_more {
+    background: #9bcb43;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+}
+#business_back .slide .text_box .learn_more:hover {
+    background: orange;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+    transition: all 0.5s;
+}
+/* 메인 ------------------------------------------------------------------------------------- */
+#business_back .center {
+    padding: 50px 0px;
+}
+#business_back .center .button a {
+    display: inline-block;
+}
+#business_back .center .button span {
+    display: block;
+    width: 150px; height: 40px; line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#business_back .center .button a:nth-child(1) {
+    background: #666666; color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+#business_back .center .button a:nth-child(2) {
+    background: #f3f3f3; color: #666666;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+/* 메인 인사말-------------------------------------------------------------------------------- */
+#business_back .center .product {
+    margin: 20px 0px 30px;
+}
+#business_back .center .product h2 {
+    font-size: 25px;
+    color: #666666;
+    padding-bottom: 10px;
+}
+#business_back .center .product p {
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 20px;
+}
+/* 이미지------------------------------------------------------------------------------------- */
+#business_back .center .product_img {
+    padding: 20px 0px 40px;
+}
+#business_back .center .product_img li {
+    display: inline-block;
+    width: 23%;
+    margin: 0px 0.5%;
+}
+#business_back .center .product_img h2 {
+    padding: 5px 0px;
+}
+#business_back .center .product_img h3 {
+    font-weight: normal; font-size: 14px;
+    padding: 0px 0px 10px;
+}
+#business_back .center .product_img img {
+    width: 100%;
+}
+#business_back .center .product_img p {
+    font-size: 12px;
+    padding: 10px 0px;
+}
+/* 그린 비지니스 텍스트----------------------------------------------------------------------------- */
+#business_back .center .green_business h2 {
+    font-size: 25px;
+    color: #666666;
+    padding-bottom: 10px;
+}
+#business_back .center .green_business p {
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 20px;
+}
+/* 그린 비지니스 이미지----------------------------------------------------------------------------- */
+#business_back .center .green_img li {
+    display: inline-block;
+    width: 49.5%;
+}
+#business_back .center .green_img h3 {
+    color: #666666;
+    font-weight: 500;
+    padding: 30px 0px 10px;
+}
+#business_back .center .green_img p {
+    font-size: 12px;
+    padding: 5px 0px 0px;
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
