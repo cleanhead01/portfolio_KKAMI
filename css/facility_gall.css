@@ -75,24 +75,6 @@
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
-/* 메인 이미지-------------------------------------------------------------------------------------- */
-/* #facility_back .center .facility_img_back {
-    padding: 50px 0px;
-} */
-#facility_back .center .facility_img {
-    width: 32%;
-    display: inline-block;
-    margin: 10px 3px;
-}
-#facility_back .center .facility_img img {
-    width: 100%;
-}
-#facility_back .center .facility_img p {
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 15px; font-weight: bold; 
-    color: #666666;
-}
 /* 검색박스------------------------------------------------------------------------------------------ */
 #facility_back .center .search_box {
     text-align: right;
@@ -114,6 +96,29 @@
 
 #facility_back .center .search_box button {
     background: #ffffff;
+}
+/* 메인 이미지-------------------------------------------------------------------------------------- */
+/* #facility_back .center .facility_img_back {
+    padding: 50px 0px;
+} */
+#facility_back .center .facility_img {
+    width: 32%;
+    display: inline-block;
+    margin: 10px 3px;
+}
+#facility_back .center .facility_img img {
+    width: 100%;
+}
+#facility_back .center .facility_img img:hover {
+    width: 100%;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+#facility_back .center .facility_img p {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 15px; font-weight: bold; 
+    color: #666666;
 }
 
 
