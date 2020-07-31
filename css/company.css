@@ -9,7 +9,9 @@
 
 
 
-
+.company_row {
+    max-width: 900px; margin: 0px auto;
+}
 
 #company_back .slide {
     background: url(../images/company_slide.jpg) no-repeat;
@@ -105,13 +107,13 @@
     display: inline-block;
     width: auto; height: auto;
     position: absolute; top: 0px;
-    padding-left: 10px;
+    padding: 0px 10px 0px 10px;
     font-weight: bold;
 }
 #company_back .center .greeting_text h3 {
     font-size: 22px;
     color: #666666;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #company_back .center .greeting_text p {
     font-size: 15px;
@@ -121,15 +123,15 @@
 #company_back .center .greeting_text h4 {
     font-size: 20px;
     color: #666666;
-    margin: 35px 0px 20px;
+    margin: 60px 0px 15px;
 }
 #company_back .center .greeting_text table {
     font-size: 15px;
     color: #666666;
-    width: 400px;
+    width: 440px;
 }
 #company_back .center .greeting_text table td {
-    padding: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 10px;
 }
 #company_back .center .greeting_text table td:nth-child(1) {
     background: #aaaaaa;
