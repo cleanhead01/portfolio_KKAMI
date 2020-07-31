@@ -79,18 +79,6 @@
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
-#company_back .center .button a:nth-child(1):hover {
-    background: #f3f3f3; color: #666666;
-    font-size: 15px;
-    border: 1px solid #d2d2d2;
-    transition: all 0.5s;
-}
-#company_back .center .button a:nth-child(2):hover {
-    background: #666666; color: #ffffff;
-    font-size: 15px;
-    border: 1px solid #d2d2d2;
-    transition: all 0.5s;
-}
 /* 메인 인사말-------------------------------------------------------------------------------- */
 #company_back .center .greeting {
     margin: 20px 0px 30px;
@@ -98,10 +86,12 @@
 #company_back .center .greeting h2 {
     font-size: 25px;
     color: #666666;
+    margin-bottom: 10px;
 }
 #company_back .center .greeting p {
     font-size: 15px;
     color: #666666;
+    padding-bottom: 20px;
 }
 /* 메인-------------------------------------------------------------------------------------- */
 #company_back .center .greeting_img {
