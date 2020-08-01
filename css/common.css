@@ -85,9 +85,10 @@
     padding: 2px 0px;
 }
 .nav_box .nav .depth2 > li {
-    display: inline-block;
-    width: 104px;
+    /* display: inline-block; */
+    width: 100%;
     font-weight: normal;
+    letter-spacing: 2px;
 }
 .nav_box .nav .depth1 > li:hover .depth2 {
     display: block;
@@ -96,6 +97,10 @@
     display: block;
     padding: 5px 10px;
     text-align: center;
+}
+.nav_box .nav .depth2 > li:hover span {
+    color: palegreen;
+    transition: all 0.5s;
 }
 .nav_box .nav .depth1 li:nth-child(1):hover .depth2::before {
     content: "";
