@@ -162,3 +162,8 @@
     color: #777777;
     padding: 20px 0px;
 }
+
+
+/* 밑에 disply:none로 없애놓고 자바스크립트로 적용시킬 때 display를 지우고 홈페이지에서 몇초뒤에 사라지게 부여해야됨 */
+.loadBox {display: none; position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; background-color: #ffffff; z-index: 999999;}
+.loadBox i {font-size: 80px; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
