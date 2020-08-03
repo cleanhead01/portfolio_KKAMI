@@ -46,7 +46,6 @@
 .nav_box .nav_banner {
     position: relative;
     padding: 30px 0px;
-    height: 114px;  /* 헤더 로고 수정 할 때 같이 씀 */
 }
 .nav_box .open_nav {
     display: none;
@@ -62,26 +61,15 @@
     padding-left: 20px;
     font-size: 40px;
     letter-spacing: 5px;
-    z-index: 9;    /* 헤더 로고 수정 할 때 같이 씀 */
 }
-/* 헤더에 로고 호버 변경 사항들 ↓-----------------------------------*/
 .nav_box h1:hover {
-    display: none;
-}
-.nav_box h2 {
     display: inline-block;
     padding-left: 20px;
     font-size: 40px;
-    letter-spacing: 1.5em;
-    position: absolute; top: 50%; left: 10px; transform: translateY(-50%);
-    display: none;
-}
-.nav_box h1:hover + h2 {
-    display: block;
-    padding-top: 50px;
+    letter-spacing: 5px;
     color: palegreen;
+    transition: all 0.5s;
 }
-/* 헤더에 로고 호버 변경 사항들 ↑-----------------------------------*/
 .nav_box .nav {
     position: absolute; top: 50%; right: 0px; transform: translate(0, -50%);
 }
