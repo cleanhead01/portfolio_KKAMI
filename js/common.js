@@ -7,8 +7,8 @@
     $('.login_box a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
-        $('#containerBox').remove()
-        $('#container').load(url)
+        $('#container').remove()
+        $('#containerBox').load(url)
     })
 
 
