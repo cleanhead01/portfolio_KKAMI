@@ -3,6 +3,7 @@
 
 
     $('#containerBox').load('main.html')
+    $('#containerBox').load('company.html')
 
     $('.login_box a').on('click', function(e){
         e.preventDefault()
