@@ -4,12 +4,13 @@
 
     $('#containerBox').load('main.html')
 
-    $('.login_box a').on('click', function(e){
+    $('.login_box a, nav a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
         $('#container').remove()
         $('#containerBox').load(url)
     })
+    
 
 
 
