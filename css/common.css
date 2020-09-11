@@ -85,7 +85,9 @@
 /* 메뉴2-------------------------------------------------------------------------------------- */
 
 .nav_box .nav .depth1 .depth2 {
-    width: 542.5px;
+    /* width: 542.5px; */
+    width: 0%;
+    height: 31px;
     background: #333333;
     display: none;
     position: absolute; top: 150%; left: 0px;

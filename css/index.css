@@ -83,33 +83,6 @@
 .slide_outer .next {
     right: 100px;
 }
-/* 서브타이틀-------------------------------------------------------------------------------------------- */
-.slide_outer .sub_nav {
-    position: absolute; bottom: 0px; left: 0px;
-    width: 100%;
-}
-.slide_outer .sub_nav li {
-    float: left;
-    width: 25%;
-}
-.slide_outer .sub_nav li > a {
-    border: 1px solid #aaaaaa;
-    height: 98.6px;
-    display: block;
-    text-align: center;
-    padding: 28px 0px;
-    background: rgb(0,0,12,0.3);
-}
-.slide_outer .sub_nav li > a:hover {
-    border: 1px solid #aaaaaa;
-    color: #ffffff;
-    height: 98.6px;
-    display: block;
-    text-align: center;
-    padding: 28px 0px;
-    background: rgb(0,0,12,0.7);
-    transition: all 0.5s;
-}
 /* 사업영역---------------------------------------------------------------------------------------------- */
 #section .title h2 {
     text-align: center;
