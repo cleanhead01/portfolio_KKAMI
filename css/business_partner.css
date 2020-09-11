@@ -8,30 +8,30 @@
 .sub_row {max-width: 900px; margin: 0px auto;}
 
 
-#business_back .slide {
+#business_par_back .slide {
     background: url(../images/business_product_slide.jpg) no-repeat;
     background-size: cover; background-position: center;
     width: 100%; height: 400px;
     padding: 98.5px 0px;
 }
-#business_back .slide .text_box {
+#business_par_back .slide .text_box {
     text-align: right;
     text-shadow: -3px 3px 3px gray;
 }
 /* 슬라이드 텍스트----------------------------------------------------------------------------- */
-#business_back .slide .text_box h1 {
+#business_par_back .slide .text_box h1 {
     font-size: 38px; font-weight: lighter;
     color: #ffffff;
     margin-bottom: 25px;
 }
-#business_back .slide .text_box h1 span {
+#business_par_back .slide .text_box h1 span {
     font-weight: bold;
 }
-#business_back .slide .text_box p {
+#business_par_back .slide .text_box p {
     font-size: 22px; font-weight: lighter;
     color: #ffffff;
 }
-#business_back .slide .text_box .learn_more {
+#business_par_back .slide .text_box .learn_more {
     background: #9bcb43;
     border-radius: 10px;
     display: inline-block;
@@ -41,7 +41,7 @@
     cursor: pointer;
     text-shadow: none;
 }
-#business_back .slide .text_box .learn_more:hover {
+#business_par_back .slide .text_box .learn_more:hover {
     background: orange;
     border-radius: 10px;
     display: inline-block;
@@ -53,43 +53,43 @@
     transition: all 0.5s;
 }
 /* 메인 버튼--------------------------------------------------------------------------------------- */
-#business_back .center {
+#business_par_back .center {
     padding: 50px 0px;
 }
-#business_back .center .button a {
+#business_par_back .center .button a {
     display: inline-block;
 }
-#business_back .center .button span {
+#business_par_back .center .button span {
     display: block;
     width: 150px; height: 40px; line-height: 40px;
     font-weight: bold;
     text-align: center;
 }
-#business_back .center .button a:nth-child(1) {
+#business_par_back .center .button a:nth-child(1) {
     background: #f3f3f3; color: #666666;
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
-#business_back .center .button a:nth-child(2) {
+#business_par_back .center .button a:nth-child(2) {
     background: #666666; color: #ffffff;
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
 /* 메인  제목 ---------------------------------------------------------------------------------- */
-#business_back .center .partner {
+#business_par_back .center .partner {
     margin: 20px 0px 30px;
 }
-#business_back .center .partner h2 {
+#business_par_back .center .partner h2 {
     font-size: 25px;
     color: #666666;
     padding-bottom: 10px;
 }
-#business_back .center .partner p {
+#business_par_back .center .partner p {
     font-size: 15px;
     color: #666666;
     padding-bottom: 20px;
 }
 /* 파트너 이미지 ---------------------------------------------------------------------------------- */
-#business_back .center .partner_img img {
+#business_par_back .center .partner_img img {
     margin: 5px 5px;
 }
