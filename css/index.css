@@ -14,22 +14,23 @@
 .slide_outer {
     position: relative; height: 792.91px; overflow: hidden;
 }
-.slide_outer .slide_inner > .slide {
-    width: 100%; height: 792.91px; 
+.slide_outer .slide_inner .slide {
+    width: 100%; height: 100%; 
     background-size: cover; background-position: center;
+    background-repeat: no-repeat;
     position: relative;
 }
-.slide_outer .slide_inner > .slide:nth-child(1) {
-    background: url(../images/slide1.jpg) no-repeat;
+.slide_outer .slide_inner .slide1 {
+    background: url(../images/slide1.jpg);
 }
-.slide_outer .slide_inner .slide:nth-child(2) {
-    background: url(../images/slide2.jpg) no-repeat;
+.slide_outer .slide_inner .slide2 {
+    background: url(../images/slide2.jpg);
 }
-.slide_outer .slide_inner .slide:nth-child(3) {
-    background: url(../images/slide3.jpg) no-repeat;
+.slide_outer .slide_inner .slide3 {
+    background: url(../images/slide3.jpg);
 }
-.slide_outer .slide_inner .slide:nth-child(4) {
-    background: url(../images/slide4.jpg) no-repeat;
+.slide_outer .slide_inner .slide4 {
+    background: url(../images/slide4.jpg);
 }
 /* 텍스트-------------------------------------------------------------------------------------------- */
 .slide_outer .slide_inner .slide .text {

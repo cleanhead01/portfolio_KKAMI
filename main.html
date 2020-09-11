@@ -1,8 +1,15 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<script src="js/slick.min.js"></script>
+
 <div id="container">
     <section id="section">
         <article class="slide_outer">
             <div class="slide_inner">
-                <div class="slide">
+                <div class="slide slide1">
                     <div class="text">
                         <h2>Creative studio</h2>
                         <span>Web sites, applications and custom programming.The latest technologies,</span>
@@ -10,7 +17,7 @@
                         <p><a href="#">check it out</a></p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide slide2">
                     <div class="text">
                         <h2>Creative studio</h2>
                         <span>Web sites, applications and custom programming.The latest technologies,</span>
@@ -18,7 +25,7 @@
                         <p><a href="#">check it out</a></p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide slide3">
                     <div class="text">
                         <h2>Creative studio</h2>
                         <span>Web sites, applications and custom programming.The latest technologies,</span>
@@ -26,7 +33,7 @@
                         <p><a href="#">check it out</a></p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide slide4">
                     <div class="text">
                         <h2>Creative studio</h2>
                         <span>Web sites, applications and custom programming.The latest technologies,</span>
@@ -308,3 +315,31 @@
         </article>
     </section>
 </div>
+
+<script>
+    (function($){
+
+        $('.slide_inner').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: false,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        pauseOnFocus: false,
+        cssEase: 'linear',
+        draggable: true,
+        fade: false,
+        // arrows: true,
+        // prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
+        // nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+        
+
+    })
+
+
+    }) (jQuery)
+
+</script>
