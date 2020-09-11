@@ -12,6 +12,7 @@
     })
 
 
+    
     $('.nav_box .nav a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
