@@ -20,8 +20,21 @@
         $('#containerBox').load(url)
     })
 
-    
-    
+    // 슬라이드
+    $('.slide_inner').slick({
+        autoplay : true,
+        autoplaySpeed : 2000,
+        dots : true,
+        speed : 500,
+        slidesToScroll : 1,
+        pauseOnHover : false,
+        pauseOnDotsHover : true,
+        pauseOnFocus : true,
+        draggable : true,
+        arrows : false,
+        // prevArrow : '<button class="prev arrow"><img src="images/icoSnsLeft.png" alt="이전으로"></button>',
+        // nextArrow : '<button class="next arrow"><img src="images/icoSnsRight.png" alt="다음으로"></button>'
+    })
     
     
     
