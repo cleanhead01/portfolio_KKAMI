@@ -68,22 +68,54 @@
 .slide_outer .arr {
     color: #ffffff;
     position: absolute; top: 50%; transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 50px;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 .slide_outer .arr:hover {
     color: #ffffff;
     opacity: 0.5;
     transition: all 0.5s;
     position: absolute; top: 50%; transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 50px;
     cursor: pointer;
 }
 .slide_outer .prev {
-    left: 100px;
+    left: 100px; z-index: 99;
 }
 .slide_outer .next {
     right: 100px;
+}
+/* 슬라이드 구역 도트----------------------------------------------------------------------- */
+.slide_outer .slick-dots {
+    position: absolute; top: 85%; left: 50%;
+    transform: translateX(-50%);
+}
+.slide_outer .slick-dots li {
+    display: inline-block;
+}
+.slide_outer .slick-dots li button {
+    width: 15px; height: 15px;
+    border-radius: 50%; border: 1px solid #fff;
+    background: none;
+    text-indent: -99999px; overflow: hidden;
+    margin: 0px 5px;
+}
+.slide_outer .slick-dots li.slick-active button { 
+    width: 15px; height: 15px;
+    border-radius: 50%; border: 1px solid #fff;
+    background: #fff;
+    text-indent: -99999px; overflow: hidden;
+    margin: 0px 5px;
+}
+/* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
+.slide_outer .plpa {
+    position: absolute; top: 84.5%; left: 53%;
+    font-size: 15px;
+    padding: 4px 0px;
+    background: none; color: #fff;
+    border-radius: none;
 }
 /* 사업영역---------------------------------------------------------------------------------------------- */
 #section .title h2 {
@@ -140,12 +172,48 @@
     float: left;
 }
 .photo_gall ul > li img {
-    width: 100%;
+    width: 100%; 
+    padding: 0px 10px;
+}
+.slide-outer2 .slick-slide {
+    opacity: 0.6;
+    transform: scale(0.8);
+    transition: all 0.5s;
+}
+.slide-outer2 .slick-slide.slick-active {
+    opacity: 1;
+    transform: scale(0.5);
+}
+.slide-outer2 .slick-slide.slick-active.slick-current {
+    transform: scale(1);
 }
 /* 갤러리 도트----------------------------------------------------------------------------------------- */
-.photo_gall_back .dot_box {
+.photo_gall_back .slick-dots {
+    position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0px;
+}
+.photo_gall_back .slick-dots li {
+    display: inline-block;
+}
+.photo_gall_back .slick-dots li button {
+    width: 15px; height: 15px;
+    border-radius: 50%; border: 1px solid #fff;
+    background: #ccc;
+    text-indent: -99999px; overflow: hidden;
+    margin: 0px 5px;
+}
+.photo_gall_back .slick-dots li.slick-active button { 
+    width: 15px; height: 15px;
+    border-radius: 50%; border: 1px solid #fff;
+    background: lime;
+    text-indent: -99999px; overflow: hidden;
+    margin: 0px 5px;
+}
+
+/* .photo_gall_back .dot_box {
     position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-    padding: 10px 0px;      /* 도트박스가 주요강사진 title에 계속 곂쳐서 photo_gall에 margin_bottom을 줌 */
+    padding: 10px 0px;      도트박스가 주요강사진 title에 계속 곂쳐서 photo_gall에 margin_bottom을 줌
 }
 .photo_gall_back .dot_box a {
     display: inline-block;
@@ -153,32 +221,34 @@
     border-radius: 50%;
     background: #cccccc;
     margin: 0px 5px;
-}
-.photo_gall_back .dot_box a:hover {
+} */
+/* .photo_gall_back .dot_box a:hover {
     display: inline-block;
     width: 13px; height: 13px;
     border-radius: 50%;
     background: lime;
     transition: all 0.5s;
     margin: 0px 5px;
-}
+} */
 /* 갤러리 화살표---------------------------------------------------------------------------------------- */
 .photo_gall_back .arr {
-    color: pink;
-    position: absolute; top: 75%; transform: translateY(-75%);
+    color: black;
+    position: absolute; top: 50%; transform: translateY(-50%);
     font-size: 40px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 .photo_gall_back .arr:hover {
     color: pink;
     opacity: 0.5;
     transition: all 0.5s;
-    position: absolute; top: 75%; transform: translateY(-75%);
+    position: absolute; top: 50%; transform: translateY(-50%);
     font-size: 40px;
     cursor: pointer;
 }
 .photo_gall_back .prev {
-    left: 10px;
+    left: 10px; z-index: 99;
 }
 .photo_gall_back .next {
     right: 10px;

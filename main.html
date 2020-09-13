@@ -1,3 +1,13 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+
 <div id="container">
     <section id="section">
         <article class="slide_outer">
@@ -37,11 +47,11 @@
             </div>
             <div class="arr prev">
                 <span class="blind">이전 슬라이드</span>
-                <i class="fas fa-arrow-left"></i>
+                <!-- <i class="fas fa-arrow-left"></i> -->
             </div>
             <div class="arr next">
                 <span class="blind">다음 슬라이드</span>
-                <i class="fas fa-arrow-right"></i>
+                <!-- <i class="fas fa-arrow-right"></i> -->
             </div>
             <button class="plpa"><i class="fas fa-pause"></i></button>
         </article>
@@ -89,7 +99,7 @@
                 <div class="title">
                     <h2>포토갤러리</h2>
                 </div>
-                <ul class="cf">
+                <ul class="cf slide_gall">
                     <li><img src="images/photo_gall1.jpg" alt=""></li>
                     <li><img src="images/photo_gall2.jpg" alt=""></li>
                     <li><img src="images/photo_gall3.jpg" alt=""></li>
@@ -99,19 +109,17 @@
             </div>
             <div class="arr prev">
                 <span class="blind">이전 슬라이드</span>
-                <i class="fas fa-arrow-left"></i>
             </div>
             <div class="arr next">
                 <span class="blind">다음 슬라이드</span>
-                <i class="fas fa-arrow-right"></i>
             </div>
-            <div class="dot_box">
+            <!-- <div class="dot_box">
                 <a href="#"><span class="blind">1</span></a>
                 <a href="#"><span class="blind">2</span></a>
                 <a href="#"><span class="blind">3</span></a>
                 <a href="#"><span class="blind">4</span></a>
                 <a href="#"><span class="blind">5</span></a>
-            </div>
+            </div> -->
         </article>
     
         <article class="main_teacher row cf">
@@ -314,9 +322,12 @@
     
     (function($){
 
-        $('.slide_inner').slick({
+
+
+    // 슬라이드 --------------------------------------------------------------------   
+    $('.slide_inner').slick({
         autoplay : true,
-        autoplaySpeed : 2000,
+        autoplaySpeed : 3000,
         dots : true,
         speed : 500,
         slidesToScroll : 1,
@@ -324,12 +335,15 @@
         pauseOnDotsHover : true,
         pauseOnFocus : true,
         draggable : true,
-        arrows : false,
-        // prevArrow : '<button class="prev arrow"><img src="images/icoSnsLeft.png" alt="이전으로"></button>',
-        // nextArrow : '<button class="next arrow"><img src="images/icoSnsRight.png" alt="다음으로"></button>'
+        arrows : true,
+        prevArrow : '<button class="prev arr"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow : '<button class="next arr"><i class="fas fa-arrow-right"></i></button>'
     })
 
 
+
+    
+    // 슬라이드 도트 --------------------------------------------------------------------
     $(".plpa").toggle(
         function(){
             $(this).find('i').removeClass('fa-pause')
@@ -342,7 +356,45 @@
             $(".slide_inner").slick("slickPlay")
         } 
     )
+
+
         
+    // 포토갤러리 슬라이드 --------------------------------------------------------------        
+    $('.slide_gall').slick({
+        autoplay : true,
+        autoplaySpeed : 3000,
+        dots : true,
+        speed : 500,
+        centerMode: true,   // centerMode 는 slidesToScroll 값이 1값으로 고정되어 있음
+        centerPadding: '50px',  // 좌우측 끝에 보여질 슬라이드 조각의 너비값
+        slidesToScroll : 1,
+        slidesToShow : 3,
+        pauseOnHover : false,
+        pauseOnDotsHover : true,
+        pauseOnFocus : true,
+        draggable : true,
+        arrows : true,
+        prevArrow : '<button class="prev arr"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow : '<button class="next arr"><i class="fas fa-arrow-right"></i></button>'
+    })
+
+
+
+
+    $(".dot_box").toggle(
+        function(){
+            $(this).find('i').removeClass('fa-pause')
+            .addClass('fa-play')
+            $(".slide_gall").slick("slickPause")
+        },
+        function(){
+            $(this).find('i').removeClass('fa-play')
+            .addClass('fa-pause')
+            $(".slide_gall").slick("slickPlay")
+        } 
+    )
+    
+    
 
 
 
