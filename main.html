@@ -43,6 +43,7 @@
                 <span class="blind">다음 슬라이드</span>
                 <i class="fas fa-arrow-right"></i>
             </div>
+            <button class="plpa"><i class="fas fa-pause"></i></button>
         </article>
     
         <article class="business_back">
@@ -327,6 +328,20 @@
         // prevArrow : '<button class="prev arrow"><img src="images/icoSnsLeft.png" alt="이전으로"></button>',
         // nextArrow : '<button class="next arrow"><img src="images/icoSnsRight.png" alt="다음으로"></button>'
     })
+
+
+    $(".plpa").toggle(
+        function(){
+            $(this).find('i').removeClass('fa-pause')
+            .addClass('fa-play')
+            $(".slide_inner").slick("slickPause")
+        },
+        function(){
+            $(this).find('i').removeClass('fa-play')
+            .addClass('fa-pause')
+            $(".slide_inner").slick("slickPlay")
+        } 
+    )
         
 
 
