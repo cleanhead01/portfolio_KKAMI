@@ -1,9 +1,22 @@
 (function(){
 
-    $(window).load(function(){
-        $('.loadBox').delay(2000).fadeOut(500)
-    })
+    // $(window).load(function(){
+    //     $('.loadBox').delay(2000).fadeOut(500)
+    // })
 
+    // 로딩화면 숫자 카운트세기
+    var minCnt = setInterval(minusCount, 1000);
+    var k = 3;
+    function minusCount() {
+        k--;
+        if (k === 0) {
+            clearInterval(minCnt)
+            $('.loadBox').fadeOut(500)
+        }
+        $('.loadBox span p').text(k+'초')
+
+
+    }
 
 
     $('#containerBox').load('main.html')
