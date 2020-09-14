@@ -5,6 +5,7 @@
     // })
 
     // 로딩화면 숫자 카운트세기
+    var colorCode = ['hotpink', 'orange', 'blue']
     var minCnt = setInterval(minusCount, 1000);
     var k = 3;
     function minusCount() {
@@ -12,8 +13,11 @@
         if (k === 0) {
             clearInterval(minCnt)
             $('.loadBox').fadeOut(500)
+            // return false
         }
-        $('.loadBox span p').text(k+'초')
+        $('.loadBox span p').text(k+'초').css({
+            color : colorCode[k]
+        })
 
 
     }
