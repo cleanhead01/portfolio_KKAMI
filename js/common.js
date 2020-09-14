@@ -1,5 +1,9 @@
 (function(){
 
+    $(window).load(function(){
+        $('.loadBox').delay(2000).fadeOut(500)
+    })
+
 
 
     $('#containerBox').load('main.html')
