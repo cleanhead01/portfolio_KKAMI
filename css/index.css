@@ -211,25 +211,7 @@
     margin: 0px 5px;
 }
 
-/* .photo_gall_back .dot_box {
-    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-    padding: 10px 0px;      도트박스가 주요강사진 title에 계속 곂쳐서 photo_gall에 margin_bottom을 줌
-}
-.photo_gall_back .dot_box a {
-    display: inline-block;
-    width: 13px; height: 13px;
-    border-radius: 50%;
-    background: #cccccc;
-    margin: 0px 5px;
-} */
-/* .photo_gall_back .dot_box a:hover {
-    display: inline-block;
-    width: 13px; height: 13px;
-    border-radius: 50%;
-    background: lime;
-    transition: all 0.5s;
-    margin: 0px 5px;
-} */
+
 /* 갤러리 화살표---------------------------------------------------------------------------------------- */
 .photo_gall_back .arr {
     color: black;
