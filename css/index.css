@@ -180,18 +180,18 @@
 .photo_gall {
     margin-bottom: 35px;
 }
-.photo_gall ul {
-    height: 272.03px; overflow: hidden;
-}
+/* .photo_gall ul {
+    height: 272.03px;
+} */
 .photo_gall ul > li {
     width: 33.33%;
     float: left;
 }
 .photo_gall ul > li img {
     width: 100%; 
-    padding: 0px 10px;
+    /* margin: 0px 20px; */
 }
-.slide-outer2 .slick-slide {
+/* .slide-outer2 .slick-slide {
     opacity: 0.6;
     transform: scale(0.8);
     transition: all 0.5s;
@@ -202,7 +202,7 @@
 }
 .slide-outer2 .slick-slide.slick-active.slick-current {
     transform: scale(1);
-}
+} */
 /* 갤러리 도트----------------------------------------------------------------------------------------- */
 .photo_gall_back .slick-dots {
     position: absolute; top: 100%; left: 50%;
@@ -211,6 +211,7 @@
 }
 .photo_gall_back .slick-dots li {
     display: inline-block;
+    width: 19%;
 }
 .photo_gall_back .slick-dots li button {
     width: 15px; height: 15px;
@@ -360,61 +361,59 @@
 }
 /* 제휴파트너-------------------------------------------------------------------------------------------- */
 .partner {
-    padding: 30px 0px 10px;
-    position: relative;
-}
-.partner ul {
-    text-align: center;
-    height: 101px; overflow: hidden;
+    padding: 30px 0px 105px;
+    /* position: relative; */
+    /* margin-bottom: 105px; */
 }
 .partner ul > li {
-    padding: 0px 50px;
     display: inline-block;
 }
 .partner img {
-    width: 100%;
+    
 }
-/* 파트너 화살표----------------------------------------------------------------------------------------- */
+/* 제휴파트너 화살표----------------------------------------------------------------------------------------- */
 .partner .arr {
-    position: absolute; top: 70%; transform: translateY(-50%);
+    position: absolute; top: 50%; transform: translateY(-50%);
     color: #000000;
     font-size: 30px;
+    background: none; border: none;
 }
 .partner .arr:hover {
-    position: absolute; top: 70%; transform: translateY(-50%);
+    position: absolute; top: 50%; transform: translateY(-50%);
     color: #cccccc; 
     transition: all 0.5s;
     cursor: pointer;
     font-size: 30px;
+    background: none; border: none;
 }
 .partner .prev {
-    left: 50px;
+    left: 0px; z-index: 99;
 }
 .partner .next {
-    right: 50px;
+    right: 0px;
 }
-/* 파트너 도트------------------------------------------------------------------------------------------ */
-.partner {
-    position: relative;
-    margin-bottom: 105px;
-}
-.partner .dot_box {
-    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+/* 제휴파트너 도트----------------------------------------------------------------------------------------- */
+.partner .slick-dots {
+    position: absolute; top: 120%; left: 50%;
+    transform: translateX(-50%);
     padding: 10px 0px;
 }
-.partner .dot_box a {
+.partner .slick-dots li {
     display: inline-block;
+    width: 50%;
+}
+.partner .slick-dots li button {
     width: 13px; height: 13px;
     border-radius: 50%;
-    background: #cccccc;
+    background: #ccc;
+    color: transparent;
     margin: 0px 5px;
 }
-.partner .dot_box a:hover {
-    display: inline-block;
+.partner .slick-dots li.slick-active button { 
     width: 13px; height: 13px;
     border-radius: 50%;
     background: lime;
-    transition: all 0.5s;
+    color: transparent;
     margin: 0px 5px;
 }
 /* 프로젝트--------------------------------------------------------------------------------------------- */
@@ -423,9 +422,34 @@
     padding-bottom: 70px;
 }
 .project li {
+    opacity: 0;
     width: 24%;
     float: left;
-    position: relative;
+    position: relative;    
+}
+.project li.on {
+    animation: fadeInUp 0.5s both;
+}
+.project li.on:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.project li.on:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.project li.on:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.project li.on:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.project li.on:nth-child(6) {
+    animation-delay: 1s;
+}
+.project li.on:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.project li.on:nth-child(8) {
+    animation-delay: 1.4s;
 }
 .project img {
     width: 100%;

@@ -235,27 +235,15 @@
                 <h2>제휴파트너</h2>
             </div>
             <ul>
-                <li><img src="images/partner1-1.png" alt="파트너1"></li>
-                <li><img src="images/partner2-1.png" alt="파트너2"></li>
-                <li><img src="images/partner3-1.png" alt="파트너3"></li>
+                <li><img src="images/partner1-2.jpg" alt="파트너1"></li>
+                <li><img src="images/partner2-1.jpg" alt="파트너2"></li>
+                <!-- <li><img src="images/partner3-1.png" alt="파트너3"></li>
                 <li><img src="images/partner4-1.png" alt="파트너4"></li>
                 <li><img src="images/partner5-1.png" alt="파트너5"></li>
                 <li><img src="images/partner6-1.png" alt="파트너6"></li>
                 <li><img src="images/partner7-1.png" alt="파트너7"></li>
-                <li><img src="images/partner8-1.png" alt="파트너8"></li>
+                <li><img src="images/partner8-1.png" alt="파트너8"></li> -->
             </ul>
-            <div class="arr prev">
-                <span class="blind">이전 슬라이드</span>
-                <i class="fas fa-arrow-left"></i>
-            </div>
-            <div class="arr next">
-                <span class="blind">다음 슬라이드</span>
-                <i class="fas fa-arrow-right"></i>
-            </div>
-            <div class="dot_box">
-                <a href="#"><span class="blind">1</span></a>
-                <a href="#"><span class="blind">2</span></a>
-            </div>
         </article>
     
         <article class="project_back">
@@ -395,8 +383,14 @@
     )
 
 
+    
+
+    // 스크롤 했을 때 이벤트
     $(window).scroll(function(){
         var sct = $(this).scrollTop()
+
+
+        // 스크롤 했을 때 사업영역
         var busiNear = $('.business').offset().top - $(this).height()/2
         if (sct >= busiNear) {
             $('.business ul > li').addClass('on')
@@ -404,6 +398,39 @@
             $('.business ul > li').removeClass('on')
         }
 
+
+        // 스크롤 했을 때 진행프로젝트 영역
+        var proNear = $('.project').offset().top - $(this).height()/2
+        if (sct >= proNear) {
+            $('.project li').addClass('on')
+        } else {
+            $('.project li').removeClass('on')
+        }
+
+
+
+    })
+
+
+
+
+    // 제휴파트너 슬라이드 --------------------------------------------------------------        
+    $('.partner ul').slick({
+        autoplay : true,
+        autoplaySpeed : 3000,
+        dots : true,
+        speed : 1000,
+        centerMode: true,   
+        centerPadding: '10px',  
+        slidesToScroll : 1,
+        slidesToShow : 1,
+        pauseOnHover : false,
+        pauseOnDotsHover : true,
+        pauseOnFocus : true,
+        draggable : true,
+        arrows : true,
+        prevArrow : '<button class="prev arr"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow : '<button class="next arr"><i class="fas fa-arrow-right"></i></button>'
     })
     
     
