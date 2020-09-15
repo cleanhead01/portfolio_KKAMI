@@ -133,9 +133,9 @@
     height: 185px;          /* 사진이 div박스 안에서 커지고 싶으면 height값을 주고 overflow:hidden */
     overflow: hidden;
 }
-.business .busi_photo img:hover {
+/* .business .busi_photo img:hover {
     transform: scale(1.5); transition: all 0.5s;
-}
+} */
 .business ul {
     padding: 0px 0px 35px;
 }
@@ -145,6 +145,22 @@
 }
 .business ul > li img {
     width: 100%;
+    opacity: 0;
+}
+.business ul > li:nth-child(1).on img {
+    animation: fadeInUp 0.5s both;
+}
+.business ul > li:nth-child(2).on img {
+    animation: fadeInUp 0.5s both 0.5s;
+}
+.business ul > li:nth-child(3).on img {
+    animation: fadeInUp 0.5s both 1s;
+}
+.business ul > li:nth-child(4).on img {
+    animation: fadeInUp 0.5s both 1.5s;
+}
+.business ul > li img:hover {
+    transform: scale(1.5); transition: all 0.5s;
 }
 .business ul > li h3 {
     text-align: center;

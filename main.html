@@ -393,6 +393,18 @@
             $(".slide_gall").slick("slickPlay")
         } 
     )
+
+
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop()
+        var busiNear = $('.business').offset().top - $(this).height()/2
+        if (sct >= busiNear) {
+            $('.business ul > li').addClass('on')
+        } else {
+            $('.business ul > li').removeClass('on')
+        }
+
+    })
     
     
 
