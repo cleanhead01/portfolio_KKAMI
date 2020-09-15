@@ -142,21 +142,22 @@
 .business ul > li {
     width: 24%;
     display: inline-block;
+    opacity: 0;
 }
 .business ul > li img {
     width: 100%;
 }
 .business ul > li:nth-child(1).on {
-    animation: fadeInLeft 0.5s both;
+    animation: fadeInLeft 1s both;
 }
 .business ul > li:nth-child(2).on {
-    animation: fadeInUp 0.5s both;
+    animation: fadeInUp 1s both;
 }
 .business ul > li:nth-child(3).on {
-    animation: fadeInDown 0.5s both;
+    animation: fadeInDown 1s both;
 }
 .business ul > li:nth-child(4).on {
-    animation: fadeInRight 0.5s both;
+    animation: fadeInRight 1s both;
 }
 .business ul > li img:hover {
     transform: scale(1.5); transition: all 0.5s;
@@ -179,30 +180,26 @@
 .photo_gall {
     margin-bottom: 35px;
 }
-/* .photo_gall ul {
-    height: 272.03px;
-} */
-.photo_gall ul > li {
-    width: 33.33%;
+.photo_gall .slide_gall .slide_gall {
     float: left;
 }
-.photo_gall ul > li img {
+.photo_gall .slide_gall div img {
     width: 100%; 
-    /* margin: 0px 20px; */
+    padding: 0px 10px;
 }
-/* .slide-outer2 .slick-slide {
+.photo_gall .slick-slide {
     opacity: 0.6;
-    transform: scale(0.8);
+    transform: scale(0.6);
     transition: all 0.5s;
 }
-.slide-outer2 .slick-slide.slick-active {
+.photo_gall .slick-slide.slick-active {
     opacity: 1;
-    transform: scale(0.5);
+    transform: scale(0.8);
 }
-.slide-outer2 .slick-slide.slick-active.slick-current {
+.photo_gall .slick-slide.slick-active.slick-current {
     transform: scale(1);
-} */
-/* 갤러리 도트----------------------------------------------------------------------------------------- */
+}
+/* 포토갤러리 도트----------------------------------------------------------------------------------------- */
 .photo_gall_back .slick-dots {
     position: absolute; top: 100%; left: 50%;
     transform: translateX(-50%);
@@ -226,9 +223,7 @@
     text-indent: -99999px; overflow: hidden;
     margin: 0px 5px;
 }
-
-
-/* 갤러리 화살표---------------------------------------------------------------------------------------- */
+/* 포토갤러리 화살표---------------------------------------------------------------------------------------- */
 .photo_gall_back .arr {
     color: black;
     position: absolute; top: 50%; transform: translateY(-50%);
@@ -246,10 +241,10 @@
     cursor: pointer;
 }
 .photo_gall_back .prev {
-    left: 10px; z-index: 99;
+    left: -50px; z-index: 99;
 }
 .photo_gall_back .next {
-    right: 10px;
+    right: -50px;
 }
 /* 주요강사진-------------------------------------------------------------------------------------------- */
 
