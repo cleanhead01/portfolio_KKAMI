@@ -197,6 +197,7 @@
     transform: scale(0.8);
 }
 .photo_gall .slick-slide.slick-active.slick-current {
+    opacity: 1;
     transform: scale(1);
 }
 /* 포토갤러리 도트----------------------------------------------------------------------------------------- */
