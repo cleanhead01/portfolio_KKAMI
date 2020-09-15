@@ -76,20 +76,20 @@
     border: 1px solid #d2d2d2;
 }
 /* 메인  제목 ---------------------------------------------------------------------------------- */
-#business_par_back .center .partner {
-    margin: 20px 0px 30px;
+#business_par_back .center .sub_partner {
+    margin: 30px 0px 50px;
 }
-#business_par_back .center .partner h2 {
+#business_par_back .center .sub_partner h2 {
     font-size: 25px;
     color: #666666;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
-#business_par_back .center .partner p {
+#business_par_back .center .sub_partner p {
     font-size: 15px;
     color: #666666;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 /* 파트너 이미지 ---------------------------------------------------------------------------------- */
-#business_par_back .center .partner_img img {
+#business_par_back .center .sub_partner_img img {
     margin: 5px 5px;
 }
