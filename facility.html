@@ -1,0 +1,138 @@
+<div id="container">
+    <section id="facility_back">
+        <article class="slide">
+            <div class="slide_back row">
+                <div class="text_box">
+                    <h1>Creative <span>Studio</span></h1>
+                    <p>Web sites, applications and custom programming. The latest technologies,</p>
+                    <p>code and design allow you to present your image with jaw-dropping effects.</p>
+                    <div class="learn_more">
+                        <span>LEARN MORE</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="center sub_row">
+            <div class="button">
+                <a href="#none" class="on"><span>갤러리</span></a>
+                <a href="#none"><span>비디오</span></a>
+            </div>
+            <div id="gal_vid">
+                <div class="div_gal">
+                    <div class="search_box">
+                        <form action="#" method="post" class="search_form">
+                            <fieldset>
+                                <legend>검색</legend>
+                                <select id="name">
+                                    <option value="search">검색</option>
+                                    <option value="name">작성자</option>
+                                    <option value="content">내용</option>
+                                </select>
+                                <input type="text" id="search" placeholder="search...">
+                                <button type="submit">
+                                    <span class="blind">검색</span>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="facility_img_back">
+                        <div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery1.jpg" alt="갤러리사진1">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery2.jpg" alt="갤러리사진2">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery3.jpg" alt="갤러리사진3">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery4.jpg" alt="갤러리사진4">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery5.jpg" alt="갤러리사진5">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery6.jpg" alt="갤러리사진6">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery7.jpg" alt="갤러리사진7">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery8.jpg" alt="갤러리사진8">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                            <div class="facility_img">
+                                <a href="#">
+                                    <img src="images/gallery9.jpg" alt="갤러리사진9">
+                                    <p>포토갤러리</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_vid">
+                    <div class="video_text">
+                        <h2>다양한 제품과 서비스로 고객의 밝은 내일을 만듭니다.</h2>
+                        <p>Make changes to your website yourself.</p>
+                    </div>
+                    <div class="youtube">
+                        <p>Product Video_01</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HF97E3C991A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Product Video_02</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yH4JHnxyEno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Product Video_03</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/79CdVomhnW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</div>
+
+
+
+<!-- <script src="js/sub-page.js"></script> -->
+
+<script>
+    (function($){
+
+        
+    $('#facility_back .center .button a').on('click', function(e){
+        e.preventDefault()
+        var index = $(this).index()
+        $(this).addClass('on')
+        .siblings().removeClass('on')
+        $('#gal_vid > div').eq(index).fadeIn(100)
+        .siblings().fadeOut(100)
+    })
+
+
+
+    }) (jQuery)
+</script>

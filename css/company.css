@@ -55,7 +55,7 @@
     text-shadow: none;
     transition: all 0.5s;
 }
-/* 메인 ------------------------------------------------------------------------------------- */
+/* 메인 버튼--------------------------------------------------------------------------------------- */
 #company_back .center {
     padding: 50px 0px;
 }
@@ -68,13 +68,13 @@
     font-weight: bold;
     text-align: center;
 }
-#company_back .center .button a:nth-child(1) {
-    background: #666666; color: #ffffff;
+#company_back .center .button a {
+    background: #f3f3f3; color: #666666;
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
-#company_back .center .button a:nth-child(2) {
-    background: #f3f3f3; color: #666666;
+#company_back .center .button a.on {
+    background: #666666; color: #ffffff;
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
@@ -139,3 +139,71 @@
     background: #f3f3f3;
     color: #aaaaaa;
 }
+
+
+
+
+
+/* 로드 페이지-------------------------------------------------------------------------------- */
+.div_roa {
+    display: none;
+}
+/* 로드 메인 인사말-------------------------------------------------------------------------------- */
+#company_back .center .counselor {
+    margin: 20px 0px 30px;
+}
+#company_back .center .counselor h2 {
+    font-size: 25px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+#company_back .center .counselor p {
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 20px;
+}
+/* 로드 상담원 소개말-------------------------------------------------------------------------------- */
+#company_back .center .counselor_img li {
+    display: inline-block;
+    width: 32%;
+    padding: 0px 10px;
+}
+#company_back .center .counselor_img img {
+    width: 100%;
+}
+#company_back .center .counselor_img h3 {
+    padding: 10px 0px 5px;
+    font-size: 14px;
+    text-align: center;
+}
+#company_back .center .counselor_img p {
+    font-size: 12px;
+}
+/* 로드 지도---------------------------------------------------------------------------------------- */
+#company_back .center .map h3 {
+    padding: 50px 0px 5px 10px;
+    font-size: 25px;
+    color: #666666;
+}
+#company_back .center .map p {
+    padding: 0px 0px 20px 10px;
+    font-size: 15px;
+    color: #666666;
+}
+/* #company_back .center .map iframe {
+    filter: grayscale();
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
