@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+
+
+
+.sub_row {max-width: 900px; margin: 0px auto;}
+
+
+#notice_back .slide {
+    background: url(../images/notice_slide.jpg) no-repeat;
+    background-size: cover; background-position: center;
+    width: 100%; height: 400px;
+    padding: 98.5px 0px;
+}
+#notice_back .slide .text_box {
+    text-align: right;
+    text-shadow: -3px 3px 3px gray;
+}
+/* 슬라이드 텍스트----------------------------------------------------------------------------- */
+#notice_back .slide .text_box h1 {
+    font-size: 38px; font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#notice_back .slide .text_box h1 span {
+    font-weight: bold;
+}
+#notice_back .slide .text_box p {
+    font-size: 22px; font-weight: lighter;
+    color: #ffffff;
+}
+#notice_back .slide .text_box .learn_more {
+    background: #9bcb43;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+}
+#notice_back .slide .text_box .learn_more:hover {
+    background: orange;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 15px; font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px; padding: 15px 30px;
+    cursor: pointer;
+    text-shadow: none;
+    transition: all 0.5s;
+}
+/* 메인 버튼--------------------------------------------------------------------------------------- */
+#notice_back .center {
+    padding: 50px 0px;
+}
+#notice_back .center .button a {
+    display: inline-block;
+}
+#notice_back .center .button span {
+    display: block;
+    width: 150px; height: 40px; line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#notice_back .center .button a:nth-child(1) {
+    background: #666666; color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+#notice_back .center .button a:nth-child(2) {
+    background: #f3f3f3; color: #666666;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+/* 검색창----------------------------------------------------------------------------------------- */
+#notice_back .center form {
+    text-align: right;
+    margin: 50px 0px 10px;
+}
+#notice_back .center form select {
+    padding: 0px 5px;
+    height: 20px;
+    vertical-align: top;
+}
+#notice_back .center form input[type=text] {
+    text-indent: 1em;
+    border-bottom: 1px solid #aaa;
+    height: 20px;
+    vertical-align: top;
+}
+#notice_back .center form input[type=submit] {
+    border: 1px solid #aaa;
+    padding: 0px 5px;
+    height: 20px;
+    vertical-align: top;
+}
+/* 표 속성------------------------------------------------------------------------------------- */
+#notice_back .center .noticeTable col:nth-child(1) {width: 10%;}
+#notice_back .center .noticeTable col:nth-child(2) {width: auto;}
+#notice_back .center .noticeTable col:nth-child(3) {width: 13%;}
+#notice_back .center .noticeTable col:nth-child(4) {width: 13%;}
+#notice_back .center .noticeTable col:nth-child(5) {width: 10%;}
+#notice_back .center .noticeTable th,
+#notice_back .center .noticeTable td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+}
+#notice_back .center .noticeTable th {
+    background: #f2f2f2;
+    border-top: 2px solid #999;
+    font-weight: bold;
+    color: #333;
+}
+#notice_back .center .noticeTable tbody tr:hover {
+    background: #f2f2f2;
+}
+#notice_back .center .noticeTable td {
+    font-size: 13px;
+    border-right: 1px solid #ccc;
+}
+#notice_back .center .noticeTable tbody td:nth-child(1),
+#notice_back .center .noticeTable tbody td:nth-child(3),
+#notice_back .center .noticeTable tbody td:nth-child(4),
+#notice_back .center .noticeTable tbody td:nth-child(5) {
+    text-align: center;
+}
+#notice_back .center .noticeTable tbody td:nth-child(2) {
+    text-indent: 1em;
+}
+#notice_back .center .noticeTable tbody td:nth-child(5) {
+    border-right: none;
+}
+/* 공지사항 페이지 번호-------------------------------------------------------------------------- */
+#notice_back .center .pageNum {
+    text-align: center;
+    margin-top: 30px;
+    /* letter-spacing: 1em; */
+}
+#notice_back .center .pageNum span {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 0px 20px;
+    vertical-align: middle;
+}
+#notice_back .center .pageNum a {
+    color: #aaa;
+    /* font-weight: bold; */
+    padding: 0px 3px;
+    vertical-align: middle;
+}
+#notice_back .center .pageNum a.on {
+    color: #555;
+    font-weight: bold;
+    vertical-align: middle;
+}
