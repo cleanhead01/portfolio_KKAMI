@@ -418,28 +418,28 @@
     position: relative;    
 }
 .project li.on {
-    animation: fadeInUp 0.5s both;
+    animation: zoomIn 0.5s both;
 }
 .project li.on:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 1.2s;
 }
 .project li.on:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 .project li.on:nth-child(4) {
     animation-delay: 0.6s;
 }
 .project li.on:nth-child(5) {
-    animation-delay: 0.8s;
+    animation-delay: 1.4s;
 }
 .project li.on:nth-child(6) {
     animation-delay: 1s;
 }
 .project li.on:nth-child(7) {
-    animation-delay: 1.2s;
+    animation-delay: 0.4s;
 }
 .project li.on:nth-child(8) {
-    animation-delay: 1.4s;
+    animation-delay: 0.8s;
 }
 .project img {
     width: 100%;
