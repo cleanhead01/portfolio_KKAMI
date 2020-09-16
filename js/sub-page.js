@@ -9,15 +9,5 @@
 // })
 
 
-$('#notice_back .center .button a').on('click', function(e){
-    e.preventDefault()
-    var index = $(this).parent().index()
-    $(this).addClass('on')
-    .siblings().removeClass('on')
-    $('#no_qa .div_qa, #no_qa .div_no').eq(index).fadeIn(100)
-    .siblings().fadeOut(100)
-})
-
-
 
 }) (jQuery)

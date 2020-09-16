@@ -208,7 +208,6 @@
                 </div>
             </div>
         </article>
-    
     </section>
 </div>
 
@@ -216,9 +215,10 @@
 <script>
     (function($){
 
+        
     $('#notice_back .center .button a').on('click', function(e){
         e.preventDefault()
-        var index = $(this).parent().index()
+        var index = $(this).index()
         $(this).addClass('on')
         .siblings().removeClass('on')
         $('#no_qa > div').eq(index).fadeIn(100)

@@ -165,13 +165,11 @@
 
 
 
-
-
+/* 표 속성------------------------------------------------------------------------------------- */
 .div_qa {
     display: none;
+    margin-top: 80px;
 }
-
-/* 표 속성------------------------------------------------------------------------------------- */
 #notice_back .center .qaTable col:nth-child(1) {width: 10%;}
 #notice_back .center .qaTable col:nth-child(2) {width: auto;}
 #notice_back .center .qaTable col:nth-child(3) {width: 13%;}
