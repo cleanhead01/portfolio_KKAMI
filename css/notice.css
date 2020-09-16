@@ -63,16 +63,17 @@
     font-weight: bold;
     text-align: center;
 }
-#notice_back .center .button a:nth-child(1) {
-    background: #666666; color: #ffffff;
-    font-size: 15px;
-    border: 1px solid #d2d2d2;
-}
-#notice_back .center .button a:nth-child(2) {
+#notice_back .center .button a {
     background: #f3f3f3; color: #666666;
     font-size: 15px;
     border: 1px solid #d2d2d2;
 }
+#notice_back .center .button a.on {
+    background: #666666; color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+
 /* 검색창----------------------------------------------------------------------------------------- */
 #notice_back .center form {
     text-align: right;
@@ -131,6 +132,94 @@
 }
 #notice_back .center .noticeTable tbody td:nth-child(5) {
     border-right: none;
+}
+/* 공지사항 페이지 번호-------------------------------------------------------------------------- */
+#notice_back .center .pageNum {
+    text-align: center;
+    margin-top: 30px;
+    /* letter-spacing: 1em; */
+}
+#notice_back .center .pageNum span {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 0px 20px;
+    vertical-align: middle;
+}
+#notice_back .center .pageNum a {
+    color: #aaa;
+    /* font-weight: bold; */
+    padding: 0px 3px;
+    vertical-align: middle;
+}
+#notice_back .center .pageNum a.on {
+    color: #555;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid #555;
+}
+
+
+
+
+
+
+
+
+
+.div_qa {
+    display: none;
+}
+
+/* 표 속성------------------------------------------------------------------------------------- */
+#notice_back .center .qaTable col:nth-child(1) {width: 10%;}
+#notice_back .center .qaTable col:nth-child(2) {width: auto;}
+#notice_back .center .qaTable col:nth-child(3) {width: 13%;}
+#notice_back .center .qaTable col:nth-child(4) {width: 13%;}
+#notice_back .center .qaTable col:nth-child(5) {width: 10%;}
+#notice_back .center .qaTable th,
+#notice_back .center .qaTable td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+}
+#notice_back .center .qaTable th {
+    background: #f2f2f2;
+    border-top: 2px solid #999;
+    font-weight: bold;
+    color: #333;
+}
+#notice_back .center .qaTable tbody tr:hover {
+    background: #f2f2f2;
+}
+#notice_back .center .qaTable td {
+    font-size: 13px;
+    border-right: 1px solid #ccc;
+}
+#notice_back .center .qaTable tbody td:nth-child(1),
+#notice_back .center .qaTable tbody td:nth-child(3),
+#notice_back .center .qaTable tbody td:nth-child(4),
+#notice_back .center .qaTable tbody td:nth-child(5) {
+    text-align: center;
+}
+#notice_back .center .qaTable tbody td:nth-child(2) {
+    text-indent: 1em;
+}
+#notice_back .center .qaTable tbody td:nth-child(5) {
+    border-right: none;
+}
+/* 글쓰기 버튼---------------------------------------------------------------------------------- */
+#notice_back .center .div_qa .div_bu {
+    text-align: right;
+    padding-top: 10px;
+}
+#notice_back .center .div_qa button {
+    background: url(../images/pen.jpg) no-repeat;
+    background-position: left;
+    width: 80px; height: 20px;
+    text-align: right;
+    letter-spacing: 0.3em;
+    border: 1px solid #999; border-radius: 5px;
 }
 /* 공지사항 페이지 번호-------------------------------------------------------------------------- */
 #notice_back .center .pageNum {
