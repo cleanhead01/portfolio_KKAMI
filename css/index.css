@@ -194,7 +194,7 @@
 }
 .photo_gall .slick-slide.slick-active {
     opacity: 1;
-    /* transform: scale(0.8); */
+    transform: scale(0.8);
 }
 .photo_gall .slick-slide.slick-active.slick-current {
     opacity: 1;
