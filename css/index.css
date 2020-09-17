@@ -255,17 +255,17 @@
     text-align: center;
     padding: 10px 0px 80px; margin: 0px 0.5%;
 }
-.main_teacher .teacher_box:hover {
+/* .main_teacher .teacher_box:hover {
     width: 24%;
     float: left;
     text-align: center;
     padding: 30px 0px 60px; margin: 0px 0.5%;
     background: #f0f0f0;
     transition: all 0.5s;
-}
-.main_teacher .teacher_box:hover h3 {
+} */
+/* .main_teacher .teacher_box:hover h3 {
     color: #ffffff;
-}
+} */
 .main_teacher .teacher_box .teacher_photo > img {
     width: 100%;
 }
@@ -418,7 +418,7 @@
     position: relative;    
 }
 .project li.on {
-    animation: zoomIn 0.5s both;
+    animation: zoomInDown 0.5s both;
 }
 .project li.on:nth-child(2) {
     animation-delay: 1.2s;
