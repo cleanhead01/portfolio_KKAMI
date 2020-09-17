@@ -109,6 +109,7 @@
 }
 #facility_back .center .facility_img img {
     width: 100%;
+    transition: all 0.5s;
 }
 #facility_back .center .facility_img img:hover {
     width: 100%;
