@@ -330,6 +330,18 @@
     )
 
 
+    // 사업영역 호버했을 때 scale
+    $('business ul > li img').hover(
+        function(){
+        $(this).stop().css({
+            transform: 'scale(5)'}, 500)
+        },
+        function(){
+            $(this).stop().css({
+            transform: ''}, 3000)
+        }
+    )
+
         
     // 포토갤러리 슬라이드 --------------------------------------------------------------        
     $('.slide_gall').slick({
@@ -352,7 +364,7 @@
 
 
 
-
+    // 도트박스
     $(".dot_box").toggle(
         function(){
             $(this).find('i').removeClass('fa-pause')
@@ -366,18 +378,22 @@
         } 
     )
 
+
+
+    // 주요 강사진 호버했을 때 나타나는 효과
     $('.main_teacher .teacher_box').hover(
         function(){
             $(this).stop().animate({
             padding: '30px 0px 60px',
-            background: '#f0f0f0'}, 500)
-            $(this).children('h3').stop().animate({
+            backgroundColor: '#f0f0f0'}, 500)
+            $(this).find('h3').stop().animate({
                 color: '#ffffff'}, 500)
         },
         function(){
             $(this).stop().animate({
-            padding: '10px 0px 80px'}, 500)
-            $(this).children('h3').stop().animate({
+            padding: '10px 0px 80px',
+            backgroundColor: ''}, 500)
+            $(this).find('h3').stop().animate({
                 color: '#777777'}, 500)
         }
     )
