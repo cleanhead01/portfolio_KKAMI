@@ -21,6 +21,7 @@
     font-size: 38px; font-weight: lighter;
     color: #ffffff;
     margin-bottom: 25px;
+    animation: tada 1s both;
 }
 #facility_back .slide .text_box h1 span {
     font-weight: bold;
@@ -28,6 +29,7 @@
 #facility_back .slide .text_box p {
     font-size: 22px; font-weight: lighter;
     color: #ffffff;
+    animation: tada 1s both 1s;
 }
 #facility_back .slide .text_box .learn_more {
     background: #9bcb43;
@@ -38,6 +40,7 @@
     margin-top: 20px; padding: 15px 30px;
     cursor: pointer;
     text-shadow: none;
+    animation: tada 1s both 2s;
 }
 #facility_back .slide .text_box .learn_more:hover {
     background: orange;

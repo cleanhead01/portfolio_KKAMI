@@ -26,6 +26,7 @@
     font-size: 38px; font-weight: lighter;
     color: #ffffff;
     margin-bottom: 25px;
+    animation: heartBeat 1s both;
 }
 #company_back .slide .text_box h1 span {
     font-weight: bold;
@@ -33,6 +34,7 @@
 #company_back .slide .text_box p {
     font-size: 22px; font-weight: lighter;
     color: #ffffff;
+    animation: heartBeat 1s both 1s;
 }
 #company_back .slide .text_box .learn_more {
     background: #9bcb43;
@@ -43,6 +45,7 @@
     margin-top: 20px; padding: 15px 30px;
     cursor: pointer;
     text-shadow: none;
+    animation: heartBeat 1s both 2s;
 }
 #company_back .slide .text_box .learn_more:hover {
     background: orange;
