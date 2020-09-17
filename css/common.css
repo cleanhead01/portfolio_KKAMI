@@ -89,7 +89,8 @@
     width: 0%;
     height: 31px;
     background: #333333;
-    display: none;
+    /* display: none; */
+    opacity: 0;
     position: absolute; top: 150%; left: 0px;
     border-radius: 10px;
     padding: 2px 0px;
@@ -100,9 +101,9 @@
     font-weight: normal;
     letter-spacing: 2px;
 }
-.nav_box .nav .depth1 > li:hover .depth2 {
+/* .nav_box .nav .depth1 > li:hover .depth2 {
     display: block;
-}
+} */
 .nav_box .nav .depth2 > li a {
     display: block;
     padding: 5px 10px;

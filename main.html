@@ -331,14 +331,14 @@
 
 
     // 사업영역 호버했을 때 scale
-    $('business ul > li img').hover(
+    $('.business ul > li img').hover(
         function(){
-        $(this).stop().css({
-            transform: 'scale(5)'}, 500)
+        $(this).stop().animate({
+            scale: '1.5'}, 500)
         },
         function(){
-            $(this).stop().css({
-            transform: ''}, 3000)
+            $(this).stop().animate({
+            scale: '1'}, 500)
         }
     )
 

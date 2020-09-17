@@ -56,14 +56,16 @@
         function(){
             $(this).find('.depth2')
             .stop().animate({
-                width: '542.5px'
+                width: '542.5px',
+                opacity: '1'
             }, 500)
         },
         function(){
             $(this).find('.depth2')
             .stop().animate({
                 width: '0px',
-            }, 500)
+                opacity: ''
+            }, 1000)
         }
     )
 
