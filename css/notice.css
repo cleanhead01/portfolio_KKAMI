@@ -21,6 +21,7 @@
     font-size: 38px; font-weight: lighter;
     color: #ffffff;
     margin-bottom: 25px;
+    animation: pulse 1s both;
 }
 #notice_back .slide .text_box h1 span {
     font-weight: bold;
@@ -28,6 +29,7 @@
 #notice_back .slide .text_box p {
     font-size: 22px; font-weight: lighter;
     color: #ffffff;
+    animation: pulse 1s both 1s;
 }
 #notice_back .slide .text_box .learn_more {
     background: #9bcb43;
@@ -38,6 +40,7 @@
     margin-top: 20px; padding: 15px 30px;
     cursor: pointer;
     text-shadow: none;
+    animation: pulse 1s both 2s;
 }
 #notice_back .slide .text_box .learn_more:hover {
     background: orange;
