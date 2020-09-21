@@ -410,16 +410,17 @@
         var busiNear = $('.business').offset().top - $(this).height()/2
         if (sct >= busiNear) {
             $('.business ul > li').addClass('on')
-        } else {
+        } else if (sct === 0) {
             $('.business ul > li').removeClass('on')
         }
 
 
         // 스크롤 했을 때 진행프로젝트 영역
         var proNear = $('.project').offset().top - $(this).height()/2
+        var notNear = $('.project').offset().top - $(this).height()/1
         if (sct >= proNear) {
             $('.project li').addClass('on')
-        } else {
+        } else if (sct < notNear) {
             $('.project li').removeClass('on')
         }
 
