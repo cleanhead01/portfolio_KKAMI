@@ -18,7 +18,7 @@
                             </div>
                         </li>
                         <li>
-                            <label for="gender" class="essential">성별</label>
+                            <label for="gender" class="essential" id="gender">성별</label>
                             <div class="input_lbl">
                                 <input type="radio" name="gender" id="male" value="male">
                                 <label for="male" class="checkbox_lbl gender_lbl">남성</label>
@@ -142,6 +142,16 @@
         
 
         // 성별 유효성 체크 : 체크되어있는지 확인
+        // var gender = $('input[name=gender]:checked').length
+        // if (gender === 0) {
+        //     $('#gender').text('성별을 선택해 주세요')
+        //     $('#gender').css({
+        //         color: 'f00'
+        //     })
+        //     return false
+        // } else {
+
+        // }
         
         
         
@@ -185,7 +195,7 @@
 
 
 
-        return false    // 유효성 검사 끝나고 지우기
+        // return false    // 유효성 검사 끝나고 지우기
     })
 
 
