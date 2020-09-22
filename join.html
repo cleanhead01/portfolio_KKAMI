@@ -122,3 +122,82 @@
         </div>
     </section>
 </div>
+
+<script>
+
+(function($){
+
+
+    $('form').submit(function(){
+
+        // 이름 유효성 체크 : 이름은 한글만 표시
+        var name = $('#name').val()
+        var namech = /^[가-힣]+$/
+        if (!(namech.test(name))) {
+            alert('한글이 아닙니다.')
+            $('#name').focus()
+            $('#name').select()
+            return false
+        }
+        
+
+        // 성별 유효성 체크 : 체크되어있는지 확인
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // 아이디 유효성 체크 : 글자수 2~6, 특수문자 제외
+        var id = $('#id').val()
+        if (id.length >= 2 && id.length <= 10) {
+            for (var i=0; i < id.length; i++) {
+                var ch = id.charAt(i);
+                if (!(ch>='0' && ch<='9') && !(ch>='a' && ch<='z') && !(ch>='A' && ch<='Z')) {
+                    alert('아이디는 영문 대소문자, 숫자만 가능합니다')
+                    $('#id').css({
+                        border:'1px solid #f00'
+                    })
+                    $('#id').focus()
+                    $('#id').select()
+                    return false
+                }
+            }
+        } else {
+            alert('아이디는 2~10글자 범위입니다.')
+            $('#id').css({
+                border:'1px solid #f00'
+            })
+            $('#id').focus()
+            $('#id').select()
+            return false
+        }
+
+
+
+
+
+        return false    // 유효성 검사 끝나고 지우기
+    })
+
+
+
+
+
+}) (jQuery)
+
+
+
+
+
+
+
+</script>
