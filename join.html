@@ -142,16 +142,26 @@
         
 
         // 성별 유효성 체크 : 체크되어있는지 확인
-        // var gender = $('input[name=gender]:checked').length
-        // if (gender === 0) {
-        //     $('#gender').text('성별을 선택해 주세요')
-        //     $('#gender').css({
-        //         color: 'f00'
-        //     })
-        //     return false
-        // } else {
+        var gender = $('input[name=gender]:checked').length
+        if (gender === 0) {
+            $('#gender').text('성별을 선택해 주세요')
+            $('#gender').css({
+                color: 'red'
+            })
+            return false
+            // 오류가 났을 때 문구만 표시하고 진행이 되버리기 때문에 return false를 넣어야한다.
+        } else {
+            $('#gender').text('성별')
+            $('#gender').css({
+                color: 'black'
+            })
+            // 정상적으로 작동이 됐을 때 전송버튼을 누르면 진행이 되어야 하기 때문에 return false를 넣지 않는다.
+        }
 
-        // }
+
+        // 비밀번호 유효성 체크 : 비밀번호 첫글자는 영문 대소문자, 특수문자, 숫자 포함 10~12글자
+        var pass1 = $('#pw').val()
+        var pass2 = $('#pw_check').val()
         
         
         
@@ -195,7 +205,7 @@
 
 
 
-        // return false    // 유효성 검사 끝나고 지우기
+        return false    // 유효성 검사 끝나고 지우기
     })
 
 
