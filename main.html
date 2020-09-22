@@ -414,13 +414,21 @@
             $('.business ul > li').removeClass('on')
         }
 
+        // 스크롤 했을 때 제품가격표 영역
+        var menuNear = $('.menu').offset().top - $(this).height()/2
+        var menuNotNear = $('.menu').offset().top - $(this).height()/1
+        if (sct >= menuNear) {
+            $('.menu .menu_list').addClass('on')
+        } else if (sct < menuNotNear) {
+            $('.menu .menu_list').removeClass('on')
+        }
 
         // 스크롤 했을 때 진행프로젝트 영역
         var proNear = $('.project').offset().top - $(this).height()/2
-        var notNear = $('.project').offset().top - $(this).height()/1
+        var proNotNear = $('.project').offset().top - $(this).height()/1
         if (sct >= proNear) {
             $('.project li').addClass('on')
-        } else if (sct < notNear) {
+        } else if (sct < proNotNear) {
             $('.project li').removeClass('on')
         }
 

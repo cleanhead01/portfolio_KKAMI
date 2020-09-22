@@ -292,6 +292,10 @@
     display: inline-block;
     text-align: center;
     padding: 0px 15px;
+    opacity: 0;
+}
+.menu .menu_list.on {
+    animation: fadeInUp 1s both;
 }
 .menu .menu_list h2 {
     font-size: 22px;
@@ -419,7 +423,7 @@
     position: relative;    
 }
 .project li.on {
-    animation: zoomInDown 0.5s both;
+    animation: zoomIn 0.5s both;
 }
 .project li.on:nth-child(2) {
     animation-delay: 1.2s;
