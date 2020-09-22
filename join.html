@@ -28,11 +28,11 @@
                             </div>
                         </li>
                         <li>
-                            <label for="code_number" class="essential">주민번호</label>
+                            <label for="birth1" class="essential">주민번호</label>
                             <div class="input_lbl">
-                                <input type="text" id="code_number">
+                                <input type="text" id="birth1">
                                 <span>-</span>
-                                <input type="text" id="code_number">
+                                <input type="text" id="birth2">
                             </div>
                         </li>
                         <li>
@@ -130,44 +130,82 @@
 
     $('form').submit(function(){
 
-        // 이름 유효성 체크 : 이름은 한글만 표시
-        var name = $('#name').val()
-        var namech = /^[가-힣]+$/
-        if (!(namech.test(name))) {
-            alert('한글이 아닙니다.')
-            $('#name').focus()
-            $('#name').select()
-            return false
-        }
+        // // 이름 유효성 체크 : 이름은 한글만 표시
+        // var name = $('#name').val()
+        // var namech = /^[가-힣]+$/
+        // if (!(namech.test(name))) {
+        //     alert('한글이 아닙니다.')
+        //     $('#name').focus()
+        //     $('#name').select()
+        //     return false
+        // }
         
 
-        // 성별 유효성 체크 : 체크되어있는지 확인
-        var gender = $('input[name=gender]:checked').length
-        if (gender === 0) {
-            $('#gender').text('성별을 선택해 주세요')
-            $('#gender').css({
-                color: 'red'
-            })
-            return false
-            // 오류가 났을 때 문구만 표시하고 진행이 되버리기 때문에 return false를 넣어야한다.
-        } else {
-            $('#gender').text('성별')
-            $('#gender').css({
-                color: 'black'
-            })
-            // 정상적으로 작동이 됐을 때 전송버튼을 누르면 진행이 되어야 하기 때문에 return false를 넣지 않는다.
-        }
+        // // 성별 유효성 체크 : 체크되어있는지 확인
+        // var gender = $('input[name=gender]:checked').length
+        // if (gender === 0) {
+        //     $('#gender').text('성별을 선택해 주세요')
+        //     $('#gender').css({
+        //         color: 'red'
+        //     })
+        //     return false
+        //     // 오류가 났을 때 문구만 표시하고 진행이 되버리기 때문에 return false를 넣어야한다.
+        // } else {
+        //     $('#gender').text('성별')
+        //     $('#gender').css({
+        //         color: 'black'
+        //     })
+        //     // 정상적으로 작동이 됐을 때 전송버튼을 누르면 진행이 되어야 하기 때문에 return false를 넣지 않는다.
+        // }
 
 
-        // 비밀번호 유효성 체크 : 비밀번호 첫글자는 영문 대소문자, 특수문자, 숫자 포함 10~12글자
-        var pass1 = $('#pw').val()
-        var pass2 = $('#pw_check').val()
-        var check = /^(?=[a-zA-Z])(?=.*[a-zA-z0-9])$/
-        // ?= 는 처음부터 조사하는 거임 첫글자는 영문 대소문자
-        // . 은 임의의 모든 문자(숫자, 특수문자, 대소문자)
-        // * 은 0번 이상 나올 수 있음
-        // + 는 1번 이상 나올 수 있음, 1번 이상 반복되어야 함
-        // [] 안에 ^ 가 나오면 부정을 의미한다 ! 랑 비슷
+        // // 비밀번호 유효성 체크 : 비밀번호 첫글자는 영문 대소문자, 특수문자, 숫자 포함 10~12글자
+        // var pass1 = $('#pw').val()
+        // var pass2 = $('#pw_check').val()
+        // var check = /^(?=[a-zA-Z])(?=.*[^a-zA-Z0-9])(?=.*[0-9]).*$/
+        // // ?= 는 처음부터 조사하는 거임 첫글자는 영문 대소문자
+        // // . 은 임의의 모든 문자(숫자, 특수문자, 대소문자)
+        // // * 은 0번 이상 나올 수 있음
+        // // + 는 1번 이상 나올 수 있음, 1번 이상 반복되어야 함
+        // // [] 안에 ^ 가 나오면 부정을 의미한다 ! 랑 비슷
+        // if (pass1.length >= 10 && pass1.length <= 12) {
+        //     if (!check.test(pass1)) {
+        //         alert('패스워드는 첫 글자는 영문 대소문자만 혀용하며, 반드시 숫자와 특수문자 1개 이상 조합해주세요')
+        //         $('#pw').css({
+        //             border: '1px solid red'
+        //         })
+        //         $('#pw').focus()
+        //         $('#pw').select()
+        //         return false
+        //     }
+        // } else {
+        //     alert('패스워드 글자 수는 10글자~12글자 범위입니다.')
+        //     $('#pw').css({
+        //         border: '1px solid red'
+        //     })
+        //     $('#pw').focus()
+        //     $('#pw').select()
+        //     return false
+        // }
+
+        // // 비밀번호와 비밀번호 확인 일치여부 점검
+        // if (pass2.length === 0) {
+        //     alert('패스워드 확인을 입력하지 않았습니다.')
+        //     $('#pw_check').css({
+        //         border: '1px solid red'
+        //     })
+        //     $('#pw_check').focus()
+        //     $('#pw_check').select()
+        //     return false
+        // } else if (pass2 !== pass1) {
+        //     alert('패스워드가 일치하지 않습니다.')
+        //     $('#pw_check').css({
+        //         border: '1px solid red'
+        //     })
+        //     $('#pw_check').focus()
+        //     $('#pw_check').select()
+        //     return false
+        // }
         
         
         
@@ -175,37 +213,61 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        // 아이디 유효성 체크 : 글자수 2~6, 특수문자 제외
-        var id = $('#id').val()
-        if (id.length >= 2 && id.length <= 10) {
-            for (var i=0; i < id.length; i++) {
-                var ch = id.charAt(i);
-                if (!(ch>='0' && ch<='9') && !(ch>='a' && ch<='z') && !(ch>='A' && ch<='Z')) {
-                    alert('아이디는 영문 대소문자, 숫자만 가능합니다')
-                    $('#id').css({
-                        border:'1px solid #f00'
+        // 보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류보류
+        // 주민번호 유효성 체크 : 앞에 6숫자, 뒤에 7숫자
+        var birth1 = $('#birth1').val()
+        var birth2 = $('#birth2').val()
+        if (birth1.length >= 7 && birth1.length <= 5) {
+            for (var i=0; i < birth1.length; i++) {
+                var ch = birth1.charAt(i);
+                if (!(ch>='0' && ch<='9')) {
+                    alert('주민번호는 숫자만 가능합니다.')
+                    $('#birth1').css({
+                        border:'1px solid red'
                     })
-                    $('#id').focus()
-                    $('#id').select()
+                    $('#birth1').focus()
+                    $('#birth1').select()
                     return false
                 }
             }
         } else {
-            alert('아이디는 2~10글자 범위입니다.')
-            $('#id').css({
-                border:'1px solid #f00'
+            alert('주민번호는 숫자 6개 입니다.')
+            $('#birth1').css({
+                border:'1px solid red'
             })
-            $('#id').focus()
-            $('#id').select()
+            $('#birth1').focus()
+            $('#birth1').select()
             return false
         }
+        
+        
+        
+        
+        
+        // // 아이디 유효성 체크 : 글자수 2~6, 특수문자 제외
+        // var id = $('#id').val()
+        // if (id.length >= 2 && id.length <= 10) {
+        //     for (var i=0; i < id.length; i++) {
+        //         var ch = id.charAt(i);
+        //         if (!(ch>='0' && ch<='9') && !(ch>='a' && ch<='z') && !(ch>='A' && ch<='Z')) {
+        //             alert('아이디는 영문 대소문자, 숫자만 가능합니다')
+        //             $('#id').css({
+        //                 border:'1px solid red'
+        //             })
+        //             $('#id').focus()
+        //             $('#id').select()
+        //             return false
+        //         }
+        //     }
+        // } else {
+        //     alert('아이디는 2~10글자 범위입니다.')
+        //     $('#id').css({
+        //         border:'1px solid red'
+        //     })
+        //     $('#id').focus()
+        //     $('#id').select()
+        //     return false
+        // }
 
 
 
