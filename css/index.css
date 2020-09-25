@@ -511,8 +511,60 @@
     display: none;
 }
 
-
-
-
+/* 팝업창-------------------------------------------------------------------------------- */
+#popup {
+    position: fixed; top: 30%; left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid #fff; border-radius: 50px;
+    overflow: hidden;
+    display: none;
+}
+#popup img {
+    /* opacity: 0.8; */
+}
+/* 버튼박스 */
+#popup .btn p {
+    text-align: center;
+    float: left;
+    width: 50%; height: 30px; line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+#popup .btn p:nth-child(1) {
+    background: darkgray;
+}
+#popup .btn p:nth-child(2) {
+    background: gray;
+}
+/* 텍스트 박스 */
+#popup .txt {
+    width: 100%;
+    /* height: 278px; */
+    text-align: center;
+    position: absolute; top: 0px; left: 50%;
+    transform: translateX(-50%);
+    /* background: rgba(255,255,255,0.3); */
+}
+#popup .txt h2 {
+    font-size: 45px;
+    padding: 10px 0px 5px;
+    text-shadow: 3px 3px 3px gray;
+    letter-spacing: 8px;
+}
+#popup .txt h2 span {
+    /* color: rgba(208,167,1,1); */
+    color: gold;
+}
+#popup .txt p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    /* text-shadow: 2px 2px 2px gray; */
+    
+}
+#popup .txt p span {
+    font-weight: bold;
+    
+}
 
 

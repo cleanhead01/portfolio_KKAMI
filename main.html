@@ -288,11 +288,49 @@
             </div>
         </article>
     </section>
+
+
+    <div id="popup">
+        <a href="#"><img src="images/popup.jpg" alt="팝업창"></a>
+        <div class="btn cf">
+            <p class="one_close">하루동안 열지 않기</p>
+            <p class="close">닫기</p>
+        </div>
+        <div class="txt">
+            <h2>KKAMI <span>Event!!</span></h2>
+            <p><span>진행기간 </span>2020.09.25(금) ~ 2020.09.27(일) 단. 3일</p>
+            <!-- <p>(토 · 일요일 및 공휴일 제외)</p> -->
+        </div>
+    </div>
+
+
+
 </div>
 
 <script>
     
     (function($){
+
+
+    // 팝업창 ---------------------------------------------------------------------
+
+    // 하루 열리지않기 안누르면 나타나기
+    if ($.cookie('pop') != 'none') {
+        $('#popup').fadeIn(300) 
+    }
+
+    // 닫기를 누르면 사라지기
+    $('#popup .close').on('click', function(){
+        $('#popup').fadeOut(300)
+    })
+
+    // 하루동안 열지 않기 누르면 오늘 하루 안열리기
+    $('#popup .one_close').on('focus', function(){
+        $.cookie('pop', 'none', {expires:1})
+        $('#popup').fadeOut(300)
+    })
+
+
 
 
 
