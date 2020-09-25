@@ -325,7 +325,7 @@
     })
 
     // 하루동안 열지 않기 누르면 오늘 하루 안열리기
-    $('#popup .one_close').on('focus', function(){
+    $('#popup .one_close').on('click', function(){
         $.cookie('pop', 'none', {expires:1})
         $('#popup').fadeOut(300)
     })
