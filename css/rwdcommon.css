@@ -155,7 +155,7 @@
     .nav_box .nav .rwd_bg {
         background: #fff;
         width: 60%; height: 100%;
-        position: fixed; right: 0%;
+        position: fixed; right: 8.4%;
     }
     /* 햄버거 메뉴 누르면 나타나는 로고 */
     .nav_box .nav h2 {
