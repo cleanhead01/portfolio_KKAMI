@@ -56,7 +56,7 @@
         function(){
             $(this).find('.depth2')
             .stop().animate({
-                width: '542.5px',
+                width: '100%',
                 opacity: '1'
             }, 500)
         },
@@ -68,6 +68,20 @@
             }, 1000)
         }
     )
+
+
+    // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
+    $('.nav_box .open_nav').on('click', function(){
+        $('nav').stop().animate({
+            right: '100%'
+        }, 500)
+    })
+    // 배경을 누르면 사라지기
+    $('.nav').on('click', function(){
+        $(this).stop().animate({
+            right: '0%'
+        }, 300)
+    })
 
 
 

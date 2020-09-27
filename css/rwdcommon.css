@@ -1,120 +1,221 @@
 @charset "utf-8";
 
+/* 큰화면 기준으로 반응형 스타일 잡기, 기본화면 1600이상(화면전체, max-width) */
+/* 작은화면 기준으로 반응형 스타일 잡기, 기본화면 479이상(min-width) */
 
 
 
-@media only screen and (max-width: 1235px) {
-    .row {
-        padding: 0px 30px;
+/* Pc는 1024 이상
+태블릿은 1024~768
+모바일은 768이하 */
+
+/* max-width:1025~1499px */
+@media screen and (max-width:1499px) {
+
+    /* 국기 이미지 */
+    .language {
+        position: relative;
     }
+    .language .flag_box {
+        width: auto; height: 35px; line-height: 35px;
+        padding-left: 20px;
+    }
+    .language .flag_box img {
+        width: auto; height: 15px;
+    }
+    /* 로그인 구역 */
     .language .login_box {
-        position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
+        position: absolute; top: 50%; right: 20px; transform: translateY(-50%);
     }
+    .language .login_box p {
+        display: inline-block;
+        font-size: 13px; font-weight: bold;
+        color: #888888;
+    }
+    .language .login_box p::before {
+        content: "|";
+        color: #cccccc;
+        padding: 0px 10px 0px 5px;
+    }
+    .language .login_box p:nth-child(1)::before {
+        display: none;
+    }
+
 }
-@media only screen and (max-width: 695px) {
+
+
+
+/* max-width:769~1024px */
+@media screen and (max-width:1024px) {
+
+}
+
+
+
+/* max-width:544~768px */
+@media screen and (max-width:768px) {
+    
+    /* 로고박스 */
+    .nav_box {
+        background: #101010;
+        height: auto;
+    }
     .nav_box .nav_banner {
         position: relative;
         padding: 30px 0px;
-        height: auto;
-        text-align: center;
     }
     .nav_box h1 {
         display: block;
         padding-left: 0px; padding-bottom: 30px;
         font-size: 40px;
         letter-spacing: 5px;
-    }
-    /* 메뉴1--------------------------------------------------------------------------------------- */
-    .nav_box .nav {
-        position: static; top: 50%; right: 0px; transform: translate(0, -50%);
-        display: block;
-    }
-    .nav_box .nav .depth1 > li {
-        display: inline-block;
-        padding: 0px 20px;
-        font-weight: bold;
-        position: relative;
-    }
-    /* 메뉴2--------------------------------------------------------------------------------------- */
-    .nav_box .nav .depth1 .depth2 {
-        width: 100%; height: auto;
-        background: #333333;
-        display: none;
-        position: static; top: 100%; left: 0px;
-        border-radius: 10px;
-        padding: 2px 0px;
-    }
-    .nav_box .nav .depth2 > li {
-        display: block;
-        width: 104px;
-        font-weight: normal;
-    }
-    .nav_box .nav .depth1 > li:hover .depth2 {
-        display: block;
-        position: absolute; top: 150%; left: 0px;
-    }
-    .nav_box .nav .depth2 > li a {
-        display: block;
-        padding: 5px 10px;
         text-align: center;
     }
-    .nav_box .nav .depth1 li:nth-child(1):hover .depth2::before {
-        content: "";
-        position: absolute; bottom: 100%; left: 40%;
-        border-bottom: 10px solid #333333;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
+    .nav_box h1:hover {
+        display: block;
+        padding-left: 0px; padding-bottom: 30px;
+        font-size: 40px;
+        letter-spacing: 5px;
+        color: palegreen;
+        transition: all 0.5s;
+        text-align: center;
     }
-    .nav_box .nav .depth1 li:nth-child(2):hover .depth2::before {
-        content: "";
-        position: absolute; bottom: 100%; left: 40%;
-        border-bottom: 10px solid #333333;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
+    /* 메뉴1 박스 */
+    .nav_box .nav {
+        position: static; top: 50%; right: 0px; transform: translate(0, -50%);
+        text-align: center;
     }
-    .nav_box .nav .depth1 li:nth-child(3):hover .depth2::before {
-        content: "";
-        position: absolute; bottom: 100%; left: 40%;
-        border-bottom: 10px solid #333333;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
+    
+    /* 메뉴2 박스 */
+    .nav_box .nav .depth1 .depth2 {
+        /* width: 542.5px; */
+        width: 0%;
+        height: 31px;
+        background: #333333;
+        /* display: none; */
+        opacity: 0;
+        position: absolute; top: 150%; left: 0px;
+        border-radius: 10px;
+        padding: 2px 0px;
+        /* text-align: center; */
     }
-    .nav_box .nav .depth1 li:nth-child(4):hover .depth2::before {
-        content: "";
-        position: absolute; bottom: 100%; left: 40%;
-        border-bottom: 10px solid #333333;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
+    /* 메뉴2 호버하면 화살표 */
+    .nav_box .nav .depth1 li .depth2::before {
+        display: none;
     }
-    .nav_box .nav .depth1 li:nth-child(5):hover .depth2::before {
-        content: "";
-        position: absolute; bottom: 100%; left: 40%;
-        border-bottom: 10px solid #333333;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
+
+
+    /* 푸터 메뉴 */
+    .footer_nav li a {
+        display: block;
+        font-size: 13px;
+        padding: 20px 10px;
+        color: #ffffff;
     }
+    .footer_nav li a:hover {
+        display: block;
+        font-size: 13px;
+        padding: 20px 10px;
+        color: #63ebc4;
+        transition: all 0.5s;
+    }
+
+
+
 }
 
-@media only screen and (max-width: 543px) {
+/* max-widtt:543px */
+@media screen and (max-width: 543px) {
+
     .nav_box h1 {
         display: block;
         padding-left: 0px; padding-bottom: 0px;
         font-size: 40px;
         letter-spacing: 5px;
+        text-align: center;
     }
+    .nav_box h1:hover {
+        display: block;
+        padding-left: 0px; padding-bottom: 0px;
+        font-size: 40px;
+        letter-spacing: 5px;
+        color: palegreen;
+        transition: all 0.5s;
+        text-align: center;
+    }
+    /* 햄버거 메뉴 누르고 나타나는 메뉴 */
     .nav_box .nav {
-        position: static; top: 50%; right: 0px; transform: translate(0, -50%);
+        position: fixed; top: 0px; right: 0px; bottom: 0px; right: 0px;
+        transform: translate(100%, 0);
+        background: rgba(0,0,0,0.8);
+        text-align: center;
+        width: 100%; height: 100%;
+        z-index: 999;
+    }
+    .nav_box .nav .rwd_bg {
+        background: #fff;
+        width: 60%; height: 100%;
+        position: fixed; right: 8.4%;
+    }
+    /* 햄버거 메뉴 누르면 나타나는 로고 */
+    .nav_box .nav h2 {
+        display: block;
+        position: absolute; top: 10%; left: 50%;
+        transform: translateX(-50%);
+        color: #000;
+        font-size: 50px;
+        border-bottom: 2px solid black;
+    }
+    .nav_box .nav .depth1 {
+        position: absolute; top: 25%; left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav_box .nav .depth1 > li {
+        display: block;
+        padding: 20px 0px;
+        font-weight: bold;
+        color: #000;
+    }
+    .nav_box .nav .depth1:hover .depth2 {
         display: none;
     }
+
+    
     /* 햄버거메뉴--------------------------------------------------------------------------------------- */
     .nav_box .open_nav {
         display: block;
         position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
         font-size: 20px;
     }
-    .nav_box .close_nav {
+    /* .nav_box .close_nav {
         display: none;
         position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
         font-size: 20px;
-    }
+    } */
+
+    
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
