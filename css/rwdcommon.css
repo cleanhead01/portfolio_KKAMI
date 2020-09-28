@@ -193,6 +193,21 @@
         font-size: 20px;
     } */
 
+    /* 푸터 메뉴 */
+    .footer_nav li a {
+        display: block;
+        font-size: 13px;
+        padding: 20px 0px;
+        color: #ffffff;
+    }
+    .footer_nav li a:hover {
+        display: block;
+        font-size: 13px;
+        padding: 20px 0px;
+        color: #63ebc4;
+        transition: all 0.5s;
+    }
+
     
 
 
