@@ -91,13 +91,13 @@
     // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
     $('.nav_box .open_nav').on('click', function(){
         $('.nav_box .nav').show().stop().animate({
-            transform: 'translate(0%, 0)'
+            left: '0'
         }, 500)
     })
     // 배경을 누르면 사라지기
     $('.nav').on('click', function(){
         $(this).stop().animate({
-            right: '100%'
+            left: '100%'
         }, 300)
     })
 
