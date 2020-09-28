@@ -15,11 +15,11 @@
         flag = false
         } else if ( ww <= 543 && !flag ) {
             $('.nav_box .open_nav').show()
-            $('.nav_box .nav').hide()
+            $('.nav_box .nav').hide()       
             flag = true
         }
     }
-
+    
     $(window).on('resize', function(){
         init()
     })
@@ -90,14 +90,14 @@
 
     // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
     $('.nav_box .open_nav').on('click', function(){
-        $('nav').stop().animate({
-            right: '100%'
+        $('.nav_box .nav').show().stop().animate({
+            transform: 'translate(0%, 0)'
         }, 500)
     })
     // 배경을 누르면 사라지기
     $('.nav').on('click', function(){
         $(this).stop().animate({
-            right: '0%'
+            right: '100%'
         }, 300)
     })
 

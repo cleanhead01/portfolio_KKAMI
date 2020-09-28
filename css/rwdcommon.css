@@ -145,7 +145,7 @@
     }
     /* 햄버거 메뉴 누르고 나타나는 메뉴 */
     .nav_box .nav {
-        position: fixed; top: 0px; right: 0px; bottom: 0px; right: 0px;
+        position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px;
         transform: translate(100%, 0);
         background: rgba(0,0,0,0.8);
         text-align: center;
