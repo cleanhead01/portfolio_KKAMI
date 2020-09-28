@@ -1,4 +1,4 @@
-(function(){
+(function($){
 
     // $(window).load(function(){
     //     $('.loadBox').delay(2000).fadeOut(500)
