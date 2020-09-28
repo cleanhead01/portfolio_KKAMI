@@ -4,6 +4,28 @@
     //     $('.loadBox').delay(2000).fadeOut(500)
     // })
 
+    init()
+
+    var flag = true;
+    function init() {
+        var ww = $(window).width()
+        if ( ww > 543 && flag ) {
+        $('.nav_box .nav').show()
+        $('.nav_box .open_nav').hide()
+        flag = false
+        } else if ( ww <= 543 && !flag ) {
+            $('.nav_box .open_nav').show()
+            $('.nav_box .nav').hide()
+            flag = true
+        }
+    }
+
+    $(window).on('resize', function(){
+        init()
+    })
+
+
+
     // 로딩화면 숫자 카운트세기
     var colorCode = ['hotpink', 'orange', 'blue']
     var minCnt = setInterval(minusCount, 1000);
@@ -33,6 +55,8 @@
     })
 
 
+
+
     // 각각 헤더 구역에서 서브페이지 이동 연결
     $('.nav_box .nav a').on('click', function(e){
         e.preventDefault()
@@ -41,12 +65,6 @@
         $('#containerBox').load(url)
     })
 
-    
-    
-    
-    
-    
-    
     
     
     
