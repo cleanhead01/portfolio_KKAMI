@@ -47,6 +47,7 @@
 
     $('#containerBox').load('main.html')
 
+    // 각각 로그인,회원가입,사이트맵 페이지 이동 연결
     $('.login_box a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -90,31 +91,21 @@
 
     // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
     $('.nav_box .open_nav').on('click', function(){
-        $('.nav_box .nav').show().stop().animate({
-            left: '0'
-        }, 500)
+        if ($(window).width() <= 543) {
+            $('.nav_box .nav').show().stop().animate({
+                left: '0'
+            }, 500)
+        }
     })
+
     // 배경을 누르면 사라지기
     $('.nav').on('click', function(){
-        $(this).stop().animate({
-            left: '100%'
-        }, 300)
+        if ($(window).width() <= 543) {
+            $(this).stop().animate({
+                left: '100%'
+            }, 300)
+        }
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
