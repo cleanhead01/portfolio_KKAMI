@@ -41,6 +41,18 @@
         display: none;
     }
 
+    /* 슬라이드 구역 */
+    .slide_outer {
+        position: relative; height: 592.91px; overflow: hidden;
+    }
+    .slide_outer .slide_inner .slide {
+        width: 100%; height: 592.91px;
+        /* height: 100%;  */
+        background-size: cover; background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
 }
 
 
@@ -102,6 +114,18 @@
     /* 메뉴2 호버하면 화살표 */
     .nav_box .nav .depth1 li .depth2::before {
         display: none;
+    }
+
+    /* 슬라이드 구역 */
+    .slide_outer {
+        position: relative; height: 492.91px; overflow: hidden;
+    }
+    .slide_outer .slide_inner .slide {
+        width: 100%; height: 492.91px;
+        /* height: 100%;  */
+        background-size: cover; background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
     }
 
 
