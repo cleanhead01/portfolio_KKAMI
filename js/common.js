@@ -9,11 +9,11 @@
     var flag = true;
     function init() {
         var ww = $(window).width()
-        if ( ww > 543 && flag ) {
+        if ( ww > 560 && flag ) {
         $('.nav_box .nav').show()
         $('.nav_box .open_nav').hide()
         flag = false
-        } else if ( ww <= 543 && !flag ) {
+        } else if ( ww <= 560 && !flag ) {
             $('.nav_box .open_nav').show()
             $('.nav_box .nav').hide()       
             flag = true
@@ -91,7 +91,7 @@
 
     // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
     $('.nav_box .open_nav').on('click', function(){
-        if ($(window).width() <= 543) {
+        if ($(window).width() <= 560) {
             $('.nav_box .nav').show().stop().animate({
                 left: '0'
             }, 500)
@@ -100,7 +100,7 @@
 
     // 배경을 누르면 사라지기
     $('.nav').on('click', function(){
-        if ($(window).width() <= 543) {
+        if ($(window).width() <= 560) {
             $(this).stop().animate({
                 left: '100%'
             }, 300)

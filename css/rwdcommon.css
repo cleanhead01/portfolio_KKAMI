@@ -125,7 +125,7 @@
 }
 
 /* max-widtt:543px */
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 560px) {
 
     .nav_box h1 {
         display: block;
