@@ -10,15 +10,19 @@
     function init() {
         var ww = $(window).width()
         if ( ww > 560 && flag ) {
-        $('.nav_box .nav').show()
-        $('.nav_box .open_nav').hide()
-        flag = false
+            $('.nav_box .nav').show()
+            $('.nav_box .open_nav, .nav_box .close_nav').hide()
+            $('html').addClass('pc').removeClass('mobile')
+            flag = false
         } else if ( ww <= 560 && !flag ) {
             $('.nav_box .open_nav').show()
             $('.nav_box .nav').hide()       
+            $('html').addClass('mobile').removeClass('pc')
             flag = true
         }
     }
+
+    init()
     
     $(window).on('resize', function(){
         init()
@@ -89,23 +93,22 @@
     )
 
 
-    // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
+
+    // 햄버거 버튼 클릭하면 메뉴가 슬라이드 업,다운 하기
     $('.nav_box .open_nav').on('click', function(){
-        if ($(window).width() <= 560) {
-            $('.nav_box .nav').show().stop().animate({
-                left: '0'
-            }, 500)
-        }
+        $(this).next('.nav').stop().slideDown(300)
+        $(this).hide()
+        $(this).nextAll('.close_nav').show()
     })
 
-    // 배경을 누르면 사라지기
-    $('.nav').on('click', function(){
-        if ($(window).width() <= 560) {
-            $(this).stop().animate({
-                left: '100%'
-            }, 300)
-        }
+    $('.nav_box .close_nav').on('click', function(){
+        $(this).prev('.nav').stop().slideUp(300)
+        $(this).hide()
+        $(this).prevAll('.open_nav').show()
     })
+
+
+    
 
 
 
