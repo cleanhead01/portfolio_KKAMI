@@ -70,10 +70,6 @@
 .nav_box .nav {
     position: absolute; top: 50%; right: 0px; transform: translate(0, -50%);
 }
-/* 반응형 제일 작은 로고 */
-.nav_box .nav h2 {
-    display: none;
-}
 .nav_box .nav .depth1 > li {
     display: inline-block;
     padding: 0px 20px;

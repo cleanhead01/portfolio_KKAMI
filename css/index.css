@@ -92,9 +92,10 @@
 }
 /* 슬라이드 구역 도트----------------------------------------------------------------------- */
 .slide_outer .slick-dots {
-    position: absolute; top: 85%; left: 50%;
+    position: absolute; bottom: 30px; left: 50%;
     transform: translateX(-50%);
 }
+
 .slide_outer .slick-dots li {
     display: inline-block;
 }
@@ -114,12 +115,13 @@
 }
 /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
 .slide_outer .plpa {
-    position: absolute; top: 84.9%; left: 53%;
+    position: absolute; bottom: 30px; left: 50%;
     font-size: 15px;
-    padding: 4px 0px;
+    margin-left: 60px;
     background: none; color: #fff;
     border-radius: none;
 }
+
 /* 사업영역---------------------------------------------------------------------------------------------- */
 #section .title h2 {
     text-align: center;

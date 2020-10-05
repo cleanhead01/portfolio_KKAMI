@@ -9,41 +9,7 @@
 태블릿은 1024~768
 모바일은 768이하 */
 
-/* max-width:1700px 도트버튼 */ 
-@media screen and (max-width:1700px) {
 
-    /* 슬라이드 구역 도트----------------------------------------------------------------------- */
-    .slide_outer .slick-dots {
-        position: absolute; top: 85%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .slide_outer .slick-dots li {
-        display: inline-block;
-    }
-    .slide_outer .slick-dots li button {
-        width: 15px; height: 15px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: none;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
-    }
-    .slide_outer .slick-dots li.slick-active button { 
-        width: 15px; height: 15px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: #fff;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
-    }
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 84.9%; left: 53%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #fff;
-        border-radius: none;
-    }
-
-}
 
 /* max-width:1025~1499px */
 @media screen and (max-width:1499px) {
@@ -87,114 +53,6 @@
         background-size: cover; background-position: center;
         background-repeat: no-repeat;
         position: relative;
-    }
-
-}
-
-/* max-width:1400px 슬라이드(도트) */
-@media screen and (max-width:1400px) {
-
-    /* 슬라이드 구역 도트----------------------------------------------------------------------- */
-    .slide_outer .slick-dots {
-        position: absolute; top: 85%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .slide_outer .slick-dots li {
-        display: inline-block;
-    }
-    .slide_outer .slick-dots li button {
-        width: 13px; height: 13px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: none;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
-    }
-    .slide_outer .slick-dots li.slick-active button { 
-        width: 13px; height: 13px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: #fff;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
-    }
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 84.9%; left: 53%;
-        font-size: 13px;
-        padding: 4px 0px;
-        background: none; color: #fff;
-        border-radius: none;
-    }
-
-}
-
-/* max-width:1250px 슬라이드(도트) */
-@media screen and (max-width:1250px) {
-    
-    /* 슬라이드 구역 도트----------------------------------------------------------------------- */
-    .slide_outer .slick-dots {
-        position: absolute; top: 85%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .slide_outer .slick-dots li {
-        display: inline-block;
-    }
-    .slide_outer .slick-dots li button {
-        width: 13px; height: 13px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: none;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 2px;
-    }
-    .slide_outer .slick-dots li.slick-active button { 
-        width: 13px; height: 13px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: #fff;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 2px;
-    }
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 84.9%; left: 53%;
-        font-size: 13px;
-        padding: 4px 0px;
-        background: none; color: #fff;
-        border-radius: none;
-    }
-    
-}
-
-/* max-width:1100px 슬라이드(도트) */ 
-@media screen and (max-width:1100px) {
-
-    /* 슬라이드 구역 도트----------------------------------------------------------------------- */
-    .slide_outer .slick-dots {
-        position: absolute; top: 85%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .slide_outer .slick-dots li {
-        display: inline-block;
-    }
-    .slide_outer .slick-dots li button {
-        width: 11px; height: 11px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: none;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 2px;
-    }
-    .slide_outer .slick-dots li.slick-active button { 
-        width: 11px; height: 11px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: #fff;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 2px;
-    }
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 84.9%; left: 53%;
-        font-size: 11px;
-        padding: 4px 0px;
-        background: none; color: #fff;
-        border-radius: none;
     }
 
 }
@@ -272,98 +130,10 @@
         right: 70px;
     }
 
-    /* 슬라이드 구역 도트----------------------------------------------------------------------- */
-    .slide_outer .slick-dots {
-        position: absolute; top: 85%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .slide_outer .slick-dots li {
-        display: inline-block;
-    }
-    .slide_outer .slick-dots li button {
-        width: 11px; height: 11px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: none;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 5px;
-    }
-    .slide_outer .slick-dots li.slick-active button { 
-        width: 11px; height: 11px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: #fff;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 5px;
-    }
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 84.9%; left: 55%;
-        font-size: 11px;
-        padding: 4px 0px;
-        background: none; color: #fff;
-        border-radius: none;
-    }
 
 }
 
-/* max-widtt:900px 슬라이드(화살표,도트) */
-@media screen and (max-width:900px) {
 
-    /* 슬라이드 화살표--------------------------------------------------------------------------------------- */
-    .slide_outer .arr {
-        color: #ffffff;
-        position: absolute; top: 50%; transform: translateY(-50%);
-        font-size: 30px;
-        cursor: pointer;
-        background: none;
-        border: none;
-    }
-    .slide_outer .arr:hover {
-        color: #ffffff;
-        opacity: 0.5;
-        transition: all 0.5s;
-        position: absolute; top: 50%; transform: translateY(-50%);
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .slide_outer .prev {
-        left: 50px; z-index: 99;
-    }
-    .slide_outer .next {
-        right: 50px;
-    }
-
-    /* 슬라이드 구역 도트----------------------------------------------------------------------- */
-    .slide_outer .slick-dots {
-        position: absolute; top: 85%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .slide_outer .slick-dots li {
-        display: inline-block;
-    }
-    .slide_outer .slick-dots li button {
-        width: 11px; height: 11px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: none;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
-    }
-    .slide_outer .slick-dots li.slick-active button { 
-        width: 11px; height: 11px;
-        border-radius: 50%; border: 1px solid #fff;
-        background: #fff;
-        text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
-    }
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 84.9%; left: 54.5%;
-        font-size: 11px;
-        padding: 4px 0px;
-        background: none; color: #fff;
-        border-radius: none;
-    }
-
-}
 
 /* max-width:810px 슬라이드 텍스트 */
 @media screen and (max-width:810px) {
@@ -457,10 +227,10 @@
 
     /* 슬라이드 구역 */
     .slide_outer {
-        position: relative; height: 452.91px; overflow: visible;
+        position: relative; height: 402.91px; overflow: visible;
     }
     .slide_outer .slide_inner .slide {
-        width: 100%; height: 402.91px;
+        width: 100%; height: 352.91px;
         /* height: 100%;  */
         background-size: cover; background-position: center;
         background-repeat: no-repeat;
@@ -487,7 +257,7 @@
         padding: 0px;
     }
     .slide_outer .slide_inner .slide .text span:nth-of-type(2) {
-        padding: 0px 0px 20px;
+        padding: 0px 0px 30px;
     }
     .slide_outer .slide_inner .slide .text p {
         width: 160px; height: 50px;
@@ -511,13 +281,14 @@
         display: block;
         font-size: 15px;
         color: #ccc;
-        position: absolute; top: 10%; right: 22%;
+        position: absolute; top: 10px; left: 50%;
+        padding-left: 170px;
     }
 
     /* 슬라이드 화살표--------------------------------------------------------------------------------------- */
     .slide_outer .arr {
         color: #aaa;
-        position: absolute; top: 112%; transform: translateY(-112%);
+        position: absolute; bottom: -40px; transform: translateY(0%);
         font-size: 30px;
         cursor: pointer;
         background: none;
@@ -527,9 +298,12 @@
         color: #aaa;
         opacity: 0.5;
         transition: all 0.5s;
-        position: absolute; top: 112%; transform: translateY(-112%);
+        position: absolute; bottom: -40px; transform: translateY(0%);
         font-size: 30px;
         cursor: pointer;
+    }
+    .slide_outer .arr i {   /* 화살표 버튼이 갖고있는 height때문에 i 태그에 직접 bottom 0값을 준다. */
+        position: absolute; bottom: 0px;
     }
     .slide_outer .prev {
         left: 80px; z-index: 99;
@@ -540,32 +314,33 @@
 
     /* 슬라이드 구역 도트----------------------------------------------------------------------- */
     .slide_outer .slick-dots {
-        position: absolute; top: 105%; left: 50%;
+        position: absolute; bottom: -35px; left: 50%;
         transform: translateX(-50%);
     }
+
     .slide_outer .slick-dots li {
         display: inline-block;
     }
     .slide_outer .slick-dots li button {
-        width: 13px; height: 13px;
-        border-radius: 50%; border: 1px solid #aaa;
-        background: none;
+        width: 15px; height: 15px;
+        border-radius: 50%; border: 1px solid #ccc;
+        background: #ccc;
         text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
+        margin: 0px 5px;
     }
     .slide_outer .slick-dots li.slick-active button { 
-        width: 13px; height: 13px;
-        border-radius: 50%; border: 1px solid #aaa;
-        background: #333;
+        width: 15px; height: 15px;
+        border-radius: 50%; border: 1px solid lime;
+        background: lime;
         text-indent: -99999px; overflow: hidden;
-        margin: 0px 3px;
+        margin: 0px 5px;
     }
     /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
     .slide_outer .plpa {
-        position: absolute; top: 93%; left: 55.5%;
+        position: absolute; bottom: 16px; left: 50%;
         font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
+        margin-left: 55px;
+        background: none; color: #ccc;
         border-radius: none;
     }
 
@@ -583,82 +358,11 @@
         color: #63ebc4;
         transition: all 0.5s;
     }
-    
-
-
-}
-
-/* max-width:730px 슬라이드(더보기,도트) */
-@media screen and (max-width:730px) {
-
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 15px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 20%;
-    }
-
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 93%; left: 55.5%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
-
-}
-
-/* max-width:700px 슬라이드(더보기) */
-@media screen and (max-width:700px) {
-
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 15px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 18%;
-    }
 
     
 }
 
-/* max-width:640px 슬라이드(더보기,도트) */
-@media screen and (max-width:640px) {
 
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 15px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 15%;
-    }
-
-    
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 93%; left: 56.5%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
-    
-}
-
-/* max-width:590px 슬라이드(더보기,도트) */
-@media screen and (max-width:590px) {
-
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 15px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 12%;
-    }
-    
-}
 
 /* max-widtt:560px */
 @media screen and (max-width: 560px) {
@@ -681,40 +385,25 @@
     }
     /* 햄버거 메뉴 누르고 나타나는 메뉴 */
     .nav_box .nav {
-        position: fixed; top: 0px; right: 0px; bottom: 0px; left: 100%;
-        overflow: hidden;
-        transform: translate(0, 0);
-        background: rgba(0,0,0,0.8);
+        position: absolute; top: 100%; right: 0px; transform: translate(0, 0%);
         text-align: center;
-        z-index: 999;
-    }
-    .nav_box .nav .rwd_bg {
-        background: #fff;
-        width: 60%; height: 100%;
-        position: fixed; right: 0%;
-    }
-    /* 햄버거 메뉴 누르면 나타나는 로고 */
-    .nav_box .nav h2 {
-        display: block;
-        position: absolute; top: 10%; left: 50%;
-        transform: translateX(-50%);
-        color: #000;
-        font-size: 50px;
-        border-bottom: 2px solid black;
-    }
-    .nav_box .nav .depth1 {
-        position: absolute; top: 25%; left: 50%;
-        transform: translateX(-50%);
-    }
-    .nav_box .nav .depth1 > li {
-        display: block;
-        padding: 20px 0px;
-        font-weight: bold;
-        color: #000;
-    }
-    .nav_box .nav .depth1:hover .depth2 {
+        background: rgb(27,22,26);
         display: none;
+        z-index: 999;
+        width: 100%;
     }
+
+    .nav_box .nav .depth1 > li {
+        display: inline-block;
+        padding: 20px 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .nav_box .nav .depth1 > li > a:hover {
+        color: #98885c;
+        transition: all 0.5s;
+    }
+
 
     
     /* 햄버거메뉴--------------------------------------------------------------------------------------- */
@@ -723,58 +412,25 @@
         position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
         font-size: 20px;
     }
-    /* .nav_box .close_nav {
+    .nav_box .close_nav {
         display: none;
         position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
         font-size: 20px;
-    } */
+    }
 
     /* 슬라이드 구역 */
     .slide_outer {
-        position: relative; height: 402.91px; overflow: visible;
+        position: relative; height: 352.91px; overflow: visible;
     }
     .slide_outer .slide_inner .slide {
-        width: 100%; height: 352.91px;
+        width: 100%; height: 302.91px;
         /* height: 100%;  */
         background-size: cover; background-position: center;
         background-repeat: no-repeat;
         position: relative;
     }
 
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 15px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 10%;
-    }
-
-    /* 슬라이드 화살표--------------------------------------------------------------------------------------- */
-    .slide_outer .arr {
-        color: #aaa;
-        position: absolute; top: 114%; transform: translateY(-112%);
-        font-size: 30px;
-        cursor: pointer;
-        background: none;
-        border: none;
-    }
-    .slide_outer .arr:hover {
-        color: #aaa;
-        opacity: 0.5;
-        transition: all 0.5s;
-        position: absolute; top: 114%; transform: translateY(-112%);
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 91%; left: 58%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
+    
 
 
     /* 푸터 메뉴 */
@@ -797,173 +453,59 @@
 
 }
 
-/* max-width:520px 슬라이드(더보기,도트) */
-@media screen and (max-width:520px) {
 
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 15px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 8%;
+/* max-width:450px */
+@media screen and (max-width:450px) {
+
+    /* 슬라이드 구역 */
+    .slide_outer {
+        position: relative; height: 352.91px; overflow: visible;
+    }
+    .slide_outer .slide_inner .slide {
+        width: 100%; height: 302.91px;
+        /* height: 100%;  */
+        background-size: cover; background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
     }
 
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 91%; left: 59%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
-    
-    
-}
-
-/* max-width:490px 슬라이드(텍스트) */
-@media screen and (max-width:490px) {
-
     /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
+    .slide_outer .slide_inner .slide .text {
+        color: #ffffff; background: rgba(50,50,50,0.8);
+        position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
     .slide_outer .slide_inner .slide .text h2 {
-        font-size: 35px;
+        font-size: 30px;
         padding: 0px 0px 0px;
     }
+
+    /* 더보기 */
     .slide_outer .slide_inner .slide .text > a {
         display: block;
-        font-size: 10px;
+        font-size: 12px;
         color: #ccc;
-        position: absolute; top: 10%; right: 10%;
+        position: absolute; top: 10px; left: 50%;
+        padding-left: 115px;
     }
-}
-
-/* max-width:420px 슬라이드(텍스트) */
-@media screen and (max-width:420px) {
 
     /* 슬라이드 화살표--------------------------------------------------------------------------------------- */
     .slide_outer .prev {
-        left: 30px; z-index: 99;
+        left: 50px; z-index: 99;
     }
     .slide_outer .next {
-        right: 30px;
+        right: 50px;
     }
-
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 91%; left: 60%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
-
 
 }
 
-/* max-width:380px 슬라이드(텍스트,도트) */
-@media screen and (max-width:380px) {
-
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text {
-        color: #ffffff; background: rgba(50,50,50,0.8);
-        position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);
-        text-align: center;
-        width: 100%;
-    }
-    .slide_outer .slide_inner .slide .text h2 {
-        font-size: 30px;
-        padding: 0px 0px 0px;
-    }
-    .slide_outer .slide_inner .slide .text span {
-        display: block;
-        padding: 0px 0px 0px;
-        font-size: 10px;
-    }
-    .slide_outer .slide_inner .slide .text span:nth-of-type(1) {
-        padding: 0px;
-    }
-    .slide_outer .slide_inner .slide .text span:nth-of-type(2) {
-        padding: 0px 0px 20px;
-    }
-    .slide_outer .slide_inner .slide .text p {
-        width: 160px; height: 50px;
-        border: 1px solid ivory; border-radius: 10px;
-        background: rgba(0,0,0,0.5);
-        padding: 14px 0px; margin: 40px auto 0px;
-        font-size: 10px;
-        display: none;
-    }
-    .slide_outer .slide_inner .slide .text p:hover {
-        width: 160px; height: 50px;
-        border: 1px solid ivory; border-radius: 10px;
-        background: rgba(108, 96, 81, 0.7);
-        transition: all 0.5s;
-        cursor: pointer;
-        padding: 14px 0px; margin: 40px auto 0px;
-        font-size: 10px;
-        display: none;
-    }
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 10px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 8%;
-    }
-
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 91%; left: 62%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
 
 
-}
-
-/* max-width:340px 슬라이드(텍스트,도트) */
-@media screen and (max-width:340px) {
-
-    /* 슬라이드 텍스트-------------------------------------------------------------------------------------------- */
-    .slide_outer .slide_inner .slide .text {
-        color: #ffffff; background: rgba(50,50,50,0.8);
-        position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);
-        text-align: center;
-        width: 100%;
-    }
-    .slide_outer .slide_inner .slide .text h2 {
-        font-size: 30px;
-        padding: 0px 0px 0px;
-    }
-    .slide_outer .slide_inner .slide .text span {
-        display: block;
-        padding: 0px 0px 0px;
-        font-size: 8px;
-    }
-    .slide_outer .slide_inner .slide .text span:nth-of-type(1) {
-        padding: 0px;
-    }
-    .slide_outer .slide_inner .slide .text span:nth-of-type(2) {
-        padding: 0px 0px 20px;
-    }
-    .slide_outer .slide_inner .slide .text > a {
-        display: block;
-        font-size: 10px;
-        color: #ccc;
-        position: absolute; top: 10%; right: 7%;
-    }
-
-    /* 슬라이드 구역 재생버튼-------------------------------------------------------------------- */
-    .slide_outer .plpa {
-        position: absolute; top: 91%; left: 62%;
-        font-size: 15px;
-        padding: 4px 0px;
-        background: none; color: #aaa;
-        border-radius: none;
-    }
 
 
-}
+
+
 
 
 
