@@ -480,6 +480,12 @@
         font-size: 30px;
         padding: 0px 0px 0px;
     }
+    .slide_outer .slide_inner .slide .text span {
+        display: block;
+        padding: 0px 0px 0px;
+        font-size: 10px;
+        text-align: center justify;
+    }
 
     /* 더보기 */
     .slide_outer .slide_inner .slide .text > a {
