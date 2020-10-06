@@ -9,20 +9,23 @@
     var flag = true;
     function init() {
         var ww = $(window).width()
-        if ( ww > 560 && flag ) {
-            $('.nav_box .nav').show()
-            $('.nav_box .open_nav, .nav_box .close_nav').hide()
+        if ( ww > 560 ) {
             $('html').addClass('pc').removeClass('mobile')
-            flag = false
-        } else if ( ww <= 560 && !flag ) {
-            $('.nav_box .open_nav').show()
-            $('.nav_box .nav').hide()       
+            if ( flag ) {
+                $('.nav_box .nav').show()
+                $('.nav_box .open_nav, .nav_box .close_nav').hide()
+                flag = false
+            }
+        } else if ( ww <= 560 ) {
             $('html').addClass('mobile').removeClass('pc')
-            flag = true
+            if ( !flag ) {
+                $('.nav_box .open_nav').show()
+                $('.nav_box .nav').hide()       
+                flag = true
+            }
         }
     }
 
-    init()
     
     $(window).on('resize', function(){
         init()
