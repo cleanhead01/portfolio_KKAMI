@@ -186,11 +186,11 @@
 .photo_gall {
     margin-bottom: 35px;
 }
-.photo_gall .slide_gall .slide_gall {
+/* .photo_gall .slide_gall .slide_gall {
     float: left;
-}
+} */
 .photo_gall .slide_gall div img {
-    width: 100%; 
+    width: 100%;
     padding: 0px 10px;
 }
 .photo_gall .slick-slide {
@@ -371,6 +371,23 @@
     position: relative;
     margin-bottom: 105px;
 }
+.partner img {
+    /* margin: 0px auto; */
+    width: 100%;
+}
+.partner .slick-slide {
+    opacity: 0.6;
+    transform: scale(0.6);
+    transition: all 0.5s;
+}
+.partner .slick-slide.slick-active {
+    opacity: 1;
+    transform: scale(0.8);
+}
+.partner .slick-slide.slick-active.slick-current {
+    opacity: 1;
+    transform: scale(1);
+}
 
 /* 제휴파트너 화살표----------------------------------------------------------------------------------------- */
 .partner .arr {
@@ -401,7 +418,7 @@
 }
 .partner .slick-dots li {
     display: inline-block;
-    width: 50%;
+    width: 20%;
 }
 .partner .slick-dots li button {
     width: 13px; height: 13px;
