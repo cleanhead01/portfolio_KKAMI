@@ -135,7 +135,7 @@
     /* 사업영역-------------------------------------------------------------------------------- */
     .business .busi_photo div {
         height: auto;
-        overflow: visible;
+        overflow: hidden;
     }
     .business ul > li {
         width: 49%;
