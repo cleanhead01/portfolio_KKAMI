@@ -494,7 +494,7 @@
 
     // 제휴파트너 슬라이드 --------------------------------------------------------------        
     $('.partner .ddong').slick({
-        autoplay : false,
+        autoplay : true,
         autoplaySpeed : 3000,
         dots : true,
         speed : 500,
@@ -514,6 +514,13 @@
             settings:{
                 centerPadding: '0px',
                 arrows:false
+
+            }
+        },
+        {
+            breakpoint:561,
+            settings:{
+                slidesToShow : 1,
 
             }
         }]
