@@ -148,6 +148,7 @@
     width: 24%;
     display: inline-block;
     opacity: 0;
+    vertical-align: top;
 }
 .business ul > li img {
     width: 100%;

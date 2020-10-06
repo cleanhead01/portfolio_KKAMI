@@ -131,6 +131,53 @@
     }
 
 
+
+    /* 사업영역-------------------------------------------------------------------------------- */
+    .business .busi_photo div {
+        height: auto;
+        overflow: visible;
+    }
+    .business ul > li {
+        width: 49%;
+        display: inline-block;
+        opacity: 0;
+    }
+    .business ul > li h3 {
+        text-align: center;
+        font-size: 22px;
+        padding: 15px 0px 5px;
+    }
+    .business ul > li p {
+        font-size: 14px;
+        color: #464646;
+        padding: 10px 0px;
+    }
+
+    /* 주요강사진-------------------------------------------------------------------------------------------- */
+    .main_teacher .teacher_box {
+        width: 49%;
+        float: left;
+        text-align: center;
+        padding: 10px 0px 80px; margin: 0px 0.5%;
+    }
+    .main_teacher .teacher_box h3 {
+        font-size: 40px;
+        color: #777777;
+        padding: 25px 0px 0px;
+    }
+    .main_teacher .teacher_box p {
+        font-size: 25px;
+        color: #949494;
+        padding: 5px 0px;
+    }
+    .main_teacher .teacher_box .teacher_mail {
+        color: #949494;
+        font-size: 20px;
+    }
+
+    
+
+
 }
 
 
@@ -168,6 +215,33 @@
         cursor: pointer;
         padding: 14px 0px; margin: 40px auto 0px;
         font-size: 13px;
+    }
+
+
+    /* 제품가격표-------------------------------------------------------------------------------------------- */
+    .menu .menu_list {
+        width: 24%;
+        display: inline-block;
+        text-align: center;
+        padding: 0px 15px;
+        opacity: 0;
+    }
+    .menu .menu_list .buy_now {
+        display: block;
+        width: 100px; height: 40px;
+        font-size: 14px; font-weight: bold;
+        border: 2px solid #000000; border-radius: 30px;
+        padding: 9px 0px; margin: 40px auto 0px;
+        transition: all 1s;
+    }
+    .menu .menu_list .buy_now:hover {
+        display: block;
+        width: 100px; height: 40px;
+        font-size: 14px; font-weight: bold;
+        background: #8dc63f; color: #ffffff;
+        border-radius: 30px; border: 2px solid #8dc63f;
+        transition: all 1s;
+        padding: 9px 0px; margin: 40px auto 0px;
     }
 
 }
@@ -288,7 +362,7 @@
     /* 슬라이드 화살표--------------------------------------------------------------------------------------- */
     .slide_outer .arr {
         color: #aaa;
-        position: absolute; bottom: -40px; transform: translateY(0%);
+        position: absolute; top: 112%; transform: translateY(0%);
         font-size: 30px;
         cursor: pointer;
         background: none;
@@ -298,7 +372,7 @@
         color: #aaa;
         opacity: 0.5;
         transition: all 0.5s;
-        position: absolute; bottom: -40px; transform: translateY(0%);
+        position: absolute; top: 112%; transform: translateY(0%);
         font-size: 30px;
         cursor: pointer;
     }
@@ -357,6 +431,54 @@
         padding: 20px 10px;
         color: #63ebc4;
         transition: all 0.5s;
+    }
+
+
+    /* 제품가격표-------------------------------------------------------------------------------------------- */
+    .menu .menu_list {
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+        padding: 0px 15px;
+        opacity: 0;
+    }
+    .menu .menu_list:nth-child(3),
+    .menu .menu_list:nth-child(4) {
+        margin-bottom: 20px;
+    }
+    .menu .menu_list .buy_now {
+        display: block;
+        width: 150px; height: 50px;
+        font-size: 17px; font-weight: bold;
+        border: 2px solid #000000; border-radius: 30px;
+        padding: 10px 0px; margin: 40px auto 0px;
+        transition: all 1s;
+    }
+    .menu .menu_list .buy_now:hover {
+        display: block;
+        width: 150px; height: 50px;
+        font-size: 17px; font-weight: bold;
+        background: #8dc63f; color: #ffffff;
+        border-radius: 30px; border: 2px solid #8dc63f;
+        transition: all 1s;
+        padding: 10px 0px; margin: 40px auto 0px;
+    }
+
+    .menu .menu_list h2 {
+        font-size: 35px;
+        padding: 16.5px 0px;
+        color: #ffffff;
+        border-top-left-radius: 20px; border-top-right-radius: 20px;
+    }
+    .menu .menu_list h3 {
+        font-size: 30px;
+        padding: 19px 0px 19px;
+        background: #e7eaec;
+    }
+    .menu .menu_list p {
+        font-size: 25px;
+        color: #777777;
+        padding: 10px 0px;
     }
 
     
@@ -428,6 +550,23 @@
         background-size: cover; background-position: center;
         background-repeat: no-repeat;
         position: relative;
+    }
+
+
+    /* 주요강사진-------------------------------------------------------------------------------------------- */
+    .main_teacher .teacher_box h3 {
+        font-size: 30px;
+        color: #777777;
+        padding: 25px 0px 0px;
+    }
+    .main_teacher .teacher_box p {
+        font-size: 20px;
+        color: #949494;
+        padding: 5px 0px;
+    }
+    .main_teacher .teacher_box .teacher_mail {
+        color: #949494;
+        font-size: 15px;
     }
 
     
@@ -502,6 +641,13 @@
     }
     .slide_outer .next {
         right: 50px;
+    }
+
+    /* 사업영역-------------------------------------------------------------------------------- */
+    .business ul > li h3 {
+        text-align: center;
+        font-size: 20px;
+        padding: 15px 0px 5px;
     }
 
 }
