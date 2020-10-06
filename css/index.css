@@ -372,8 +372,8 @@
     margin-bottom: 105px;
 }
 .partner img {
-    /* margin: 0px auto; */
-    width: 100%;
+    margin: 0px auto;
+    /* width: 100%; */
 }
 .partner .slick-slide {
     opacity: 0.6;
