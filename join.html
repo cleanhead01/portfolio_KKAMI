@@ -85,7 +85,7 @@
                         <li>
                             <label for="phone" class="essential">휴대폰</label>
                             <div class="input_lbl">
-                                <input type="tel" id="phone" placeholder='휴대폰번호 "-" 없이 숫자만 입력해주세요' class="w300">
+                                <input type="tel" id="phone" placeholder='휴대폰번호 "-" 없이 숫자만 입력' class="w300">
                             </div>
                         </li>
                         <li>
@@ -127,6 +127,23 @@
 <script>
 
 (function($){
+
+
+    // var flagJoin = true;
+    // initJoin()
+    // function initJoin() {
+    //     if ($('html').hasClass('mobile') && flagJoin) {
+    //         $('.input_lbl select[id=tel_choice]').attr('<br>')
+    //         flagJoin = false
+    //     } else if ($('html').hasClass('pc') && !flagJoin) {
+    //         $('.input_lbl').find('br').remove()
+    //         flagJoin = true
+    //     }
+    // }
+
+    // $(window).resize(function(){
+    //     initJoin()
+    // })
 
 
     $('form').submit(function(){
@@ -241,9 +258,9 @@
 
 
         // 집 전화번호 유효성 체크 : 첫번째는 3~4개 숫자, 두번째는 4개 숫자
-        ^ : 시작 표시
-        $ : 끝 표시
-        + : 한번 이상 포함
+        // ^ : 시작 표시
+        // $ : 끝 표시
+        // + : 한번 이상 포함
         var tel1 = $('#home_tel1').val()
         var tel2 = $('#home_tel2').val()
         if (!/^\d{3,4}$/.test(tel1)) {
