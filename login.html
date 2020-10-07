@@ -28,10 +28,10 @@
                             <a href="#"><i class="fas fa-shield-alt"></i>보안센터</a>
                         </div>
                         <div class="button_box">
-                            <button type="submit"><span>KFC 로그인</span></button>
-                            <button type="submit"><span>LOTTERIA 로그인</span></button>
-                            <button type="submit"><span>Mcdonald's 로그인</span></button>
-                            <button type="submit"><span>BURGER KING 로그인</spa></button>
+                            <button type="submit"><span>Facebook 로그인</spa></button>
+                            <button type="submit"><span>Google 로그인</span></button>
+                            <button type="submit"><span>Naver 로그인</span></button>
+                            <button type="submit"><span>Daum 로그인</span></button>
                         </div>
                     </div>
                 </fieldset>
@@ -39,3 +39,35 @@
         </div>
     </section>
 </div>
+
+
+<script>
+
+    (function($){
+
+        var flagLogin = true;
+        initLogin()
+        function initLogin() {
+            if ($('html').hasClass('mobile') && flagLogin) {
+                $('.check_box label').after('<br>')
+                // $('.idpw_box input:first-child').attr({placeholder:'이메일 주소'})
+                flagLogin = false
+            } else if ($('html').hasClass('pc') && !flagLogin) {
+                $('.check_box').find('br').remove()
+                // $('.idpw_box input:first-child').attr({placeholder:''})
+                flagLogin = true
+            }
+        }
+
+        $(window).resize(function(){
+            initLogin()
+        })
+
+    })(jQuery)
+
+
+
+
+
+
+</script>

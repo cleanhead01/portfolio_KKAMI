@@ -20,7 +20,7 @@
 #login_back .idpw_box input {
     display: block;
     font-size: 16px;
-    width: 500px; height: 60px;
+    width: 100%; height: 60px;
     padding: 20px 0px 0px 10px;
     border-bottom: 1px solid #000000;
 }
@@ -63,86 +63,251 @@
     color: #333333;
 }
 /* 버튼 로그인박스---------------------------------------------------------------------------------- */
-#login_back .login_content button {
-    display: block;
-    margin: 5px auto; padding: 10px 0px;
-    font-size: 14px;
-    width: 300px;
-    background: #ffffff;
-    border: 1px solid #cccccc; border-radius: 10px;    
-}
 #login_back .login_content .button_login {
     background: pink;
     font-size: 18px;
     font-weight: bold;
+    display: block;
+    margin: 5px auto; padding: 10px 0px;
+    font-size: 20px;
+    width: 50%;
+    border: 1px solid #cccccc; border-radius: 10px;
+    transition: all 0.5s;
 }
 #login_back .login_content .button_login:hover {
     background: pink; color: #ffffff;
     font-size: 18px;
     font-weight: bold;
+    display: block;
+    margin: 5px auto; padding: 10px 0px;
+    font-size: 20px;
+    width: 50%;
+    border: 1px solid #cccccc; border-radius: 10px; 
     transition: all 0.5s;
 }
 /* 버튼 햄버거박스---------------------------------------------------------------------------------- */
+#login_back .login_content .button_box {
+    width: 100%;
+}
 #login_back .login_content .button_box button {
-    height: 54px;
-    vertical-align: middle;
+    display: block;
+    margin: 5px auto;
+    font-size: 16px;
+    width: 50%; height: 40px; line-height: 40px;
+    background: #ffffff;
+    border: 1px solid #999; border-radius: 10px;  
+    overflow: hidden;
 }
-#login_back .login_content .button_box button:nth-child(1) span::before {
-    content: "";
-    display: inline-block;
-    width: 22px; height: 22px;
-    background: url(../images/hamburger.png) no-repeat;
-    background-size: 50px auto; background-position: -5px -19px;
-    position: relative; top: 5px; right: 30%;
-    vertical-align: middle;
+#login_back .login_content .button_box button span {
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    font-weight: bold;
+    display: block;
 }
-#login_back .login_content .button_box button:nth-child(2) span::before {
-    content: "";
-    display: inline-block;
-    width: 22px; height: 29px;
-    background: url(../images/hamburger.png) no-repeat;
-    background-size: 50px auto; background-position: -11px -62px;
-    position: relative; top: 5px; right: 23%;
-    vertical-align: middle;
-}
-#login_back .login_content .button_box button:nth-child(3) span::before {
-    content: "";
-    display: inline-block;
-    width: 22px; height: 15px;
-    background: url(../images/hamburger.png) no-repeat;
-    background-size: 50px auto; background-position: -11px -105px;
-    position: relative; top: 5px; right: 23%;
-    vertical-align: middle;
-}
-#login_back .login_content .button_box button:nth-child(4) span::before {
-    content: "";
-    display: inline-block;
-    width: 22px; height: 23px;
-    background: url(../images/hamburger.png) no-repeat;
-    background-size: 50px auto; background-position: -12px -148px;
-    position: relative; top: 5px; right: 18%;
-    vertical-align: middle;
-}
-/* #login_back .login_content .button_box button:nth-child(1) {
-    background: url(../images/kfc.png) no-repeat 17px 50%;
-    background-size: auto 30px;
+#login_back .login_content .button_box button:nth-child(1) {
+    background: url(../images/facebook.jpg) no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    
 }
 #login_back .login_content .button_box button:nth-child(2) {
-    background: url(../images/lotteria.png) no-repeat 5px 50%;
-    background-size: auto 30px;
+    background: url(../images/google.jpg) no-repeat;
+    background-position: center;
+    /* background-size: cover; */
 }
 #login_back .login_content .button_box button:nth-child(3) {
-    background: url(../images/mcdonard.png) no-repeat 12px 50%;
-    background-size: auto 30px;
+    background: url(../images/naver.jpg) no-repeat;
+    background-position: center;
+    /* background-size: cover; */
 }
 #login_back .login_content .button_box button:nth-child(4) {
-    background: url(../images/burgerking.png) no-repeat 13px 50%;
-    background-size: auto 30px;
+    background: url(../images/daum.jpg) no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+/* #login_back .login_content .button_box button:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    width: 10%; height: 22px;
+    background: url(../images/hamburger.png) no-repeat;
+    background-size: 50px auto; background-position: -5px -19px;
+    position: relative; top: 0; left: 0px;
+    vertical-align: middle;
+}
+#login_back .login_content .button_box button:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 10%; height: 29px;
+    background: url(../images/hamburger.png) no-repeat;
+    background-size: 50px auto; background-position: -11px -62px;
+    position: relative; top: 0; left: 0px;
+    vertical-align: middle;
+}
+#login_back .login_content .button_box button:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    width: 10%; height: 15px;
+    background: url(../images/hamburger.png) no-repeat;
+    background-size: 50px auto; background-position: -11px -105px;
+    position: relative; top: 0; left: 0px;
+    vertical-align: middle;
+}
+#login_back .login_content .button_box button:nth-child(4)::before {
+    content: "";
+    display: inline-block;
+    width: 10%; height: 23px;
+    background: url(../images/hamburger.png) no-repeat;
+    background-size: 50px auto; background-position: -12px -148px;
+    position: relative; top: 0; left: 0px;
+    vertical-align: middle;
 } */
 
 
 
 
 
+
+
+@media screen and (max-width:768px) {
+
+    #login_back .login_page {
+        width: auto;
+        text-align: center;
+        border: 1px solid #000000; border-radius: 50px;
+        padding: 60px 70px; margin: 0px 50px;
+    }
+
+
+    /* ID 찾기----------------------------------------------------------------------------------------------- */
+    #login_back .login_content .link {
+        padding: 10px 0px 30px;
+    }
+    #login_back .login_content .link a {
+        float: none;
+        text-align: left;
+        font-size: 13px;
+        color: #333333;
+        padding: 10px 0px; margin: 10px 0px 40px;
+    }
+    #login_back .login_content .link a::before {
+        content: "|";
+        margin: 0px 10px 0px 0px;
+    }
+    #login_back .login_content .link a:last-child {
+        float: none;
+        text-align: left;
+        font-size: 13px;
+        color: #333333;
+        margin-left: 10px;
+    }
+
+    /* 버튼 로그인박스---------------------------------------------------------------------------------- */
+    #login_back .login_content .button_login {
+        background: pink;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        margin: 5px auto; padding: 10px 0px;
+        font-size: 20px;
+        width: 70%;
+        border: 1px solid #cccccc; border-radius: 10px;
+        transition: all 0.5s;
+    }
+    #login_back .login_content .button_login:hover {
+        background: pink; color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        margin: 5px auto; padding: 10px 0px;
+        font-size: 20px;
+        width: 70%;
+        border: 1px solid #cccccc; border-radius: 10px; 
+        transition: all 0.5s;
+    }
+    /* 버튼 햄버거박스---------------------------------------------------------------------------------- */
+    #login_back .login_content .button_box {
+        width: 100%;
+    }
+    #login_back .login_content .button_box button {
+        display: block;
+        margin: 5px auto;
+        font-size: 16px;
+        width: 70%; height: 40px; line-height: 40px;
+        background: #ffffff;
+        border: 1px solid #999; border-radius: 10px;  
+        overflow: hidden;
+    }
+    #login_back .login_content .button_box button:nth-child(1) {
+        background: url(../images/facebook.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    #login_back .login_content .button_box button:nth-child(2) {
+        background: url(../images/google.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #login_back .login_content .button_box button:nth-child(3) {
+        background: url(../images/naver.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #login_back .login_content .button_box button:nth-child(4) {
+        background: url(../images/daum.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+
+
+@media screen and (max-width:560px) {
+
+    #login_back .login_page {
+        width: auto;
+        text-align: center;
+        border: 1px solid #000000; border-radius: 50px;
+        padding: 40px 30px 30px; margin: 0px 50px;
+    }
+
+    /* #login_back .login_content .idpw_box input {
+        height: 100px;
+    } */
+    #login_back .login_content .idpw_box input::placeholder {
+        font-size: 1px;
+    }
+    #login_back .login_content .button_box button {
+        display: block;
+        margin: 5px auto;
+        font-size: 12px;
+        width: 70%; height: 40px; line-height: 40px;
+        background: #ffffff;
+        border: 1px solid #999; border-radius: 10px;  
+        overflow: hidden;
+    }
+
+    #login_back .login_content .link a {
+        float: none;
+        text-align: left;
+        font-size: 13px;
+        color: #333333;
+        padding: 0px 0px; margin: 5px 0px 0px;
+        display: block;
+    }
+    #login_back .login_content .link a::before {
+        content: "";
+        margin: 0px 0px 0px 0px;
+    }
+    #login_back .login_content .link a:last-child {
+        float: none;
+        text-align: left;
+        font-size: 13px;
+        color: #333333;
+        margin-left: 0px;
+    }
+
+}
 
 
