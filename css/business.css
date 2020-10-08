@@ -20,7 +20,7 @@
     font-size: 38px; font-weight: lighter;
     color: #ffffff;
     margin-bottom: 25px;
-    animation: bounce 1s both;
+    animation: pulse 1s both;
 }
 #business_back .slide .text_box h1 span {
     font-weight: bold;
@@ -28,7 +28,7 @@
 #business_back .slide .text_box p {
     font-size: 22px; font-weight: lighter;
     color: #ffffff;
-    animation: bounce 1s both 1s;
+    animation: pulse 1s both 1s;
 }
 #business_back .slide .text_box .learn_more {
     background: #9bcb43;
@@ -39,7 +39,7 @@
     margin-top: 20px; padding: 15px 30px;
     cursor: pointer;
     text-shadow: none;
-    animation: bounce 1s both 2s;
+    animation: pulse 1s both 2s;
 }
 #business_back .slide .text_box .learn_more:hover {
     background: orange;

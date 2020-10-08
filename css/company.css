@@ -25,8 +25,8 @@
 #company_back .slide .text_box h1 {
     font-size: 38px; font-weight: lighter;
     color: #ffffff;
-    margin-bottom: 25px;
-    animation: heartBeat 1s both;
+    margin-bottom: 25px; padding-right: 10px;
+    animation: pulse 1s both;
 }
 #company_back .slide .text_box h1 span {
     font-weight: bold;
@@ -34,7 +34,8 @@
 #company_back .slide .text_box p {
     font-size: 22px; font-weight: lighter;
     color: #ffffff;
-    animation: heartBeat 1s both 1s;
+    padding-right: 10px;
+    animation: pulse 1s both 1s;
 }
 #company_back .slide .text_box .learn_more {
     background: #9bcb43;
@@ -42,10 +43,10 @@
     display: inline-block;
     font-size: 15px; font-weight: bold;
     color: #ffffff;
-    margin-top: 20px; padding: 15px 30px;
+    margin: 20px 10px 0px 0px; padding: 15px 30px;
     cursor: pointer;
     text-shadow: none;
-    animation: heartBeat 1s both 2s;
+    animation: pulse 1s both 2s;
 }
 #company_back .slide .text_box .learn_more:hover {
     background: orange;
@@ -53,7 +54,7 @@
     display: inline-block;
     font-size: 15px; font-weight: bold;
     color: #ffffff;
-    margin-top: 20px; padding: 15px 30px;
+    margin: 20px 10px 0px 0px; padding: 15px 30px;
     cursor: pointer;
     text-shadow: none;
     transition: all 0.5s;
@@ -97,18 +98,19 @@
 }
 /* 메인-------------------------------------------------------------------------------------- */
 #company_back .center .greeting_img {
-    width: 440px; height: 529px;
     display: inline-block;
+    width: 49%;
+    vertical-align: top;
 }
-#company_back .center .greeting_back {
-    position: relative;
+#company_back .center .greeting_img img {
+    width: 100%;
 }
 #company_back .center .greeting_text {
     display: inline-block;
-    width: auto; height: auto;
-    position: absolute; top: 0px;
+    width: 49%;
     padding: 0px 10px 0px 10px;
     font-weight: bold;
+    vertical-align: top;
 }
 #company_back .center .greeting_text h3 {
     font-size: 22px;
@@ -119,6 +121,7 @@
     font-size: 15px;
     color: #666666;
     margin-bottom: 10px;
+    width: 100%;
 }
 #company_back .center .greeting_text h4 {
     font-size: 20px;
@@ -128,7 +131,7 @@
 #company_back .center .greeting_text table {
     font-size: 15px;
     color: #666666;
-    width: 440px;
+    width: 100%;
 }
 #company_back .center .greeting_text table td {
     padding: 5px 0px 5px 10px;
@@ -136,7 +139,7 @@
 #company_back .center .greeting_text table td:nth-child(1) {
     background: #aaaaaa;
     color: #f3f3f3;
-    width: 150px;
+    width: 40%;
 }
 #company_back .center .greeting_text table td:nth-child(2) {
     background: #f3f3f3;
@@ -170,6 +173,7 @@
     display: inline-block;
     width: 32%;
     padding: 0px 10px;
+    vertical-align: top;
 }
 #company_back .center .counselor_img img {
     width: 100%;
@@ -193,9 +197,10 @@
     font-size: 15px;
     color: #666666;
 }
-/* #company_back .center .map iframe {
-    filter: grayscale();
-} */
+#company_back .center .map iframe {
+    /* filter: grayscale(); */
+    /* width: 100%; height: 400px; */
+}
 
 
 
@@ -204,6 +209,159 @@
 
 
 
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    #company_back .center .greeting_img {
+        display: block;
+        width: 100%;
+        vertical-align: top;
+    }
+    #company_back .center .greeting_img img {
+        width: 100%;
+    }
+    #company_back .center .greeting_text {
+        display: block;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    #company_back .center .counselor_img h3 span:nth-child(2) {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    /* 슬라이드 텍스트----------------------------------------------------------------------------- */
+    #company_back .slide .text_box h1 {
+        font-size: 25px; font-weight: lighter;
+        color: #ffffff;
+        margin-bottom: 25px; padding-right: 10px;
+        animation: pulse 1s both;
+    }
+    #company_back .slide .text_box p {
+        font-size: 16px; font-weight: lighter;
+        color: #ffffff;
+        padding-right: 10px;
+        animation: pulse 1s both 1s;
+    }
+    #company_back .slide .text_box .learn_more {
+        background: #9bcb43;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 12px; font-weight: bold;
+        color: #ffffff;
+        margin: 20px 10px 0px 0px; padding: 10px 20px;
+        cursor: pointer;
+        text-shadow: none;
+        animation: pulse 1s both 2s;
+    }
+    #company_back .slide .text_box .learn_more:hover {
+        background: orange;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 12px; font-weight: bold;
+        color: #ffffff;
+        margin: 20px 10px 0px 0px; padding: 10px 20px;
+        cursor: pointer;
+        text-shadow: none;
+        transition: all 0.5s;
+    }
+
+
+    /* 메인 인사말-------------------------------------------------------------------------------- */
+    #company_back .center .greeting h2 {
+        font-size: 15px;
+        color: #666666;
+        margin-bottom: 10px; padding-left: 10px;
+    }
+    #company_back .center .greeting p {
+        font-size: 11px;
+        color: #666666;
+        padding-bottom: 20px; padding-left: 10px;
+    }
+    /* 인사말 메인---------------------------------------------------------------------------------- */
+    #company_back .center .greeting_text h3 {
+        font-size: 15px;
+        color: #666666;
+        margin-bottom: 10px; margin-top: 10px;
+    }
+    #company_back .center .greeting_text p {
+        font-size: 11px;
+        color: #666666;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #company_back .center .greeting_text h4 {
+        font-size: 15px;
+        color: #666666;
+        margin: 60px 0px 15px;
+    }
+    #company_back .center .greeting_text table {
+        font-size: 12px;
+        color: #666666;
+        width: 100%;
+    }
+
+
+    /* 로드 메인 인사말-------------------------------------------------------------------------------- */
+    #company_back .center .counselor h2 {
+        font-size: 15px;
+        color: #666666;
+        margin-bottom: 10px; padding-left: 10px;
+    }
+    #company_back .center .counselor p {
+        font-size: 11px;
+        color: #666666;
+        padding-bottom: 20px; padding-left: 10px;
+    }
+
+    /* 로드 상담원 소개말-------------------------------------------------------------------------------- */
+    #company_back .center .counselor_img li {
+        display: inline-block;
+        width: 32%;
+        padding: 0px 10px;
+        vertical-align: top;
+    }
+    #company_back .center .counselor_img img {
+        width: 100%;
+    }
+    #company_back .center .counselor_img h3 {
+        padding: 10px 0px 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #company_back .center .counselor_img h3 span {
+        display: block;
+    }
+    #company_back .center .counselor_img p {
+        font-size: 12px;
+    }
+
+    /* 로드 지도---------------------------------------------------------------------------------------- */
+    #company_back .center .map h3 {
+        padding: 50px 0px 5px 10px;
+        font-size: 15px;
+        color: #666666;
+    }
+    #company_back .center .map p {
+        padding: 0px 0px 20px 10px;
+        font-size: 11px;
+        color: #666666;
+    }
+
+    
+
+
+}
 
 
 

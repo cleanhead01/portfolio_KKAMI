@@ -529,6 +529,20 @@
         transition: all 0.5s;
     }
 
+    /* 메뉴2 박스 */
+    .nav_box .nav .depth1 .depth2 {
+        /* width: 542.5px; */
+        width: 0%;
+        height: 31px;
+        background: #333333;
+        display: none;
+        opacity: 0;
+        position: absolute; top: 150%; left: 0px;
+        border-radius: 10px;
+        padding: 2px 0px;
+        /* text-align: center; */
+    }
+
 
     
     /* 햄버거메뉴--------------------------------------------------------------------------------------- */
