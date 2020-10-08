@@ -4,25 +4,39 @@
     //     $('.loadBox').delay(2000).fadeOut(500)
     // })
 
+    var deviceSize = 560;
+
+    function scrollOX(status) {
+        $('html').css({
+            overflowY:status
+        })
+        var htmlWidth = $('html').width()
+        return htmlWidth
+    }
+
+    var swh = scrollOX('hidden');
+    var sws = scrollOX('scroll');
+    var swd = swh - sws;
+
+    if (swd > 0) {
+        deviceSize = deviceSize - swd
+    }
+
+
+
+
     init()
 
-    var flag = true;
     function init() {
         var ww = $(window).width()
-        if ( ww > 560 ) {
+        if ( ww > deviceSize && !$('html').hasClass('pc') ) {
             $('html').addClass('pc').removeClass('mobile')
-            if ( flag ) {
-                $('.nav_box .nav').show()
-                $('.nav_box .open_nav, .nav_box .close_nav').hide()
-                flag = false
-            }
-        } else if ( ww <= 560 ) {
+            $('.nav_box .nav').show()
+            $('.nav_box .open_nav, .nav_box .close_nav').hide()
+        } else if ( ww <= deviceSize && !$('html').hasClass('mobile') ) {
             $('html').addClass('mobile').removeClass('pc')
-            if ( !flag ) {
-                $('.nav_box .open_nav').show()
-                $('.nav_box .nav').hide()       
-                flag = true
-            }
+            $('.nav_box .open_nav').show()
+            $('.nav_box .nav').hide()       
         }
     }
 
