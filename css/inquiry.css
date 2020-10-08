@@ -24,7 +24,8 @@
 }
 /* form 시작------------------------------------------------------------------------------------------------- */
 .inquiry_page .inquiry_form {
-    padding-left: 366px;
+    width: 500px;
+    margin: 0px auto;
 }
 .inquiry_page .inquiry_content select,
 .inquiry_page .inquiry_content textarea,
@@ -50,7 +51,7 @@
 .inquiry_page .inquiry_content .select_mail {
     display: inline-block;
     vertical-align: top;
-    width: 103px;
+    width: 100px;
 }
 .inquiry_page .inquiry_content select:hover {
     background: #cccccc;
@@ -89,4 +90,47 @@
     background: blue;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width:560px) {
+
+    .inquiry_page .inquiry_content .w500 {
+        width: 100%;
+    }
+
+    /* form 시작------------------------------------------------------------------------------------------------- */
+    .inquiry_page .inquiry_form {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+
+    .inquiry_page .inquiry_content .mail input {
+        width: 60%; min-width: 180px;
+    }
+    .inquiry_page .inquiry_content .mail input:nth-of-type(1) {
+        margin-bottom: 0px;
+    }
+    .inquiry_page .inquiry_content .mail span {
+        display: block;
+        margin: 5px 0px;
+    }
+
+
+
+
+    /* 전송버튼------------------------------------------------------------------------------------------------- */
+    .inquiry_page .sm_rs_button button {
+        width: 49%; height: 50px;
+        border-radius: 10px; border: 1px solid #000000;
+        margin-top: 60px;
+        color: #ffffff; 
+        font-weight: bold; font-size: 15px;
+    }
+
 }
