@@ -520,7 +520,7 @@
 
     .nav_box .nav .depth1 > li {
         display: inline-block;
-        padding: 20px 20px;
+        padding: 20px 10px;
         font-weight: bold;
         color: #fff;
     }
@@ -652,6 +652,14 @@
 
 /* max-width:450px */
 @media screen and (max-width:450px) {
+
+    /* 메뉴1 */
+    .nav_box .nav .depth1 > li {
+        display: inline-block;
+        padding: 20px 5px;
+        font-weight: bold; font-size: 12px;
+        color: #fff;
+    }
 
     /* 슬라이드 구역 */
     .slide_outer {
