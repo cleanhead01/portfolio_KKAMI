@@ -66,6 +66,8 @@
     }
 
 
+
+
     $('#containerBox').load('main.html')
 
     // 각각 로그인,회원가입,사이트맵 페이지 이동 연결
@@ -85,6 +87,22 @@
         var url = $(this).attr('href')
         $('#container').remove()
         $('#containerBox').load(url)
+    })
+
+
+
+
+    // 1499px 이하에서 window값이 100이상이면 fixed되어있는 헤더에서 로그인구역이 사라지기
+    $(window).scroll(function(){
+        var sctNav = $(this).scrollTop();
+        var scwNav = $(this).width();
+
+        if (scwNav <= 1499 && sctNav >= 100) {
+            $('lang_back').stop().css({
+                display: 'none'
+            })
+        }
+
     })
 
     
