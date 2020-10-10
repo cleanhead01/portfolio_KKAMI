@@ -97,12 +97,14 @@
         var sctNav = $(this).scrollTop();
         var scwNav = $(this).width();
 
-        if (scwNav <= 1499 && sctNav >= 100) {
-            $('lang_back').stop().css({
-                display: 'none'
-            })
+        if (scwNav <= 1499 && sctNav > 0) {
+            $('.lang_back').stop().hide()
+            if (scwNav <= 1499 && sctNav <= 50) {
+                $('.lang_back').stop().show()
+            }
+        } else if (scwNav >= 1500) {
+            $('.lang_back').stop().show()
         }
-
     })
 
     

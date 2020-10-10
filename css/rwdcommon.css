@@ -14,6 +14,7 @@
 /* max-width:1025~1499px */
 @media screen and (max-width:1499px) {
 
+    /* 메뉴 1499px부터 fixed시키고 gotop버튼 없애기 */
     #header {
         height: 114px;
         position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
@@ -53,6 +54,7 @@
     /* 슬라이드 구역 */
     .slide_outer {
         position: relative; height: 592.91px; overflow: hidden;
+        /* padding: 114px 0px 0px; */
     }
     .slide_outer .slide_inner .slide {
         width: 100%; height: 592.91px;
@@ -60,6 +62,14 @@
         background-size: cover; background-position: center;
         background-repeat: no-repeat;
         position: relative;
+    }
+
+    /* 1499px부터 gotop버튼 없애고 메뉴 fixed시키기 */
+    .go_top {
+        position: fixed; bottom: 50px; right: 50px;
+        font-size: 40px;
+        color: skyblue;
+        display: none;
     }
 
 }
