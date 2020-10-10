@@ -51,6 +51,10 @@
         display: none;
     }
 
+    #containerBox {
+        padding-top: 114px;
+    }
+
     /* 슬라이드 구역 */
     .slide_outer {
         position: relative; height: 592.91px; overflow: hidden;
