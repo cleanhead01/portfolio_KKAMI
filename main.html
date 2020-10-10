@@ -297,6 +297,17 @@
     </section>
 
 
+    <div class="go_top">
+        <i class="fas fa-cloud"></i>
+        <div class="lightning">
+            <i class="fas fa-bolt"></i>
+            <i class="fas fa-bolt"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+        <span class="blind">맨위로</span>
+    </div>
+
+
     <div id="popup">
         <a href="#"><img src="images/popup.jpg" alt="팝업창"></a>
         <div class="btn cf">
@@ -525,6 +536,27 @@
             }
         }]
     })
+
+
+    // 고탑버튼 클릭하면 맨위로 올라가기
+    $('.go_top').on('click', function(){
+        $('html, body').stop().animate({
+            scrollTop: 0
+        }, 800, 'linear')
+    })
+
+
+
+
+    // <div class="go_top">
+    //     <i class="fas fa-cloud"></i>
+    //     <div class="lightning">
+    //         <i class="fas fa-bolt"></i>
+    //         <i class="fas fa-bolt"></i>
+    //         <i class="fas fa-bolt"></i>
+    //     </div>
+    //     <span class="blind">맨위로</span>
+    // </div>
     
     
 

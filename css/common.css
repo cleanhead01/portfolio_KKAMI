@@ -12,6 +12,9 @@
     color: #ffffff;
     z-index: 99999;
 }
+.lang_back {
+    background: #fff;
+}
 .language {
     position: relative;
 }
