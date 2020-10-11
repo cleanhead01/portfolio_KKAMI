@@ -147,9 +147,8 @@
 
 
     // 560px 반응형에서 메뉴 누르면 페이지 이동하면서 메뉴닫기 
-    // 오류 해결해야됨!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     $('.nav_box .nav').on('click', function(){
-        var clickNav = $(this).width();
+        var clickNav = $(window).width();
 
         if (clickNav <= 560) {
             $(this).hide()
