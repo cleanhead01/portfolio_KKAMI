@@ -129,6 +129,7 @@
     )
 
 
+    
     // 반응형 햄버거 메뉴 누르면 depth1 목록 나오기
     $('.nav_box .open_nav').on('click', function(){
         $(this).next('.nav').stop().slideDown(300)
@@ -144,6 +145,9 @@
     })
 
 
+
+    // 560px 반응형에서 메뉴 누르면 페이지 이동하면서 메뉴닫기 
+    // 오류 해결해야됨!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     $('.nav_box .nav').on('click', function(){
         var clickNav = $(this).width();
 
@@ -153,6 +157,8 @@
             $(this).prev('.nav_box .open_nav').show()
         }
     })
+
+    
 
 
 

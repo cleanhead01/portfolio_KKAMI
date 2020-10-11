@@ -95,8 +95,9 @@
 }
 #business_back .center .product_img li {
     display: inline-block;
-    width: 23%;
+    width: 22%;
     margin: 0px 0.5%;
+    vertical-align: top;
 }
 #business_back .center .product_img h2 {
     padding: 5px 0px;
@@ -126,12 +127,15 @@
 /* 그린 비지니스 이미지----------------------------------------------------------------------------- */
 #business_back .center .green_img li {
     display: inline-block;
-    width: 49.5%;
+    width: 49%;
 }
 #business_back .center .green_img h3 {
     color: #666666;
     font-weight: 500;
     padding: 30px 0px 10px;
+}
+#business_back .center .green_img li img {
+    width: 100%;
 }
 #business_back .center .green_img p {
     font-size: 12px;
