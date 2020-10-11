@@ -153,8 +153,8 @@
 
         if (clickNav <= 560) {
             $(this).hide()
-            $(this).next('.nav_box .close_nav').hide()
-            $(this).prev('.nav_box .open_nav').show()
+            $(this).next().hide()
+            $(this).prev().show()
         }
     })
 
