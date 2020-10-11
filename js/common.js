@@ -93,17 +93,16 @@
 
 
     // 1499px 이하에서 window값이 100이상이면 fixed되어있는 헤더에서 로그인구역이 사라지기
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         var sctNav = $(this).scrollTop();
         var scwNav = $(this).width();
-
-        if (scwNav <= 1499 && sctNav > 0) {
-            $('.lang_back').stop().hide()
-            if (scwNav <= 1499 && sctNav <= 50) {
-                $('.lang_back').stop().show()
-            }
-        } else if (scwNav >= 1500) {
-            $('.lang_back').stop().show()
+    
+        if (scwNav <= 1499) {
+          if (sctNav > 0) {
+            $(".lang_back").stop().hide();
+          } else {
+            $(".lang_back").stop().show();
+          }
         }
     })
 
@@ -145,6 +144,15 @@
     })
 
 
+    $('.nav_box .nav').on('click', function(){
+        var clickNav = $(this).width();
+
+        if (clickNav <= 560) {
+            $(this).hide()
+            $(this).next('.nav_box .close_nav').hide()
+            $(this).prev('.nav_box .open_nav').show()
+        }
+    })
 
 
 
