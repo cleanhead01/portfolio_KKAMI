@@ -245,6 +245,12 @@
 
 @media screen and (max-width:768px) {
 
+    #company_back .slide {
+        background: url(../images/company_slide.jpg) no-repeat;
+        background-size: cover; background-position: center;
+        width: 100%; height: 300px;
+    }
+
     /* 슬라이드 텍스트----------------------------------------------------------------------------- */
     #company_back .slide .text_box h1 {
         font-size: 25px; font-weight: lighter;
@@ -383,6 +389,8 @@
 
 
 }
+
+
 
 
 
