@@ -236,9 +236,10 @@
         vertical-align: top;
     }
 
-    #company_back .center .counselor_img h3 span:nth-child(2) {
+    #company_back .center .counselor_img h3 span {
         display: block;
     }
+
 
 }
 
@@ -352,25 +353,31 @@
     }
 
     /* 로드 상담원 소개말-------------------------------------------------------------------------------- */
+    #company_back .center .counselor_img ul {
+        text-align: center;
+    }
     #company_back .center .counselor_img li {
         display: inline-block;
-        width: 32%;
-        padding: 0px 10px;
+        width: 100%;
+        padding: 0px 10px 15px;
         vertical-align: top;
     }
     #company_back .center .counselor_img img {
-        width: 100%;
+        width: 40%; min-width: 170px;
+        vertical-align: top;
+    }
+    #company_back .center .counselor_img .txt {
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
     }
     #company_back .center .counselor_img h3 {
-        padding: 10px 0px 5px;
-        font-size: 12px;
+        padding: 5px 0px 15px;
+        font-size: 13px;
         text-align: center;
     }
-    #company_back .center .counselor_img h3 span {
-        display: block;
-    }
     #company_back .center .counselor_img p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* 로드 지도---------------------------------------------------------------------------------------- */
