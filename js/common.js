@@ -98,10 +98,16 @@
         var scwNav = $(this).width();
     
         if (scwNav <= 1499) {
-          if (sctNav > 0) {
+          if (sctNav > 100) {
             $(".lang_back").stop().hide();
+            // $('#containerBox').css({
+            //     paddingTop : "0px"
+            // })
           } else {
             $(".lang_back").stop().show();
+            // $('#containerBox').css({
+            //     paddingTop : "149px"
+            // })
           }
         }
     })

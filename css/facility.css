@@ -99,9 +99,9 @@
     background: #ffffff;
 }
 /* 메인 이미지-------------------------------------------------------------------------------------- */
-/* #facility_back .center .facility_img_back {
-    padding: 50px 0px;
-} */
+#facility_back .center .facility_img_back {
+    text-align: center;
+}
 #facility_back .center .facility_img {
     width: 32%;
     display: inline-block;
@@ -224,21 +224,40 @@
         transition: all 0.5s;
     }
 
+    /* 메인 버튼--------------------------------------------------------------------------------------- */
+    #facility_back .center .button {
+        text-align: center;
+    }
+    #facility_back .center .button span {
+        display: block;
+        width: 100px; height: 40px; line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #facility_back .center .button a {
+        background: #f3f3f3; color: #666666;
+        font-size: 12px;
+        border: 1px solid #d2d2d2;
+    }
+
     /* 메인 이미지-------------------------------------------------------------------------------------- */
     #facility_back .center .facility_img_back .facility_img:last-child {
-        text-align: left;
+        float: left;
     }
     #facility_back .center .facility_img {
-        width: 45%;
+        width: 47%;
         display: inline-block;
         margin: 10px 3px;
     }
 
     /* 비디오 메인  텍스트 ---------------------------------------------------------------------------------- */
     #facility_back .center .video_text h2 {
-        font-size: 13px;
+        font-size: 15px;
         color: #7a7171;
         padding: 50px 0px 10px;
+    }
+    #facility_back .center .video_text span {
+        display: block;
     }
     #facility_back .center .video_text p {
         font-size: 11px;

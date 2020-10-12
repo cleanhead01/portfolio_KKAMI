@@ -132,6 +132,8 @@
 }
 #notice_back .center .noticeTable tbody td:nth-child(2) {
     text-indent: 1em;
+    white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis;
 }
 #notice_back .center .noticeTable tbody td:nth-child(5) {
     border-right: none;
@@ -205,6 +207,8 @@
 }
 #notice_back .center .qaTable tbody td:nth-child(2) {
     text-indent: 1em;
+    text-overflow: ellipsis; overflow: hidden;
+    white-space: nowrap;
 }
 #notice_back .center .qaTable tbody td:nth-child(5) {
     border-right: none;
@@ -247,3 +251,105 @@
     vertical-align: middle;
     border-bottom: 1px solid #555;
 }
+
+
+
+
+@media screen and (max-width:768px) {
+    
+
+    /* 슬라이드 텍스트----------------------------------------------------------------------------- */
+    #notice_back .slide .text_box h1 {
+        font-size: 25px; font-weight: lighter;
+        color: #ffffff;
+        margin-bottom: 25px; padding-right: 10px;
+        animation: pulse 1s both;
+    }
+    #notice_back .slide .text_box p {
+        font-size: 16px; font-weight: lighter;
+        color: #ffffff;
+        padding-right: 10px;
+        animation: pulse 1s both 1s;
+    }
+    #notice_back .slide .text_box .learn_more {
+        background: #9bcb43;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 12px; font-weight: bold;
+        color: #ffffff;
+        margin: 20px 10px 0px 0px; padding: 10px 20px;
+        cursor: pointer;
+        text-shadow: none;
+        animation: pulse 1s both 2s;
+    }
+    #notice_back .slide .text_box .learn_more:hover {
+        background: orange;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 12px; font-weight: bold;
+        color: #ffffff;
+        margin: 20px 10px 0px 0px; padding: 10px 20px;
+        cursor: pointer;
+        text-shadow: none;
+        transition: all 0.5s;
+    }
+
+    /* 메인 버튼--------------------------------------------------------------------------------------- */
+    #notice_back .center .button {
+        text-align: center;
+    }
+    #notice_back .center .button span {
+        display: block;
+        width: 100px; height: 40px; line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #notice_back .center .button a {
+        background: #f3f3f3; color: #666666;
+        font-size: 12px;
+        border: 1px solid #d2d2d2;
+    }
+
+    /* 검색창----------------------------------------------------------------------------------------- */
+    #notice_back .center form input[type=text] {
+        text-indent: 1em;
+        border-bottom: 1px solid #aaa;
+        height: 20px;
+        vertical-align: top;
+        width: 40%; max-width: 170px;
+    }
+
+
+    /* 표 속성------------------------------------------------------------------------------------- */
+    #notice_back .center .noticeTable col:nth-child(1) {width: 15%;}
+    #notice_back .center .noticeTable col:nth-child(2) {width: auto;}
+    #notice_back .center .noticeTable col:nth-child(3) {width: 20%;}
+    #notice_back .center .noticeTable col:nth-child(4) {width: 15%; display: none;}
+    #notice_back .center .noticeTable col:nth-child(5) {width: 20%;}
+
+    #notice_back .center .noticeTable th:nth-child(4),
+    #notice_back .center .noticeTable tr td:nth-child(4) {
+        display: none;
+    }
+
+    /* Q&A 표 속성------------------------------------------------------------------------------------- */
+    #notice_back .center .qaTable col:nth-child(1) {width: 15%;}
+    #notice_back .center .qaTable col:nth-child(2) {width: auto;}
+    #notice_back .center .qaTable col:nth-child(3) {width: 20%;}
+    #notice_back .center .qaTable col:nth-child(4) {width: 15%; display: none;}
+    #notice_back .center .qaTable col:nth-child(5) {width: 20%;}
+
+    #notice_back .center .qaTable th:nth-child(4),
+    #notice_back .center .qaTable tr td:nth-child(4) {
+        display: none;
+    }
+    
+
+
+   
+
+    
+
+
+}
+

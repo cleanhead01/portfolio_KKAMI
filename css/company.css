@@ -276,6 +276,22 @@
         transition: all 0.5s;
     }
 
+    /* 메인 버튼--------------------------------------------------------------------------------------- */
+    #company_back .center .button {
+        text-align: center;
+    }
+    #company_back .center .button span {
+        display: block;
+        width: 100px; height: 40px; line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #company_back .center .button a {
+        background: #f3f3f3; color: #666666;
+        font-size: 12px;
+        border: 1px solid #d2d2d2;
+    }
+
 
     /* 메인 인사말-------------------------------------------------------------------------------- */
     #company_back .center .greeting h2 {
