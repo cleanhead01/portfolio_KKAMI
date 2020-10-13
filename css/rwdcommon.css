@@ -511,6 +511,23 @@
         transition: all 0.5s;
     }
 
+    /* 팝업창-------------------------------------------------------------------------------- */
+    #popup {
+        position: fixed; top: 30%; left: 50%;
+        transform: translateX(-50%);
+        border: 10px solid #fff; border-radius: 50px;
+        overflow: hidden;
+        display: none;
+        width: 80%;
+    }
+    #popup img {
+        width: 100%;
+    }
+
+    
+
+
+
     
 }
 
@@ -679,16 +696,54 @@
     .footer_nav li a {
         display: block;
         font-size: 13px;
-        padding: 20px 0px;
+        padding: 20px 3px;
         color: #ffffff;
     }
     .footer_nav li a:hover {
         display: block;
         font-size: 13px;
-        padding: 20px 0px;
+        padding: 20px 3px;
         color: #63ebc4;
         transition: all 0.5s;
     }
+
+    /* 팝업창---------------------------------------------------------------------------------------------- */
+    #popup {
+        position: fixed; top: 30%; left: 50%;
+        transform: translateX(-50%);
+        border: 10px solid #fff; border-radius: 50px;
+        overflow: hidden;
+        display: none;
+        z-index: 99999999999;
+    }
+    #popup .btn p {
+        text-align: center;
+        float: left;
+        width: 50%; height: 30px; line-height: 30px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+    /* 텍스트 박스 */
+    #popup .txt h2 {
+        font-size: 25px;
+        padding: 10px 0px 0px;
+        text-shadow: 3px 3px 3px gray;
+        letter-spacing: 3px;
+    }
+    #popup .txt p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #333;
+    }
+    #popup .txt p span {
+        font-weight: bold;  
+        display: block;
+    }
+
+
+    
 
     
 

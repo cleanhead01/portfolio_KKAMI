@@ -543,9 +543,13 @@
     display: none;
 }
 #popup img {
-    /* opacity: 0.8; */
+
 }
 /* 버튼박스 */
+#popup .btn {
+    position: relative;
+    z-index: 99999999999999999;
+}
 #popup .btn p {
     text-align: center;
     float: left;
@@ -561,12 +565,9 @@
 }
 /* 텍스트 박스 */
 #popup .txt {
-    width: 100%;
-    /* height: 278px; */
     text-align: center;
-    position: absolute; top: 0px; left: 50%;
-    transform: translateX(-50%);
-    /* background: rgba(255,255,255,0.3); */
+    position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;
+    background: rgba(255,255,255,0.5);
 }
 #popup .txt h2 {
     font-size: 45px;
@@ -586,8 +587,7 @@
     
 }
 #popup .txt p span {
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 
