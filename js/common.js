@@ -163,6 +163,21 @@
         }
     })
 
+
+
+    // 푸터구역 패밀리 사이트 이동버튼 누르면 해당 페이지로이동하기
+    $('.family_site a').on('click', function(){
+        var familyUrl = $('#siteLink').val()
+        if (familyUrl === '') {
+            return false
+        } else {
+            $(this).attr({
+                href : familyUrl,
+                target : '_blank'
+            })
+        }
+    })
+
     
 
 

@@ -170,7 +170,26 @@
     color: #63ebc4;
     transition: all 0.5s;
 }
+/* 푸터 패밀리사이트 링크-------------------------------------------------------------------------------- */
+.footer_nav .family_site .site_link {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer_nav .family_site select {
+    width: 200px; height: 35px;
+    text-indent: 10px;
+    font-weight: bold;
+}
+.family_site a {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px; height: 35px;
+    background: #484848; color: #fff;
+    text-align: center;
+    line-height: 35px;
+}
 
+/* 푸터 카피라이트 */
 .footer_copy {
     background: #f2f3f4;
     text-align: center;
