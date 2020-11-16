@@ -16,7 +16,7 @@
 
     /* 메뉴 1499px부터 fixed시키고 gotop버튼 없애기 */
     #header {
-        height: 114px;
+        height: 149px;
         position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
         z-index: 99999999999999999;
     }
